@@ -7,13 +7,14 @@ import org.junit.runner.RunWith;
 @RunWith(JUnitParamsRunner.class)
 public class RomanTPPShould {
     @Test
-   /*   @Parameters({
-           "1,I"
-    })*/
-    public void return_I_when_1_is_passed(){
+    @Parameters({
+           "1,I",
+           "2,II"
+    })
+    public void return_roman_number_when_arabic_number_is_passed(int arabicNumber, String romanNumber){
 
         RomanTPP romanTPP = new RomanTPP();
 
-        Assert.assertEquals("I", romanTPP.convert(1));
+        Assert.assertEquals(romanNumber, romanTPP.convert(arabicNumber));
     }
 }
