@@ -8,9 +8,10 @@ import org.junit.runner.RunWith;
 public class RomanTPPShould {
     @Test
     @Parameters({
-           "1,I",
-           "2,II",
-           "3,III"
+            "1,I",
+            "2,II",
+            "3,III",
+            "4,IV"
     })
     public void return_roman_number_when_arabic_number_is_passed(int arabicNumber, String romanNumber){
 
