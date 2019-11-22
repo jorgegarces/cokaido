@@ -13,7 +13,9 @@ public class RomanTPPShould {
             "3,III",
             "4,IV",
             "5,V",
-            "6,VI"
+            "6,VI",
+            "7,VII",
+            "8,VIII"
     })
     public void return_roman_number_when_arabic_number_is_passed(int arabicNumber, String romanNumber){
 
