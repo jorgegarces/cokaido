@@ -9,7 +9,8 @@ public class RomanTPPShould {
     @Test
     @Parameters({
            "1,I",
-           "2,II"
+           "2,II",
+           "3,III"
     })
     public void return_roman_number_when_arabic_number_is_passed(int arabicNumber, String romanNumber){
 
