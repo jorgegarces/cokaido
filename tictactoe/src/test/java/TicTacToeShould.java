@@ -57,4 +57,15 @@ public class TicTacToeShould {
         Assert.assertTrue(tictactoe.checkWinner());
     }
 
+    @Test
+    public void ensureThatTheXIsTheWinnerThirdLine(){
+        tictactoe.move("X",6);
+        tictactoe.move("O",1);
+        tictactoe.move("X",7);
+        tictactoe.move("O",3);
+        tictactoe.move("X",8);
+
+        Assert.assertTrue(tictactoe.checkWinner());
+    }
+
 }
