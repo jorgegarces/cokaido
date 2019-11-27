@@ -8,9 +8,15 @@ public class TicTacToe {
         if (move != lastMove && board[position] == "") {
             lastMove = move;
             board[position] = move;
+
             return true;
         }
         return false;
 
+    }
+
+    public boolean checkWinner() {
+        if(board[0] == board[1] && board[1] == board[2]) return true;
+        return false;
     }
 }
