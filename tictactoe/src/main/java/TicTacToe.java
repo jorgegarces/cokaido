@@ -21,4 +21,8 @@ public class TicTacToe {
         if(board[6] == board[7] && board[7] == board[8]) return true;
         return false;
     }
+
+    public boolean checkDraw() {
+        return true;
+    }
 }

@@ -68,4 +68,18 @@ public class TicTacToeShould {
         Assert.assertTrue(tictactoe.checkWinner());
     }
 
+    @Test
+    public void ensureThatADrawHappens(){
+        tictactoe.move("X",1);
+        tictactoe.move("O",0);
+        tictactoe.move("X",2);
+        tictactoe.move("O",5);
+        tictactoe.move("X",3);
+        tictactoe.move("O",6);
+        tictactoe.move("X",4);
+        tictactoe.move("O",7);
+        tictactoe.move("X",8);
+
+        Assert.assertTrue(tictactoe.checkDraw());
+    }
 }
