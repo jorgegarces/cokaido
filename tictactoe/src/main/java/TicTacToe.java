@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.List;
 
 public class TicTacToe {
@@ -23,6 +24,7 @@ public class TicTacToe {
     }
 
     public boolean checkDraw() {
-        return true;
+        if(!checkWinner() && !Arrays.asList(board).contains("")) return true;
+        return false;
     }
 }
