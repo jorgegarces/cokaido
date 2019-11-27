@@ -13,20 +13,27 @@ public class TicTacToeShould {
 
     @Test
     public void ensureThatXPlaysFirst() {
-
-        Assert.assertTrue(tictactoe.move("X"));
+        Assert.assertTrue(tictactoe.move("X", 0));
     }
 
     @Test
     public void ensureThatODoesNotPlayFirst() {
-
-        Assert.assertFalse(tictactoe.move("O"));
+        Assert.assertFalse(tictactoe.move("O", 0));
     }
 
     @Test
     public void ensureThatSameMoveIsNotPlayedTwice(){
+        tictactoe.move("X", 0);
 
-        tictactoe.move("X");
-        Assert.assertFalse(tictactoe.move("X"));
+        Assert.assertFalse(tictactoe.move("X", 0));
     }
+
+    @Test
+    public void ensureThatTheSamePositionIsNotUsedTwice() {
+        tictactoe.move("X", 1);
+
+        Assert.assertFalse(tictactoe.move("O", 1));
+    }
+
+
 }
