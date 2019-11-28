@@ -15,4 +15,11 @@ public class TicTacToeShould {
     public void ensure_O_is_not_passed_on_the_first_move() {
         Assert.assertEquals(Response.NOTYOURTURN, tictactoe.move(Movement.O));
     }
+
+    @Test
+    public void ensure_alternate_moves(){
+        tictactoe.move(Movement.X);
+
+        Assert.assertEquals(Response.NOTYOURTURN, tictactoe.move(Movement.X));
+    }
 }
