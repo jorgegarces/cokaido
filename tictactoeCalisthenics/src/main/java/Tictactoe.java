@@ -1,5 +1,5 @@
-enum Movement { X, O };
-enum Response { NOTYOURTURN, TURNO, TURNX, INVALIDMOVE };
+enum Movement { X, O, NONE };
+enum Response { NOTYOURTURN, TURNO, TURNX, INVALIDMOVE, YOUWIN };
 
 public class Tictactoe {
 
@@ -9,8 +9,15 @@ public class Tictactoe {
     public Response move(Movement movement, Cell position) {
 
         if(movement == lastMove) return Response.NOTYOURTURN;
-        board.addPosition(position);
+        board.addPosition(position, movement);
         lastMove = movement;
+        return checkWinner();
+    }
+
+    public Response checkWinner() {
+        if(board.getMovementFromGivenPosition(Cell.ZERO)==
+        board.getMovementFromGivenPosition(Cell.ONE) && board.getMovementFromGivenPosition(Cell.ONE) ==
+        board.getMovementFromGivenPosition(Cell.TWO)) return Response.YOUWIN;
         return Response.TURNO;
     }
 }

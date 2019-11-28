@@ -30,4 +30,16 @@ public class TicTacToeShould {
         tictactoe.move(Movement.O, Cell.ZERO);
 
     }
+
+    @Test
+    public void ensure_game_ends_on_first_row_win(){
+
+        tictactoe.move(Movement.X, Cell.ZERO);
+        tictactoe.move(Movement.O, Cell.THREE);
+        tictactoe.move(Movement.X, Cell.ONE);
+        tictactoe.move(Movement.O, Cell.FOUR);
+
+        Assert.assertEquals(Response.YOUWIN, tictactoe.move(Movement.X, Cell.TWO));
+    }
+
 }
