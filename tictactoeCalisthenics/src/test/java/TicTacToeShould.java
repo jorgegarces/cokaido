@@ -13,13 +13,21 @@ public class TicTacToeShould {
 
     @Test
     public void ensure_O_is_not_passed_on_the_first_move() {
-        Assert.assertEquals(Response.NOTYOURTURN, tictactoe.move(Movement.O));
+        Assert.assertEquals(Response.NOTYOURTURN, tictactoe.move(Movement.O, Cell.ZERO));
     }
 
     @Test
     public void ensure_alternate_moves(){
-        tictactoe.move(Movement.X);
+        tictactoe.move(Movement.X, Cell.TWO);
 
-        Assert.assertEquals(Response.NOTYOURTURN, tictactoe.move(Movement.X));
+        Assert.assertEquals(Response.NOTYOURTURN, tictactoe.move(Movement.X, Cell.ZERO));
+    }
+
+    @Test(expected = RuntimeException.class)
+    public void ensure_no_repeated_position(){
+        tictactoe.move(Movement.X, Cell.ZERO);
+
+        tictactoe.move(Movement.O, Cell.ZERO);
+
     }
 }
