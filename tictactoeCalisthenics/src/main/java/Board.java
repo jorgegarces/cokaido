@@ -11,6 +11,6 @@ public class Board {
 
     public Response checkWinner() {
         if(grid.get(Cell.ZERO) == grid.get(Cell.ONE) && grid.get(Cell.ONE) == grid.get(Cell.TWO)) return Response.YOUWIN;
-        return Response.TURNO;
+        return Response.TURN;
     }
 }
