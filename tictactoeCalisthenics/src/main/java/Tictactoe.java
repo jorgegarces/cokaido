@@ -11,13 +11,7 @@ public class Tictactoe {
         if(movement == lastMove) return Response.NOTYOURTURN;
         board.addPosition(position, movement);
         lastMove = movement;
-        return checkWinner();
+        return board.checkWinner();
     }
 
-    public Response checkWinner() {
-        if(board.getMovementFromGivenPosition(Cell.ZERO)==
-        board.getMovementFromGivenPosition(Cell.ONE) && board.getMovementFromGivenPosition(Cell.ONE) ==
-        board.getMovementFromGivenPosition(Cell.TWO)) return Response.YOUWIN;
-        return Response.TURNO;
-    }
 }

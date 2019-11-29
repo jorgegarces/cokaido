@@ -26,14 +26,11 @@ public class TicTacToeShould {
     @Test(expected = RuntimeException.class)
     public void ensure_no_repeated_position(){
         tictactoe.move(Movement.X, Cell.ZERO);
-
         tictactoe.move(Movement.O, Cell.ZERO);
-
     }
 
     @Test
     public void ensure_game_ends_on_first_row_win(){
-
         tictactoe.move(Movement.X, Cell.ZERO);
         tictactoe.move(Movement.O, Cell.THREE);
         tictactoe.move(Movement.X, Cell.ONE);
@@ -41,5 +38,4 @@ public class TicTacToeShould {
 
         Assert.assertEquals(Response.YOUWIN, tictactoe.move(Movement.X, Cell.TWO));
     }
-
 }
