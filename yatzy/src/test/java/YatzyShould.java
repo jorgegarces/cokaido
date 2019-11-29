@@ -24,4 +24,11 @@ public class YatzyShould {
 
         Assert.assertTrue(new Score(14).equals(currentGame.calculateScore()));
     }
+
+    @Test
+    public void ensure_ones_plays_adds_ones(){
+        Game currentGame = new Game(new int[]{1,1,2,3,4}, "ones");
+
+        Assert.assertTrue(new Score(2).equals(currentGame.calculateScore()));
+    }
 }
