@@ -5,16 +5,23 @@ public class YatzyShould {
 
     @Test
     public void ensure_yatzy_play_scores_50_points(){
-        Yatzy yatzy = new Yatzy(new int[]{1, 1, 1, 1, 1}, "yatzy");
+        Game currentGame = new Game(new int[]{1, 1, 1, 1, 1}, "yatzy");
 
 //        Assert.assertEquals(new Score(50), yatzy.calculateScore());
-        Assert.assertTrue(new Score(50).equals(yatzy.calculateScore()));
+        Assert.assertTrue(new Score(50).equals(currentGame.calculateScore()));
     }
 
     @Test
     public void ensure_erroneous_yatzy_play_scores_0_points(){
-        Yatzy yatzy = new Yatzy(new int[]{1, 1, 1, 1, 2}, "yatzy");
+        Game currentGame = new Game(new int[]{1, 1, 1, 1, 2}, "yatzy");
 
-        Assert.assertTrue(new Score(0).equals(yatzy.calculateScore()));
+        Assert.assertTrue(new Score(0).equals(currentGame.calculateScore()));
+    }
+
+    @Test
+    public void ensure_chance_play_adds_the_dices(){
+        Game currentGame = new Game(new int[]{1,1,3,3,6}, "chance");
+
+        Assert.assertTrue(new Score(14).equals(currentGame.calculateScore()));
     }
 }
