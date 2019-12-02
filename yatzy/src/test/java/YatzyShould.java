@@ -11,12 +11,12 @@ public class YatzyShould {
         Assert.assertTrue(new Score(50).equals(currentGame.calculateScore()));
     }
 
-   /* @Test
+    @Test
     public void ensure_erroneous_yatzy_play_scores_0_points(){
         Game currentGame = new Game(new Roll(DiceValue.ONE, DiceValue.ONE, DiceValue.ONE, DiceValue.ONE, DiceValue.TWO), "yatzy");
 
         Assert.assertTrue(new Score(0).equals(currentGame.calculateScore()));
-    }*/
+    }
 
     /*@Test
     public void ensure_chance_play_adds_the_dices(){
