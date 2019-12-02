@@ -5,7 +5,7 @@ public class YatzyShould {
 
     @Test
     public void ensure_yatzy_play_scores_50_points(){
-        Game currentGame = new Game(new Roll(DiceValue.ONE, DiceValue.ONE, DiceValue.ONE, DiceValue.ONE, DiceValue.ONE), "yatzy");
+        Game currentGame = new Game(new Yatzy(DiceValue.ONE, DiceValue.ONE, DiceValue.ONE, DiceValue.ONE, DiceValue.ONE));
 
 //        Assert.assertEquals(new Score(50), yatzy.calculateScore());
         Assert.assertTrue(new Score(50).equals(currentGame.calculateScore()));
@@ -13,16 +13,15 @@ public class YatzyShould {
 
     @Test
     public void ensure_erroneous_yatzy_play_scores_0_points(){
-        Game currentGame = new Game(new Roll(DiceValue.ONE, DiceValue.ONE, DiceValue.ONE, DiceValue.ONE, DiceValue.TWO), "yatzy");
+        Roll yatzy = new Yatzy(DiceValue.ONE, DiceValue.ONE, DiceValue.ONE, DiceValue.ONE, DiceValue.TWO);
+        Game currentGame = new Game(yatzy);
 
         Assert.assertTrue(new Score(0).equals(currentGame.calculateScore()));
     }
 
-
-
     @Test
     public void ensure_chance_play_adds_the_dices(){
-        Game currentGame = new Game(new Roll(DiceValue.ONE, DiceValue.ONE, DiceValue.THREE, DiceValue.THREE, DiceValue.SIX), "chance");
+        Game currentGame = new Game(new Chance(DiceValue.ONE, DiceValue.ONE, DiceValue.THREE, DiceValue.THREE, DiceValue.SIX));
 
         Assert.assertTrue(new Score(14).equals(currentGame.calculateScore()));
     }
