@@ -9,4 +9,9 @@ public enum DiceValue {
     private final int valueCode;
 
     DiceValue(int valueCode) {this.valueCode = valueCode;}
+
+
+    public int toInt(){
+        return valueCode;
+    }
 }

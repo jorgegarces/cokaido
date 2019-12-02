@@ -18,14 +18,16 @@ public class YatzyShould {
         Assert.assertTrue(new Score(0).equals(currentGame.calculateScore()));
     }
 
-    /*@Test
+
+
+    @Test
     public void ensure_chance_play_adds_the_dices(){
-        Game currentGame = new Game(new int[]{1,1,3,3,6}, "chance");
+        Game currentGame = new Game(new Roll(DiceValue.ONE, DiceValue.ONE, DiceValue.THREE, DiceValue.THREE, DiceValue.SIX), "chance");
 
         Assert.assertTrue(new Score(14).equals(currentGame.calculateScore()));
     }
 
-    @Test
+    /*@Test
     public void ensure_ones_play_adds_ones(){
         Game currentGame = new Game(new int[]{1,1,2,3,4}, "ones");
 
