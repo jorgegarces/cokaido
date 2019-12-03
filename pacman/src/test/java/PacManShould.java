@@ -20,4 +20,13 @@ public class PacManShould {
 
         Assert.assertEquals(new PacMan(1,0),pacman);
     }
+
+    @Test
+    public void ensure_pacman_moves_left(){
+        PacMan pacman = new PacMan(1,1);
+
+        pacman.moveLeft();
+
+        Assert.assertEquals(new PacMan(1,0),pacman);
+    }
 }
