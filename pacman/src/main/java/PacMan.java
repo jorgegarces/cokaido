@@ -20,6 +20,10 @@ public class PacMan {
         this.y++;
     }
 
+    public void moveDown() {
+        this.x++;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -33,4 +37,5 @@ public class PacMan {
     public int hashCode() {
         return Objects.hash(x, y);
     }
+
 }
