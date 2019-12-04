@@ -13,7 +13,12 @@ public class PacMan {
     }
 
     public void moveRight() {
-        x=1;
+        this.x++;
+    }
+
+    public void moveLeft() {
+        this.x--;
+        this.direction = "L";
     }
 
     @Override
