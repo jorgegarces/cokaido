@@ -4,32 +4,16 @@ public class PacMan {
 
     private int x;
     private int y;
+    private String direction;
 
-    public PacMan(int x, int y) {
+    public PacMan(int x, int y, String direction) {
         this.x = x;
         this.y = y;
+        this.direction = direction;
     }
-
-    public PacMan() {
-        this.x = 0;
-        this.y = 0;
-    }
-
 
     public void moveRight() {
-        this.y++;
-    }
-
-    public void moveDown() {
-        this.x++;
-    }
-
-    public void moveLeft() {
-        this.y--;
-    }
-
-    public void moveUp() {
-        this.x--;
+        x=1;
     }
 
     @Override
@@ -38,12 +22,21 @@ public class PacMan {
         if (o == null || getClass() != o.getClass()) return false;
         PacMan pacMan = (PacMan) o;
         return x == pacMan.x &&
-                y == pacMan.y;
+                y == pacMan.y &&
+                Objects.equals(direction, pacMan.direction);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(x, y);
+        return Objects.hash(x, y, direction);
     }
 
+    @Override
+    public String toString() {
+        return "PacMan{" +
+                "x=" + x +
+                ", y=" + y +
+                ", direction='" + direction + '\'' +
+                '}';
+    }
 }
