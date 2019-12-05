@@ -4,7 +4,7 @@ import org.junit.Test;
 public class YatzyShould {
 
     @Test
-    public void ensure_yatzy_play_scores_50_points(){
+    public void ensure_yatzy_play_scores_50_points() {
         Game currentGame = new Game(new Yatzy(DiceValue.ONE, DiceValue.ONE, DiceValue.ONE, DiceValue.ONE, DiceValue.ONE));
 
 //        Assert.assertEquals(new Score(50), yatzy.calculateScore());
@@ -12,7 +12,7 @@ public class YatzyShould {
     }
 
     @Test
-    public void ensure_erroneous_yatzy_play_scores_0_points(){
+    public void ensure_erroneous_yatzy_play_scores_0_points() {
         Roll yatzy = new Yatzy(DiceValue.ONE, DiceValue.ONE, DiceValue.ONE, DiceValue.ONE, DiceValue.TWO);
         Game currentGame = new Game(yatzy);
 
@@ -20,21 +20,21 @@ public class YatzyShould {
     }
 
     @Test
-    public void ensure_chance_play_adds_the_dices(){
+    public void ensure_chance_play_adds_the_dices() {
         Game currentGame = new Game(new Chance(DiceValue.ONE, DiceValue.ONE, DiceValue.THREE, DiceValue.THREE, DiceValue.SIX));
 
         Assert.assertTrue(new Score(14).equals(currentGame.calculateScore()));
     }
 
     @Test
-    public void ensure_ones_play_adds_ones(){
+    public void ensure_ones_play_adds_ones() {
         Game currentGame = new Game(new Ones(DiceValue.ONE, DiceValue.ONE, DiceValue.THREE, DiceValue.THREE, DiceValue.SIX));
 
         Assert.assertTrue(new Score(2).equals(currentGame.calculateScore()));
     }
 
     @Test
-    public void ensure_twos_play_adds_twos(){
+    public void ensure_twos_play_adds_twos() {
         Game currentGame = new Game(new Twos(DiceValue.ONE, DiceValue.ONE, DiceValue.TWO, DiceValue.TWO, DiceValue.FOUR));
 
         Assert.assertTrue(new Score(4).equals(currentGame.calculateScore()));
@@ -42,7 +42,7 @@ public class YatzyShould {
     }
 
     @Test
-    public void ensure_threes_play_adds_threes(){
+    public void ensure_threes_play_adds_threes() {
         Game currentGame = new Game(new Threes(DiceValue.THREE, DiceValue.THREE, DiceValue.TWO, DiceValue.TWO, DiceValue.FOUR));
 
         Assert.assertTrue(new Score(6).equals(currentGame.calculateScore()));
@@ -63,10 +63,17 @@ public class YatzyShould {
     }
 
     @Test
-    public void ensure_pairs_play_scores_0_if_no_pairs(){
+    public void ensure_pairs_play_scores_0_if_no_pairs() {
         Game currentGame = new Game(new Pairs(DiceValue.ONE, DiceValue.TWO, DiceValue.THREE, DiceValue.SIX, DiceValue.FIVE));
 
         Assert.assertTrue(new Score(0).equals(currentGame.calculateScore()));
     }
 
+    @Test
+    public void ensure_game_adds_score_from_multiple_plays() {
+        Game currentGame = new Game(new Pairs(DiceValue.ONE, DiceValue.TWO, DiceValue.THREE, DiceValue.SIX, DiceValue.FIVE));
+        currentGame.addRoll(new Threes(DiceValue.THREE, DiceValue.THREE, DiceValue.TWO, DiceValue.TWO, DiceValue.FOUR));
+
+        Assert.assertTrue(new Score(6).equals(currentGame.calculateScore()));
+    }
 }

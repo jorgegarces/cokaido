@@ -21,4 +21,8 @@ public class Score {
                 "_value=" + _value +
                 '}';
     }
+
+    public Score sum(Score otherScore) {
+        return new Score(this._value + otherScore._value);
+    }
 }
