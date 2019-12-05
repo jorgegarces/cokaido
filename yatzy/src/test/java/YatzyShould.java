@@ -62,5 +62,11 @@ public class YatzyShould {
         Assert.assertTrue(new Score(8).equals(currentGame.calculateScore()));
     }
 
+    @Test
+    public void ensure_pairs_play_scores_0_if_no_pairs(){
+        Game currentGame = new Game(new Pairs(DiceValue.ONE, DiceValue.TWO, DiceValue.THREE, DiceValue.SIX, DiceValue.FIVE));
+
+        Assert.assertTrue(new Score(0).equals(currentGame.calculateScore()));
+    }
 
 }
