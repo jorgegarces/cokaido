@@ -54,4 +54,11 @@ public class YatzyShould {
 
         Assert.assertTrue(new Score(0).equals(currentGame.calculateScore()));
     }
+
+    @Test
+    public void ensure_pairs_play_adds_highest_pair() {
+        Game currentGame = new Game(new Pairs(DiceValue.THREE, DiceValue.THREE, DiceValue.THREE, DiceValue.FOUR, DiceValue.ONE));
+
+        Assert.assertTrue(new Score(6).equals(currentGame.calculateScore()));
+    }
 }
