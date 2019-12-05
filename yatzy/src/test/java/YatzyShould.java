@@ -42,9 +42,16 @@ public class YatzyShould {
     }
 
     @Test
-    public void test(){
+    public void ensure_threes_play_adds_threes(){
         Game currentGame = new Game(new Threes(DiceValue.THREE, DiceValue.THREE, DiceValue.TWO, DiceValue.TWO, DiceValue.FOUR));
 
         Assert.assertTrue(new Score(6).equals(currentGame.calculateScore()));
+    }
+
+    @Test
+    public void ensure_any_play_scores_zero_when_played_number_is_not_found_in_roll() {
+        Game currentGame = new Game(new Ones(DiceValue.THREE, DiceValue.THREE, DiceValue.THREE, DiceValue.FOUR, DiceValue.FIVE));
+
+        Assert.assertTrue(new Score(0).equals(currentGame.calculateScore()));
     }
 }
