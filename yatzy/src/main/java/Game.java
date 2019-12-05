@@ -11,7 +11,6 @@ public class Game {
 
     public Score calculateScore() {
         return _currentRoll.calculate();
-        /*if (_category == "ones") return new Score(Arrays.stream(_currentRoll).filter((item)-> item == 1).sum());
-        if (_category == "pair of ones") return new Score((int) Arrays.stream(_currentRoll).filter((item)-> item ==1).count());*/
+       // if (_category == "pair of ones") return new Score((int) Arrays.stream(_currentRoll).filter((item)-> item ==1).count());
     }
 }
