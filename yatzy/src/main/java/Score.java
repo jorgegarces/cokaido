@@ -14,4 +14,15 @@ public class Score {
     private boolean equals(Score otherScore) {
         return otherScore._value == _value;
     }
+
+    @Override
+    public String toString() {
+        return "Score{" +
+                "_value=" + _value +
+                '}';
+    }
+
+    public Score sum(Score otherScore) {
+        return new Score(this._value + otherScore._value);
+    }
 }
