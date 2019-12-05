@@ -33,11 +33,18 @@ public class YatzyShould {
         Assert.assertTrue(new Score(2).equals(currentGame.calculateScore()));
     }
 
-    /*@Test
-    public void ensure_pair_of_ones_play_adds_ones(){
-        Game currentGame = new Game(new int[]{1,1,2,2,4}, "pair of ones");
+    @Test
+    public void ensure_twos_play_adds_twos(){
+        Game currentGame = new Game(new Twos(DiceValue.ONE, DiceValue.ONE, DiceValue.TWO, DiceValue.TWO, DiceValue.FOUR));
 
-        Assert.assertTrue(new Score(2).equals(currentGame.calculateScore()));
+        Assert.assertTrue(new Score(4).equals(currentGame.calculateScore()));
 
-    }*/
+    }
+
+    @Test
+    public void test(){
+        Game currentGame = new Game(new Threes(DiceValue.THREE, DiceValue.THREE, DiceValue.TWO, DiceValue.TWO, DiceValue.FOUR));
+
+        Assert.assertTrue(new Score(6).equals(currentGame.calculateScore()));
+    }
 }
