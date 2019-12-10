@@ -4,12 +4,12 @@ public class GameOfLife {
 
 public Board board = new Board();
 
- public void addLivingCell(int x, int y){
-     board.addCell(x,y);
+ public void addLivingCell(Cell cell, Position position){
+     board.addCell(cell, position);
  }
 
  public void runGame() {
-     board.grid.remove(0);
+     board.checkGrid();
  }
 
     @Override

@@ -1,13 +1,35 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 public class Board {
-    public Map<Integer, Integer> grid = new HashMap<>();
+    public Map<Position, Cell> grid = new HashMap<>();
 
-    public void addCell(int x, int y){
-        this.grid.put(x,y);
+    public void addCell(Cell cell, Position position){
+        if (!grid.containsKey(position))
+            this.grid.put(position, cell);
     }
+
+    List<Position> neighbors;
+    public void checkGrid(){
+        if (grid.size() <= 2) grid.clear();
+        for(Position coord : grid.keySet()) {
+            neighbors = coord.neighbors();
+            if (algo.comparar.size() < 2) grid.coord.laborro()
+        }
+    }
+
+    public List<Position> comparar(){
+        List<Position> live = new ArrayList<>();
+        for(int i = 0; i < grid.size(); i++) {
+            for(int j = 0; j < neighbors.size(); j++) {
+                if (neighbors.toArray()[j] = grid.keySet().toArray()[i]){
+                    live.add(grid.keySet().toArray());
+                }
+            }
+        }
+
+        return live;
+    }
+
 
     @Override
     public boolean equals(Object o) {
