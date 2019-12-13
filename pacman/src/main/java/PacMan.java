@@ -22,6 +22,11 @@ public class PacMan {
         this.direction = Direction.LEFT;
     }
 
+    public void moveUp() {
+        this.y++;
+        this.direction = Direction.UP;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

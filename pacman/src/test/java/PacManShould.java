@@ -10,7 +10,7 @@ import org.junit.Test;
 public class PacManShould {
 
     @Test
-    public void new_ensure_pacman_moves_right_and_looks_right() {
+    public void ensure_pacman_moves_right_and_looks_right() {
         PacMan pacman = new PacMan(0,0, Direction.LEFT);
 
         pacman.moveRight();
@@ -19,7 +19,7 @@ public class PacManShould {
     }
 
     @Test
-    public void new_ensure_pacman_moves_left_and_looks_left() {
+    public void ensure_pacman_moves_left_and_looks_left() {
         PacMan pacman = new PacMan(0, 0, Direction.RIGHT);
 
         pacman.moveLeft();
@@ -27,6 +27,14 @@ public class PacManShould {
         Assert.assertEquals(new PacMan(-1, 0, Direction.LEFT), pacman);
     }
 
+    @Test
+    public void ensure_pacman_moves_up_and_looks_up(){
+        PacMan pacman = new PacMan(0,0, Direction.RIGHT);
+
+        pacman.moveUp();
+
+        Assert.assertEquals(new PacMan(0,1, Direction.UP), pacman);
+    }
 
 
 }
