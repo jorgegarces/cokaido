@@ -27,6 +27,11 @@ public class PacMan {
         this.direction = Direction.UP;
     }
 
+    public void moveDown() {
+        this.y--;
+        this.direction = Direction.DOWN;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
