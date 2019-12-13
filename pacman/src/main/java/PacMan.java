@@ -12,30 +12,32 @@ public class PacMan {
         this.direction = direction;
     }
 
-    public void move(Cell destination, Move move) {
-        if (destination == Cell.WALL) return;
-        if (move == Move.RIGHT) moveRight(destination);
-        if (move == Move.LEFT) moveLeft(destination);
-        if (move == Move.UP) moveUp(destination);
-        if (move == Move.DOWN) moveDown(destination);
+    public Cell move(Cell destination, Move move) {
+        if (destination == Cell.WALL) return Cell.PACMAN;
+        if (move == Move.RIGHT) moveRight();
+        if (move == Move.LEFT) moveLeft();
+        if (move == Move.UP) moveUp();
+        if (move == Move.DOWN) moveDown();
+        return Cell.EMPTY;
     }
 
-    private void moveRight(Cell destination) {
+    private void moveRight() {
         this.x++;
         this.direction = Direction.RIGHT;
+
     }
 
-    private void moveLeft(Cell destination) {
+    private void moveLeft() {
         this.x--;
         this.direction = Direction.LEFT;
     }
 
-    private void moveUp(Cell destination) {
+    private void moveUp() {
         this.y++;
         this.direction = Direction.UP;
     }
 
-    private void moveDown(Cell destination) {
+    private void moveDown() {
         this.y--;
         this.direction = Direction.DOWN;
     }

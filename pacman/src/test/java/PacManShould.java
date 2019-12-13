@@ -78,4 +78,15 @@ public class PacManShould {
         Assert.assertEquals(new PacMan(0,0, Direction.DOWN), pacman);
     }
 
+    @Test
+    public void ensure_pacman_always_leaves_an_empty_cell_behind() {
+        PacMan pacman = new PacMan(0,0, Direction.DOWN);
+
+        Cell destination = Cell.DOT;
+        Cell origin = pacman.move(destination, Move.DOWN);
+
+        Assert.assertEquals(Cell.EMPTY, origin);
+    }
+
+
 }
