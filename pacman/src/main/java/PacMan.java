@@ -24,7 +24,8 @@ public class PacMan {
         this.direction = Direction.LEFT;
     }
 
-    public void moveUp() {
+    public void moveUp(Cell destination) {
+        if (destination == Cell.WALL) return;
         this.y++;
         this.direction = Direction.UP;
     }
