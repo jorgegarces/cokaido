@@ -36,6 +36,15 @@ public class PacManShould {
         Assert.assertEquals(new PacMan(1,0, Direction.RIGHT), pacman);
     }
 
+    @Test
+    public void new_ensure_pacman_moves_left_and_looks_left() {
+        PacMan pacman = new PacMan(0, 0, Direction.RIGHT);
+
+        pacman.moveLeft();
+
+        Assert.assertEquals(new PacMan(-1, 0, Direction.LEFT), pacman);
+    }
+
 
 
 }

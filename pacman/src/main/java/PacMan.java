@@ -28,7 +28,7 @@ public class PacMan {
     public void moveLeft() {
         this.x--;
         this.direction = "L";
-
+        this.newDirection = Direction.LEFT;
     }
 
     @Override
