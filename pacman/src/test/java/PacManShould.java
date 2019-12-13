@@ -37,7 +37,7 @@ public class PacManShould {
     public void ensure_pacman_moves_down_and_looks_down() {
         PacMan pacman = new PacMan(0, 0, Direction.DOWN);
 
-        pacman.moveDown();
+        pacman.moveDown(Cell.EMPTY);
 
         Assert.assertEquals(new PacMan(0, -1, Direction.DOWN), pacman);
     }
@@ -67,6 +67,15 @@ public class PacManShould {
         pacman.moveUp(Cell.WALL);
 
         Assert.assertEquals(new PacMan(0,0, Direction.UP), pacman);
+    }
+
+    @Test
+    public void ensure_pacman_does_not_move_through_walls_when_moving_down(){
+        PacMan pacman = new PacMan(0,0, Direction.DOWN);
+
+        pacman.moveDown(Cell.WALL);
+
+        Assert.assertEquals(new PacMan(0,0, Direction.DOWN), pacman);
     }
 
 }

@@ -30,7 +30,8 @@ public class PacMan {
         this.direction = Direction.UP;
     }
 
-    public void moveDown() {
+    public void moveDown(Cell destination) {
+        if (destination == Cell.WALL) return;
         this.y--;
         this.direction = Direction.DOWN;
     }
