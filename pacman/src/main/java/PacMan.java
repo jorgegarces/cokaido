@@ -4,31 +4,22 @@ public class PacMan {
 
     private int x;
     private int y;
-    private String direction;
-    private Direction newDirection;
+    private Direction direction;
 
-    public PacMan(int x, int y, String direction) {
+    public PacMan(int x, int y, Direction direction) {
         this.x = x;
         this.y = y;
         this.direction = direction;
     }
 
-    public PacMan(int x, int y, Direction direction) {
-        this.x = x;
-        this.y = y;
-        this.newDirection = direction;
-    }
-
     public void moveRight() {
         this.x++;
-        this.direction = "R";
-        this.newDirection = Direction.RIGHT;
+        this.direction = Direction.RIGHT;
     }
 
     public void moveLeft() {
         this.x--;
-        this.direction = "L";
-        this.newDirection = Direction.LEFT;
+        this.direction = Direction.LEFT;
     }
 
     @Override
@@ -38,7 +29,7 @@ public class PacMan {
         PacMan pacMan = (PacMan) o;
         return x == pacMan.x &&
                 y == pacMan.y &&
-                (Objects.equals(direction, pacMan.direction) || Objects.equals(newDirection, pacMan.newDirection));
+                Objects.equals(direction, pacMan.direction);
     }
 
     @Override
