@@ -1,10 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 /*
-* Direction: R, L, U, D
-* Assert Pacmans direction is up when moving up from right
-* Assert Pacmans direction is down when moving down from right
-* Assert Pacmans direction is right when moving right from left
+*
 *
  */
 public class PacManShould {
@@ -13,7 +10,7 @@ public class PacManShould {
     public void ensure_pacman_moves_right_and_looks_right() {
         PacMan pacman = new PacMan(0,0, Direction.LEFT);
 
-        pacman.moveRight();
+        pacman.moveRight(Cell.EMPTY);
 
         Assert.assertEquals(new PacMan(1,0, Direction.RIGHT), pacman);
     }
@@ -43,6 +40,15 @@ public class PacManShould {
         pacman.moveDown();
 
         Assert.assertEquals(new PacMan(0, -1, Direction.DOWN), pacman);
+    }
+
+    @Test
+    public void ensure_pacman_does_not_move_through_walls_when_moving_right(){
+        PacMan pacman = new PacMan(0,0, Direction.RIGHT);
+
+        pacman.moveRight(Cell.WALL);
+
+        Assert.assertEquals(new PacMan(0,0, Direction.RIGHT), pacman);
     }
 
 }

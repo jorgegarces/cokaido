@@ -12,7 +12,8 @@ public class PacMan {
         this.direction = direction;
     }
 
-    public void moveRight() {
+    public void moveRight(Cell destination) {
+        if (destination == Cell.WALL) return;
         this.x++;
         this.direction = Direction.RIGHT;
     }
