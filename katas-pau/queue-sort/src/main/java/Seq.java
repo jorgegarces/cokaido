@@ -8,7 +8,8 @@ public class Seq {
     public Seq(){
         sequence = new ArrayList<Person>();
     }
-    public void addPerson(Person person){
+
+    public void addPerson(Person person) {
         sequence.add(person);
     }
 
