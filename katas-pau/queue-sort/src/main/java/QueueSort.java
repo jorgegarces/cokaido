@@ -1,5 +1,8 @@
+import java.util.List;
+
 public class QueueSort {
-public Seq sort(Seq sequence){
-        return sequence;
-        }
+
+    public static List<Person> sort(List<Person> list) {
+        return list;
+    }
 }
