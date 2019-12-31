@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PersonSorterShould" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-30T14:39:54" hostname="admins-MacBook-Pro.local" time="0.004">
+  <properties/>
+  <testcase name="ensure_it_sorts_more_than_two_people_by_age_and_name" classname="PersonSorterShould" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
