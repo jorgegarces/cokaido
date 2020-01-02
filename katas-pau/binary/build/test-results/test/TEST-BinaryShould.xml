@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BinaryShould" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-01-02T16:47:47" hostname="admins-MacBook-Pro.local" time="0.01">
+  <properties/>
+  <testcase name="work_with_two_zeroes" classname="BinaryShould" time="0.006"/>
+  <testcase name="work_with_a_900000_and_a_1000000" classname="BinaryShould" time="0.0"/>
+  <testcase name="work_with_a_two_and_a_three" classname="BinaryShould" time="0.001"/>
+  <testcase name="work_with_an_eight_and_a_fifteen" classname="BinaryShould" time="0.0"/>
+  <testcase name="work_with_a_thousand_and_a_sixhundred" classname="BinaryShould" time="0.0"/>
+  <testcase name="work_with_two_ones" classname="BinaryShould" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
