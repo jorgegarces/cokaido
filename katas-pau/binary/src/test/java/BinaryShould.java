@@ -1,42 +1,52 @@
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
-import java.math.BigInteger;
+@RunWith(JUnitParamsRunner.class)
 
 public class BinaryShould {
     @Test
-    public void work_with_two_ones(){
-        BigInteger expected = new BigInteger("11");
-        Assert.assertEquals(expected, new Converter().merge(1, 1));
+    @Parameters({
+            "1,1, 11",
+            "8,15, 11010101",
+            "2,3, 1101",
+            "1000,600, 11101011100111000000",
+            "900000,1000000, 1111011110011010100011101001100000000000",
+            "0,0, 00",
+            "0,1, 01"
+    })
+
+    public void work_with_a_long_ass_named_method(int decimal1, int decimal2, String expected){
+        Assert.assertEquals(expected, TwoDecimalsToTwoBinariesConverterAndAlternateMerger.merge(decimal1, decimal2));
     }
 
     @Test
-    public void work_with_an_eight_and_a_fifteen(){
-        BigInteger expected = new BigInteger("11010101");
-        Assert.assertEquals(expected, new Converter().merge(8, 15));
+    @Parameters({
+            "2, 10",
+            "15, 1111",
+            "0, 0",
+            "1, 1"
+    })
+
+    public void correctly_convert_a_natural_number_to_binary(int natural, String expected) {
+        Assert.assertEquals(new BinaryNumber(expected), new NaturalNumber(natural).toBinary());
     }
 
     @Test
-    public void work_with_a_two_and_a_three(){
-        BigInteger expected = new BigInteger("1101");
-        Assert.assertEquals(expected, new Converter().merge(2, 3));
-    }
+    @Parameters({
+            "8,15, 11010101",
+            "2,3, 1101",
+            "1000,600, 11101011100111000000",
+            "900000,1000000, 1111011110011010100011101001100000000000",
+            "0,0, 00",
+            "0,1, 01"
+    })
 
-    @Test
-    public void work_with_a_thousand_and_a_sixhundred(){
-        BigInteger expected = new BigInteger("11101011100111000000");
-        Assert.assertEquals(expected, new Converter().merge(1000, 600));
-    }
-
-    @Test
-    public void work_with_a_900000_and_a_1000000(){
-        BigInteger expected = new BigInteger("1111011110011010100011101001100000000000");
-        Assert.assertEquals(expected, new Converter().merge(900000, 1000000));
-    }
-
-    @Test
-    public void work_with_two_zeroes(){
-        BigInteger expected = new BigInteger("00");
-        Assert.assertEquals(expected, new Converter().merge(0, 0));
+    public void merge_two_binaries_alternating_their_elements(int natural1, int natural2, String expected) {
+        BinaryNumber binary1 = new NaturalNumber(natural1).toBinary();
+        BinaryNumber binary2 = new NaturalNumber(natural2).toBinary();
+        Assert.assertEquals(new BinaryNumber(expected), BinaryNumber.alternatingMerge(binary1, binary2));
     }
 }
