@@ -15,13 +15,14 @@ does_not_return_any_trips_when_users_are_not_friends
 return_trips_when_users_are_friends
 */
 	User loggedUser;
+
     @Test
     public void throws_UserNotLoggedInException_when_user_is_not_logged_in() {
         loggedUser = null;
 
         TripService tripService = new TestableTripService();
 
-	    assertThrows(UserNotLoggedInException.class,() -> tripService.getTripsByUser(null));
+	    assertThrows(UserNotLoggedInException.class,() -> tripService.getTripsByUser(null, loggedUser));
     }
 
     @Test
@@ -32,7 +33,7 @@ return_trips_when_users_are_friends
 
         List<Trip> expected = new ArrayList<Trip>();
 
-        assertEquals(expected, tripService.getTripsByUser(new User()));
+        assertEquals(expected, tripService.getTripsByUser(new User(), loggedUser));
     }
 
     @Test
@@ -46,16 +47,12 @@ return_trips_when_users_are_friends
 
         TripService tripService = new TestableTripService();
 
-        List<Trip> result = tripService.getTripsByUser(friend);
+        List<Trip> result = tripService.getTripsByUser(friend, loggedUser);
         assertEquals(3, result.size());
     }
 
 
     private class TestableTripService extends  TripService {
-        @Override
-        protected User getLoggedUser() {
-            return loggedUser;
-        }
 
         @Override
         protected List<Trip> findTrips(User user) {
