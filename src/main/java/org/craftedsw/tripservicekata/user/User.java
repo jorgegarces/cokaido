@@ -26,4 +26,14 @@ public class User {
 		return trips;
 	}
 
+	public boolean isFriendsWith(User otherUser) {
+		boolean isFriend = false;
+		for (User friend : friends) {
+			if (friend.equals(otherUser)) {
+				isFriend = true;
+				break;
+			}
+		}
+		return isFriend;
+	}
 }

@@ -51,7 +51,6 @@ return_trips_when_users_are_friends
     }
 
 
-
     private class TestableTripService extends  TripService {
         @Override
         protected User getLoggedUser() {
