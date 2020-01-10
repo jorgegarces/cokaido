@@ -35,10 +35,32 @@ return_trips_when_users_are_friends
         assertEquals(expected, tripService.getTripsByUser(new User()));
     }
 
+    @Test
+    public void returns_friend_trips_when_both_users_are_friends(){
+        loggedUser = new User();
+        User friend = new User();
+        friend.addTrip(new Trip());
+        friend.addTrip(new Trip());
+        friend.addTrip(new Trip());
+        friend.addFriend(loggedUser);
+
+        TripService tripService = new TestableTripService();
+
+        List<Trip> result = tripService.getTripsByUser(friend);
+        assertEquals(3, result.size());
+    }
+
+
+
     private class TestableTripService extends  TripService {
         @Override
         protected User getLoggedUser() {
             return loggedUser;
+        }
+
+        @Override
+        protected List<Trip> findTrips(User user) {
+            return user.trips();
         }
     }
 }
