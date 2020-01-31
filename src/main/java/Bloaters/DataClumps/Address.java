@@ -8,30 +8,24 @@ public class Address {
 
     public String city;
 
-    public String postcode;
+    public String postCode;
 
     public String country;
 
-    public Address(String house, String street, String city, String postcode, String country) {
+    public Address(String house, String street, String city, String postCode, String country) {
         this.house = house;
         this.street = street;
         this.city = city;
-        this.postcode = postcode;
+        this.postCode = postCode;
         this.country = country;
-    }
-
-    public String GetAddressSummary()
-    {
-        return house + ", " + street + ", " + city + ", " + postcode + ", "
-                + country;
     }
 
     public String getCountry() {
         return country;
     }
 
-    public String getPostcode() {
-        return postcode;
+    public String getPostCode() {
+        return postCode;
     }
 
     public String getCity() {
@@ -44,5 +38,9 @@ public class Address {
 
     public String getHouse() {
         return house;
+    }
+
+    public String getAddressSummary() {
+        return house + ", " + street + ", " + city + ", " + postCode + ", " + country;
     }
 }
