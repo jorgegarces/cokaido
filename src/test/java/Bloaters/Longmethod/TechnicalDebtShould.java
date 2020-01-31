@@ -31,8 +31,7 @@ public class TechnicalDebtShould {
 
     @Test
     public void registeringIssueIncreasesTotal()
-    {
-        technicalDebt.register(50, "Declared Issue class in same file as TechnicalDebt class");
+    { technicalDebt.register(50, "Declared Issue class in same file as TechnicalDebt class");
 
         assertEquals(50, technicalDebt.getTotal());
     }

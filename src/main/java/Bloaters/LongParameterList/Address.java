@@ -2,9 +2,7 @@ package Bloaters.LongParameterList;
 
 public class Address {
     private String city;
-
     private String country;
-
     private String postcode;
 
     public String getCity() {

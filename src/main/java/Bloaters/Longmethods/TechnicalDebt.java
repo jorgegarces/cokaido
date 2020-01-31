@@ -17,11 +17,11 @@ public class TechnicalDebt {
 
     public void register(float effortManHours, String description)
     {
-        Priority priority = checkPriority(effortManHours);
+        Priority priority = getPriority(effortManHours);
 
         this.total = total + effortManHours;
 
-        issues.add(new Issue(priority));
+        issues.add(new Issue(effortManHours, description, priority));
 
         updateLastIssue();
     }
@@ -32,12 +32,12 @@ public class TechnicalDebt {
         this.lastIssueDate = now.get(Calendar.DAY_OF_MONTH) + "/" + now.get(Calendar.MONTH) + "/" + now.get(Calendar.YEAR);
     }
 
-    private Priority checkPriority(float effortManHours) {
+    private Priority getPriority(float effortManHours) {
         checkIfOffBounds(effortManHours);
 
-        if (effortManHours > 100) return Priority.Medium;
-        if (effortManHours > 250) return Priority.High;
         if (effortManHours > 500) return Priority.Critical;
+        if (effortManHours > 250) return Priority.High;
+        if (effortManHours > 100) return Priority.Medium;
 
         return Priority.Low;
     }
