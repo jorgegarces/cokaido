@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d066d18-04a3-42a5-98d4-9c96c3417736" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bloaters/DataClumps/Name.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bloaters/DataClumps/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bloaters/DataClumps/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bloaters/DataClumps/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bloaters/DataClumps/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Bloaters/DataClumps/CustomerShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Bloaters/DataClumps/CustomerShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bloaters/DataClumps/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Bloaters/DataClumps/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bloaters/Longmethods/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bloaters/Longmethods/Issue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bloaters/Longmethods/TechnicalDebt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bloaters/Longmethods/TechnicalDebt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Bloaters/DataClumps/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Bloaters/DataClumps/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Bloaters/DataClumps/CustomerShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Bloaters/DataClumps/CustomerShould.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,10 +70,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="453" y="109" key="#com.intellij.ide.util.MemberChooser" timestamp="1580402508565">
+    <state x="453" y="109" key="#com.intellij.ide.util.MemberChooser" timestamp="1580477846917">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state x="453" y="109" key="#com.intellij.ide.util.MemberChooser/0.23.1280.727@0.23.1280.727" timestamp="1580402508565" />
+    <state x="453" y="109" key="#com.intellij.ide.util.MemberChooser/0.23.1280.727@0.23.1280.727" timestamp="1580477846917" />
     <state x="380" y="177" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580402826812">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
@@ -87,10 +82,10 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="400" y="255" width="479" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.727@0.23.1280.727" timestamp="1580401097993" />
-    <state x="400" y="228" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1580403181814">
+    <state x="400" y="228" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1580478214680">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state x="400" y="228" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.23.1280.727@0.23.1280.727" timestamp="1580403181814" />
+    <state x="400" y="228" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.23.1280.727@0.23.1280.727" timestamp="1580478214680" />
     <state x="276" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580403037979">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
@@ -99,22 +94,22 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="378" y="141" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.727@0.23.1280.727" timestamp="1580402728857" />
-    <state width="1240" height="180" key="GridCell.Tab.0.bottom" timestamp="1580403534906">
+    <state width="1240" height="103" key="GridCell.Tab.0.bottom" timestamp="1580478931907">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="180" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1580403534906" />
-    <state width="1240" height="180" key="GridCell.Tab.0.center" timestamp="1580403534902">
+    <state width="1240" height="103" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1580478931907" />
+    <state width="1240" height="103" key="GridCell.Tab.0.center" timestamp="1580478931906">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="180" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1580403534902" />
-    <state width="1240" height="180" key="GridCell.Tab.0.left" timestamp="1580403534902">
+    <state width="1240" height="103" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1580478931906" />
+    <state width="1240" height="103" key="GridCell.Tab.0.left" timestamp="1580478931905">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="180" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1580403534902" />
-    <state width="1240" height="180" key="GridCell.Tab.0.right" timestamp="1580403534904">
+    <state width="1240" height="103" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1580478931905" />
+    <state width="1240" height="103" key="GridCell.Tab.0.right" timestamp="1580478931907">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="180" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1580403534904" />
+    <state width="1240" height="103" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1580478931907" />
     <state x="504" y="40" width="469" height="698" key="RefactorJ.IntroduceParameterObject" timestamp="1580403442391">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
@@ -127,13 +122,17 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="283" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.727@0.23.1280.727" timestamp="1580402120122" />
-    <state x="378" y="150" key="extract.method.dialog" timestamp="1580403173753">
+    <state x="416" y="310" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580478002307">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state x="378" y="150" key="extract.method.dialog/0.23.1280.727@0.23.1280.727" timestamp="1580403173753" />
-    <state x="664" y="23" key="refactoring.ChangeSignatureDialog" timestamp="1580401331750">
+    <state x="416" y="310" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.727@0.23.1280.727" timestamp="1580478002307" />
+    <state x="629" y="252" key="extract.method.dialog" timestamp="1580478427688">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state x="664" y="23" key="refactoring.ChangeSignatureDialog/0.23.1280.727@0.23.1280.727" timestamp="1580401331750" />
+    <state x="629" y="252" key="extract.method.dialog/0.23.1280.727@0.23.1280.727" timestamp="1580478427688" />
+    <state x="664" y="23" key="refactoring.ChangeSignatureDialog" timestamp="1580478846070">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="664" y="23" key="refactoring.ChangeSignatureDialog/0.23.1280.727@0.23.1280.727" timestamp="1580478846070" />
   </component>
 </project>
