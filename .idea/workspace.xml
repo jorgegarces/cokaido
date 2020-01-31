@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d066d18-04a3-42a5-98d4-9c96c3417736" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bloaters/LongParameterList/customerData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Bloaters/LongParameterList/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bloaters/LongParameterList/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Bloaters/LongParameterList/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bloaters/LongParameterList/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bloaters/Longmethods/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bloaters/Longmethods/Issue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bloaters/Longmethods/TechnicalDebt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bloaters/Longmethods/TechnicalDebt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Bloaters/Longmethod/TechnicalDebtShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Bloaters/Longmethod/TechnicalDebtShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bloaters/LongParameterList/customerData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Bloaters/LongParameterList/CustomerTestsShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Bloaters/LongParameterList/CustomerTestsShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Bloaters/LongParameterList/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Bloaters/LongParameterList/Address.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Bloaters/LongParameterList/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Bloaters/LongParameterList/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Bloaters/LongParameterList/customerData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Bloaters/LongParameterList/CustomerTestsShould.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +35,11 @@
   </component>
   <component name="RecentsManager">
     <key name="IntroduceParameterObject.EXISTING_KEY">
+      <recent name="Bloaters.LongParameterList.Address" />
       <recent name="Bloaters.DataClumps.Address" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TechnicalDebtShould">
+  <component name="RunManager" selected="JUnit.CustomerTestsShould">
     <configuration name="CustomerShould.customerAddressSummaryIncludesHouseStreetCityPostCodeAndCountry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodeSmells" />
       <extension name="coverage">
@@ -87,8 +88,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TechnicalDebtShould" />
         <item itemvalue="JUnit.CustomerTestsShould" />
+        <item itemvalue="JUnit.TechnicalDebtShould" />
         <item itemvalue="JUnit.CustomerShould.customerAddressSummaryIncludesHouseStreetCityPostCodeAndCountry" />
       </list>
     </recent_temporary>
@@ -107,14 +108,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="453" y="109" key="#com.intellij.ide.util.MemberChooser" timestamp="1580479736565">
+    <state x="453" y="109" key="#com.intellij.ide.util.MemberChooser" timestamp="1580480937141">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state x="453" y="109" key="#com.intellij.ide.util.MemberChooser/0.23.1280.727@0.23.1280.727" timestamp="1580479736565" />
-    <state x="380" y="177" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580402826812">
+    <state x="453" y="109" key="#com.intellij.ide.util.MemberChooser/0.23.1280.727@0.23.1280.727" timestamp="1580480937141" />
+    <state x="380" y="177" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580480782360">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state x="380" y="177" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1280.727@0.23.1280.727" timestamp="1580402826812" />
+    <state x="380" y="177" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1280.727@0.23.1280.727" timestamp="1580480782360" />
     <state x="400" y="255" width="479" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580401097993">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
@@ -127,30 +128,34 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="276" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.727@0.23.1280.727" timestamp="1580403037979" />
-    <state x="378" y="141" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580402728857">
+    <state x="378" y="141" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580481288820">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state x="378" y="141" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.727@0.23.1280.727" timestamp="1580402728857" />
-    <state width="1240" height="153" key="GridCell.Tab.0.bottom" timestamp="1580480143618">
+    <state x="378" y="141" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.727@0.23.1280.727" timestamp="1580481288820" />
+    <state width="1240" height="151" key="GridCell.Tab.0.bottom" timestamp="1580481303115">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="153" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1580480143618" />
-    <state width="1240" height="153" key="GridCell.Tab.0.center" timestamp="1580480143618">
+    <state width="1240" height="151" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1580481303115" />
+    <state width="1240" height="151" key="GridCell.Tab.0.center" timestamp="1580481303114">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="153" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1580480143618" />
-    <state width="1240" height="153" key="GridCell.Tab.0.left" timestamp="1580480143617">
+    <state width="1240" height="151" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1580481303114" />
+    <state width="1240" height="151" key="GridCell.Tab.0.left" timestamp="1580481303113">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="153" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1580480143617" />
-    <state width="1240" height="153" key="GridCell.Tab.0.right" timestamp="1580480143618">
+    <state width="1240" height="151" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1580481303113" />
+    <state width="1240" height="151" key="GridCell.Tab.0.right" timestamp="1580481303115">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="153" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1580480143618" />
-    <state x="622" y="40" width="518" height="698" key="RefactorJ.IntroduceParameterObject" timestamp="1580479162911">
+    <state width="1240" height="151" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1580481303115" />
+    <state x="622" y="23" width="518" height="698" key="RefactorJ.IntroduceParameterObject" timestamp="1580480792553">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state x="622" y="40" width="518" height="698" key="RefactorJ.IntroduceParameterObject/0.23.1280.727@0.23.1280.727" timestamp="1580479162911" />
+    <state x="622" y="23" width="518" height="698" key="RefactorJ.IntroduceParameterObject/0.23.1280.727@0.23.1280.727" timestamp="1580480792553" />
+    <state x="47" y="141" key="caller.chooser.dialog" timestamp="1580481296802">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="47" y="141" key="caller.chooser.dialog/0.23.1280.727@0.23.1280.727" timestamp="1580481296802" />
     <state x="100" y="123" width="1080" height="527" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1580402434835">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
@@ -167,9 +172,13 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="629" y="252" key="extract.method.dialog/0.23.1280.727@0.23.1280.727" timestamp="1580478427688" />
-    <state x="664" y="23" key="refactoring.ChangeSignatureDialog" timestamp="1580480099095">
+    <state x="664" y="23" key="refactoring.ChangeSignatureDialog" timestamp="1580481035546">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state x="664" y="23" key="refactoring.ChangeSignatureDialog/0.23.1280.727@0.23.1280.727" timestamp="1580480099095" />
+    <state x="664" y="23" key="refactoring.ChangeSignatureDialog/0.23.1280.727@0.23.1280.727" timestamp="1580481035546" />
+    <state x="303" y="71" width="672" height="678" key="search.everywhere.popup" timestamp="1580480426459">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="303" y="71" width="672" height="678" key="search.everywhere.popup/0.23.1280.727@0.23.1280.727" timestamp="1580480426459" />
   </component>
 </project>

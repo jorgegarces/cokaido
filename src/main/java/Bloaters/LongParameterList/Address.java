@@ -5,6 +5,12 @@ public class Address {
     private String country;
     private String postcode;
 
+    public Address(String city, String country, String postcode) {
+        this.city = city;
+        this.country = country;
+        this.postcode = postcode;
+    }
+
     public String getCity() {
         return city;
     }
