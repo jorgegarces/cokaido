@@ -3,9 +3,9 @@ package ChangePreventers.DivergentChange;
 import java.util.List;
 
 public class OnDemandAgentService {
-    public String Username;
-    public String Password;
-    public List<String> Log;
+    public String username;
+    public String password;
+    public List<String> log;
 
     public OnDemandAgent startNewOnDemandMachine()
     {
@@ -13,23 +13,32 @@ public class OnDemandAgentService {
 
         try
         {
-            if (isAuthorized(Username, Password))
-            {
-                loginfo(String.format("User %s will attempt to start a new on-demand agent.", Username));
-                OnDemandAgent agent = startNewAmazonServer();
-                sendEmailToAdmin(String.format("User %s has successfully started a machine with ip %s.", Username, agent.getIp()));
-                return agent;
-            }
-
-            logWarning("User " + Username + " attempted to start a new on-demand agent.");
-            throw new RuntimeException("Unauthorized access to StartNewOnDemandMachine method.");
+            if (isAuthorized(username, password)) return startMachine();
+            return warningAndUnauthorized();
         }
         catch (Exception ex)
         {
-            logError("Exception in on-demand agent creation logic");
-            throw new RuntimeException(ex);
+            return throwException(ex);
         }
     }
+
+    private OnDemandAgent throwException(Exception ex) {
+        log.add("ERROR: " + "Exception in on-demand agent creation logic");
+        throw new RuntimeException(ex);
+    }
+
+    private OnDemandAgent warningAndUnauthorized() {
+        log.add("WARNING: " + ("User " + username + " attempted to start a new on-demand agent."));
+        throw new RuntimeException("Unauthorized access to StartNewOnDemandMachine method.");
+    }
+
+    private OnDemandAgent startMachine() {
+        loginfo(String.format("User %s will attempt to start a new on-demand agent.", username));
+        OnDemandAgent agent = startNewAmazonServer();
+        sendEmailToAdmin(String.format("User %s has successfully started a machine with ip %s.", username, agent.getIp()));
+        return agent;
+    }
+
 
     private OnDemandAgent startNewAmazonServer()
     {
@@ -41,19 +50,8 @@ public class OnDemandAgentService {
         return amazonAgent;
     }
 
-    private void loginfo(String info)
-    {
-        Log.add("INFO: " + info);
-    }
-
-    private void logWarning(String warning)
-    {
-        Log.add("WARNING: " + warning);
-    }
-
-    private void logError(String errorMessage)
-    {
-        Log.add("ERROR: " + errorMessage);
+    private void loginfo(String info) {
+        log.add("INFO: " + info);
     }
 
     private boolean isAuthorized(String username, String password)

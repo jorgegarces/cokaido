@@ -2,20 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d066d18-04a3-42a5-98d4-9c96c3417736" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ChangePreventers/DivergentChange/AmazonServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bloaters/LongParameterList/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bloaters/LongParameterList/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bloaters/LongParameterList/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bloaters/LongParameterList/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bloaters/LongParameterList/customerData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Bloaters/LongParameterList/CustomerTestsShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Bloaters/LongParameterList/CustomerTestsShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bloaters/LongParameterList/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Bloaters/LongParameterList/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bloaters/LongParameterList/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Bloaters/LongParameterList/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bloaters/LongParameterList/customerData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Bloaters/LongParameterList/CustomerTestsShould.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ChangePreventers/DivergentChange/OnDemandAgentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ChangePreventers/DivergentChange/OnDemandAgentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ChangePreventers/DivergentChange/OnDemandAgentServiceShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ChangePreventers/DivergentChange/OnDemandAgentServiceShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ChangePreventers/DivergentChange/OnDemandAgentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ChangePreventers/DivergentChange/OnDemandAgentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ChangePreventers/DivergentChange/OnDemandAgentServiceShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ChangePreventers/DivergentChange/OnDemandAgentServiceShould.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,7 +43,7 @@
       <recent name="Bloaters.DataClumps.Address" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerTestsShould">
+  <component name="RunManager" selected="JUnit.OnDemandAgentServiceShould">
     <configuration name="CustomerShould.customerAddressSummaryIncludesHouseStreetCityPostCodeAndCountry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodeSmells" />
       <extension name="coverage">
@@ -71,6 +75,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OnDemandAgentServiceShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodeSmells" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ChangePreventers.DivergentChange.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ChangePreventers.DivergentChange" />
+      <option name="MAIN_CLASS_NAME" value="ChangePreventers.DivergentChange.OnDemandAgentServiceShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TechnicalDebtShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodeSmells" />
       <extension name="coverage">
@@ -88,6 +107,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OnDemandAgentServiceShould" />
         <item itemvalue="JUnit.CustomerTestsShould" />
         <item itemvalue="JUnit.TechnicalDebtShould" />
         <item itemvalue="JUnit.CustomerShould.customerAddressSummaryIncludesHouseStreetCityPostCodeAndCountry" />
@@ -116,10 +136,10 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="380" y="177" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1280.727@0.23.1280.727" timestamp="1580480782360" />
-    <state x="400" y="255" width="479" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580401097993">
+    <state x="400" y="255" width="493" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580486621402">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state x="400" y="255" width="479" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.727@0.23.1280.727" timestamp="1580401097993" />
+    <state x="400" y="255" width="493" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.727@0.23.1280.727" timestamp="1580486621402" />
     <state x="400" y="228" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1580478214680">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
@@ -132,22 +152,26 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="378" y="141" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.727@0.23.1280.727" timestamp="1580481288820" />
-    <state width="1240" height="151" key="GridCell.Tab.0.bottom" timestamp="1580481303115">
+    <state width="1240" height="151" key="GridCell.Tab.0.bottom" timestamp="1580486761699">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="151" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1580481303115" />
-    <state width="1240" height="151" key="GridCell.Tab.0.center" timestamp="1580481303114">
+    <state width="1240" height="151" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1580486761699" />
+    <state width="1240" height="151" key="GridCell.Tab.0.center" timestamp="1580486761698">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="151" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1580481303114" />
-    <state width="1240" height="151" key="GridCell.Tab.0.left" timestamp="1580481303113">
+    <state width="1240" height="151" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1580486761698" />
+    <state width="1240" height="151" key="GridCell.Tab.0.left" timestamp="1580486761697">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="151" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1580481303113" />
-    <state width="1240" height="151" key="GridCell.Tab.0.right" timestamp="1580481303115">
+    <state width="1240" height="151" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1580486761697" />
+    <state width="1240" height="151" key="GridCell.Tab.0.right" timestamp="1580486761698">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="151" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1580481303115" />
+    <state width="1240" height="151" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1580486761698" />
+    <state x="298" y="91" width="683" height="574" key="RefactorJ.ExtractClass" timestamp="1580486694333">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="298" y="91" width="683" height="574" key="RefactorJ.ExtractClass/0.23.1280.727@0.23.1280.727" timestamp="1580486694333" />
     <state x="622" y="23" width="518" height="698" key="RefactorJ.IntroduceParameterObject" timestamp="1580480792553">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
@@ -168,10 +192,10 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="416" y="310" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.727@0.23.1280.727" timestamp="1580478002307" />
-    <state x="629" y="252" key="extract.method.dialog" timestamp="1580478427688">
+    <state x="584" y="199" key="extract.method.dialog" timestamp="1580482301209">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state x="629" y="252" key="extract.method.dialog/0.23.1280.727@0.23.1280.727" timestamp="1580478427688" />
+    <state x="584" y="199" key="extract.method.dialog/0.23.1280.727@0.23.1280.727" timestamp="1580482301209" />
     <state x="664" y="23" key="refactoring.ChangeSignatureDialog" timestamp="1580481035546">
       <screen x="0" y="23" width="1280" height="727" />
     </state>

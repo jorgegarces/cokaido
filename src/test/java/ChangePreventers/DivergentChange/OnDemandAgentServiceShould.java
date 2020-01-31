@@ -15,9 +15,9 @@ public class OnDemandAgentServiceShould {
     {
         OnDemandAgentService service = new OnDemandAgentService();
         List<String> log = new ArrayList<>();
-        service.Log = log;
-        service.Password = "passw0rd";
-        service.Username = "admin";
+        service.log = log;
+        service.password = "passw0rd";
+        service.username = "admin";
 
         OnDemandAgent agent = service.startNewOnDemandMachine();
 
@@ -30,9 +30,9 @@ public class OnDemandAgentServiceShould {
     {
         OnDemandAgentService service = new OnDemandAgentService();
         List<String> log = new ArrayList<>();
-        service.Log = log;
-        service.Password = "";
-        service.Username = "";
+        service.log = log;
+        service.password = "";
+        service.username = "";
 
         assertThrows(RuntimeException.class, () -> service.startNewOnDemandMachine());
     }
