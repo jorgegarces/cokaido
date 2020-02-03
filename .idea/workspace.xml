@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9d066d18-04a3-42a5-98d4-9c96c3417736" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Couplers/InappropriateIntimacy/License.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Couplers/InappropriateIntimacy/License.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Couplers/InappropriateIntimacy/Motorist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Couplers/InappropriateIntimacy/Motorist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,22 +40,7 @@
       <recent name="Bloaters.DataClumps.Address" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InsuranceQuotationShould">
-    <configuration name="CustomerTestsShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CodeSmells" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Bloaters.LongParameterList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Bloaters.LongParameterList" />
-      <option name="MAIN_CLASS_NAME" value="Bloaters.LongParameterList.CustomerTestsShould" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MotoristShould">
     <configuration name="InsuranceQuotationShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodeSmells" />
       <extension name="coverage">
@@ -84,6 +71,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LicenseShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodeSmells" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Couplers.InappropriateIntimacy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Couplers.InappropriateIntimacy" />
+      <option name="MAIN_CLASS_NAME" value="Couplers.InappropriateIntimacy.LicenseShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MotoristShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodeSmells" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Couplers.InappropriateIntimacy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Couplers.InappropriateIntimacy" />
+      <option name="MAIN_CLASS_NAME" value="Couplers.InappropriateIntimacy.MotoristShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OnDemandAgentServiceShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodeSmells" />
       <extension name="coverage">
@@ -99,28 +116,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TechnicalDebtShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CodeSmells" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Bloaters.Longmethod.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Bloaters.Longmethod" />
-      <option name="MAIN_CLASS_NAME" value="Bloaters.Longmethod.TechnicalDebtShould" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MotoristShould" />
+        <item itemvalue="JUnit.LicenseShould" />
         <item itemvalue="JUnit.InsuranceQuotationShould" />
         <item itemvalue="JUnit.InvoiceShould" />
         <item itemvalue="JUnit.OnDemandAgentServiceShould" />
-        <item itemvalue="JUnit.CustomerTestsShould" />
-        <item itemvalue="JUnit.TechnicalDebtShould" />
       </list>
     </recent_temporary>
   </component>
@@ -150,10 +152,10 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="400" y="255" width="493" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.727@0.23.1280.727" timestamp="1580486621402" />
-    <state x="654" y="182" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1580719571800">
+    <state x="654" y="182" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1580720160140">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state x="654" y="182" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.23.1280.727@0.23.1280.727" timestamp="1580719571800" />
+    <state x="654" y="182" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.23.1280.727@0.23.1280.727" timestamp="1580720160140" />
     <state x="276" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580403037979">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
@@ -162,22 +164,22 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="378" y="141" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.727@0.23.1280.727" timestamp="1580481288820" />
-    <state width="1240" height="151" key="GridCell.Tab.0.bottom" timestamp="1580719605529">
+    <state width="1240" height="150" key="GridCell.Tab.0.bottom" timestamp="1580720402482">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="151" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1580719605529" />
-    <state width="1240" height="151" key="GridCell.Tab.0.center" timestamp="1580719605528">
+    <state width="1240" height="150" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1580720402482" />
+    <state width="1240" height="150" key="GridCell.Tab.0.center" timestamp="1580720402482">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="151" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1580719605528" />
-    <state width="1240" height="151" key="GridCell.Tab.0.left" timestamp="1580719605527">
+    <state width="1240" height="150" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1580720402482" />
+    <state width="1240" height="150" key="GridCell.Tab.0.left" timestamp="1580720402481">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="151" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1580719605527" />
-    <state width="1240" height="151" key="GridCell.Tab.0.right" timestamp="1580719605528">
+    <state width="1240" height="150" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1580720402481" />
+    <state width="1240" height="150" key="GridCell.Tab.0.right" timestamp="1580720402482">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="151" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1580719605528" />
+    <state width="1240" height="150" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1580720402482" />
     <state x="298" y="91" width="683" height="574" key="RefactorJ.ExtractClass" timestamp="1580486694333">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
@@ -202,10 +204,10 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="416" y="310" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.727@0.23.1280.727" timestamp="1580478002307" />
-    <state x="593" y="188" key="extract.method.dialog" timestamp="1580718710204">
+    <state x="702" y="137" key="extract.method.dialog" timestamp="1580720151376">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state x="593" y="188" key="extract.method.dialog/0.23.1280.727@0.23.1280.727" timestamp="1580718710204" />
+    <state x="702" y="137" key="extract.method.dialog/0.23.1280.727@0.23.1280.727" timestamp="1580720151376" />
     <state x="664" y="23" key="refactoring.ChangeSignatureDialog" timestamp="1580481035546">
       <screen x="0" y="23" width="1280" height="727" />
     </state>

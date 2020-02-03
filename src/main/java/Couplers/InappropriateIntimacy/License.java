@@ -6,7 +6,7 @@ public class License {
 
     public String getSummary()
     {
-            return motorist.getTitle() + " " + motorist.getFirstName() + " " + motorist.getSurname() + ", " + points + " points";
+            return motorist.getMotoristData() + ", " + points + " points";
     }
 
     public void addPoints(int points)
