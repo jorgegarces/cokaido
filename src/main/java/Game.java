@@ -15,7 +15,7 @@ public class Game {
             throw new Exception("Invalid next player");
         }
         //if not first move but play on an already played tile
-        else if (_board.TileAt(x, y).Symbol != ' ') { // mesage chain
+        else if (_board.tileAt(x, y).Symbol != ' ') { // mesage chain
             throw new Exception("Invalid position");
         }
 

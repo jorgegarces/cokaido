@@ -9,22 +9,23 @@ public class Board
     {
         for (int i = 0; i < 3; i++) // One level of indentation
         {
-            for (int j = 0; j < 3; j++)
-            {
-                Tile tile = new Tile(); // Inappropiate intimacy
-                tile.X = i;
-                tile.Y = j;
-                tile.Symbol = ' ';
-                _plays.add(tile);
-            }
+            createVerticalPositions(i);
         }
     }
 
-    public Tile TileAt(int x, int y)
+    private void createVerticalPositions(int i) {
+        for (int j = 0; j < 3; j++)
+        {
+            Tile tile = new Tile(i, j,  ' ');
+            _plays.add(tile);
+        }
+    }
+
+    public Tile tileAt(int x, int y)
     {
-        for (Tile t : _plays) {
-            if (t.X == x && t.Y == y){
-                return t;
+        for (Tile tile : _plays) {
+            if (tile.hasSamePosition(x, y)){
+                return tile;
             }
         }
         return null;
@@ -32,50 +33,45 @@ public class Board
 
     public void AddTileAt(char symbol, int x, int y)
     {
-        Tile newTile = new Tile();
-        newTile.X = x;
-        newTile.Y = y;
-        newTile.Symbol = symbol;
-
-        TileAt(x,y).Symbol = symbol;
+        tileAt(x,y).Symbol = symbol;
     }
 
-    public char Winner() {  // long method // duplication
+    public char winner() {  // long method // duplication
         //if the positions in first row are taken  // no coments
-        if (TileAt(0, 0).Symbol != ' ' &&  // Message chain
-                TileAt(0, 1).Symbol != ' ' &&
-                TileAt(0, 2).Symbol != ' ') {
+        if (tileAt(0, 0).Symbol != ' ' &&
+                tileAt(0, 1).Symbol != ' ' &&
+                tileAt(0, 2).Symbol != ' ') {
             //if first row is full with same symbol
-            if (TileAt(0, 0).Symbol ==
-                    TileAt(0, 1).Symbol &&
-                    TileAt(0, 2).Symbol == TileAt(0, 1).Symbol) {
-                return TileAt(0, 0).Symbol;
+            if (tileAt(0, 0).Symbol ==
+                    tileAt(0, 1).Symbol &&
+                    tileAt(0, 2).Symbol == tileAt(0, 1).Symbol) {
+                return tileAt(0, 0).Symbol;
             }
         }
 
         //if the positions in first row are taken
-        if (TileAt(1, 0).Symbol != ' ' &&
-                TileAt(1, 1).Symbol != ' ' &&
-                TileAt(1, 2).Symbol != ' ') {
+        if (tileAt(1, 0).Symbol != ' ' &&
+                tileAt(1, 1).Symbol != ' ' &&
+                tileAt(1, 2).Symbol != ' ') {
             //if middle row is full with same symbol
-            if (TileAt(1, 0).Symbol ==
-                    TileAt(1, 1).Symbol &&
-                    TileAt(1, 2).Symbol ==
-                            TileAt(1, 1).Symbol) {
-                return TileAt(1, 0).Symbol;
+            if (tileAt(1, 0).Symbol ==
+                    tileAt(1, 1).Symbol &&
+                    tileAt(1, 2).Symbol ==
+                            tileAt(1, 1).Symbol) {
+                return tileAt(1, 0).Symbol;
             }
         }
 
         //if the positions in first row are taken
-        if (TileAt(2, 0).Symbol != ' ' &&
-                TileAt(2, 1).Symbol != ' ' &&
-                TileAt(2, 2).Symbol != ' ') {
+        if (tileAt(2, 0).Symbol != ' ' &&
+                tileAt(2, 1).Symbol != ' ' &&
+                tileAt(2, 2).Symbol != ' ') {
             //if middle row is full with same symbol
-            if (TileAt(2, 0).Symbol ==
-                    TileAt(2, 1).Symbol &&
-                    TileAt(2, 2).Symbol ==
-                            TileAt(2, 1).Symbol) {
-                return TileAt(2, 0).Symbol;
+            if (tileAt(2, 0).Symbol ==
+                    tileAt(2, 1).Symbol &&
+                    tileAt(2, 2).Symbol ==
+                            tileAt(2, 1).Symbol) {
+                return tileAt(2, 0).Symbol;
             }
         }
 
