@@ -27,7 +27,7 @@ public class Tile
         return Symbol;
     }
 
-    public void updateSymbol(Tile tile){
+    public void update(Tile tile){
         this.Symbol = tile.Symbol;
     }
 }

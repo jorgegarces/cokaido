@@ -30,8 +30,16 @@ public class Board {
         return null;
     }
 
+    public void replaceTileAt(Tile newTile) {
+        for (Tile tile : _plays) {
+            if (tile.hasSamePosition(newTile)) {
+                tile.update(newTile);
+            }
+        }
+
+    }
     public void AddTileAt(Tile tile) {
-        tileAt(tile.getX(), tile.getY()).updateSymbol(tile);
+        replaceTileAt(tile);
     }
 
     public char winner() {
