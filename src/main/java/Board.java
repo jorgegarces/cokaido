@@ -31,31 +31,29 @@ public class Board {
     }
 
     public void AddTileAt(char symbol, int x, int y) {
-        tileAt(x, y).Symbol = symbol;
+        tileAt(x, y).setSymbol(symbol);
     }
 
-    public char winner() {  // long method
-        for (int i = 0; i < 3; i++) {
-            if (rowIsNotEmpty(i)) {
-                if (isWinningRow(i)) {
-                    return tileAt(i, 0).Symbol;
+    public char winner() {
+        for (int x = 0; x < 3; x++) {
+            if (rowIsNotEmpty(x)) {
+                if (isWinningRow(x)) {
+                    return tileAt(x, 0).getSymbol();
                 }
             }
-
         }
-
         return ' ';
     }
 
-    private boolean isWinningRow(int i) {
-        return tileAt(i, 0).Symbol ==
-                tileAt(i, 1).Symbol &&
-                tileAt(i, 2).Symbol == tileAt(i, 1).Symbol;
+    private boolean isWinningRow(int x) {
+        return tileAt(x, 0).getSymbol() ==
+                tileAt(x, 1).getSymbol() &&
+                tileAt(x, 2).getSymbol() == tileAt(x, 1).getSymbol();
     }
 
-    private boolean rowIsNotEmpty(int i) {
-        return tileAt(i, 0).Symbol != ' ' &&
-                tileAt(i, 1).Symbol != ' ' &&
-                tileAt(i, 2).Symbol != ' ';
+    private boolean rowIsNotEmpty(int x) {
+        return tileAt(x, 0).getSymbol() != ' ' &&
+                tileAt(x, 1).getSymbol() != ' ' &&
+                tileAt(x, 2).getSymbol() != ' ';
     }
 }
