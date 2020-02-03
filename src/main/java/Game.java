@@ -21,7 +21,7 @@ public class Game {
 
         // update game state
         _lastSymbol = symbol;
-        _board.AddTileAt(symbol, x, y);
+        _board.AddTileAt(new Tile(x, y, symbol));
     }
 
 }

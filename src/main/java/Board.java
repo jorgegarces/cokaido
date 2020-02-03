@@ -30,8 +30,8 @@ public class Board {
         return null;
     }
 
-    public void AddTileAt(char symbol, int x, int y) {
-        tileAt(x, y).setSymbol(symbol);
+    public void AddTileAt(Tile tile) {
+        tileAt(tile.getX(), tile.getY()).setSymbol(tile.getSymbol());
     }
 
     public char winner() {
