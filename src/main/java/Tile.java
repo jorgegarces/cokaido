@@ -11,8 +11,8 @@ public class Tile
         Symbol = symbol;
     }
 
-    boolean hasSamePosition(int x, int y) {
-        return X == x && Y == y;
+    boolean hasSamePosition(Tile tile) {
+        return X == tile.X && Y == tile.Y;
     }
 
     public int getX() {

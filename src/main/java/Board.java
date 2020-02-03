@@ -23,7 +23,7 @@ public class Board {
 
     public Tile tileAt(int x, int y) {
         for (Tile tile : _plays) {
-            if (tile.hasSamePosition(x, y)) {
+            if (tile.hasSamePosition(new Tile(x,y, ' '))) {
                 return tile;
             }
         }
