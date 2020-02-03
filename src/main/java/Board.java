@@ -58,7 +58,6 @@ public class Board {
         return true;
     }
 
-
     private Tile tileAt(int x, int y) {
         for (Tile tile : _plays) {
             if (tile.hasSamePosition(new Tile(x, y, ' '))) {
