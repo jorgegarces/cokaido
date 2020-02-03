@@ -21,14 +21,6 @@ public class Board {
         }
     }
 
-    public Tile tileAt(int x, int y) {
-        for (Tile tile : _plays) {
-            if (tile.hasSamePosition(new Tile(x, y, ' '))) {
-                return tile;
-            }
-        }
-        return null;
-    }
 
     public void replaceTileAt(Tile newTile) {
         for (Tile tile : _plays) {
@@ -42,11 +34,15 @@ public class Board {
         for (int x = 0; x < 3; x++) {
             if (rowIsNotEmpty(x)) {
                 if (isWinningRow(x)) {
-                    return tileAt(x, 0).getSymbol();
+                    return getSymbol(x,0);
                 }
             }
         }
         return ' ';
+    }
+
+    public char getSymbol(int x, int y) {
+        return tileAt(x, y).getSymbol();
     }
 
     private boolean isWinningRow(int x) {
@@ -62,7 +58,13 @@ public class Board {
         return true;
     }
 
-    char getSymbol(int x, int y) {
-        return tileAt(x, y).getSymbol();
+
+    private Tile tileAt(int x, int y) {
+        for (Tile tile : _plays) {
+            if (tile.hasSamePosition(new Tile(x, y, ' '))) {
+                return tile;
+            }
+        }
+        return null;
     }
 }
