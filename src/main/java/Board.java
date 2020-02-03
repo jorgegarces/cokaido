@@ -31,7 +31,7 @@ public class Board {
     }
 
     public void AddTileAt(Tile tile) {
-        tileAt(tile.getX(), tile.getY()).setSymbol(tile.getSymbol());
+        tileAt(tile.getX(), tile.getY()).updateSymbol(tile);
     }
 
     public char winner() {
