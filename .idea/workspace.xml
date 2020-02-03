@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9d066d18-04a3-42a5-98d4-9c96c3417736" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Couplers/MessageChains/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Couplers/MessageChains/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Couplers/MessageChains/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Couplers/MessageChains/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Couplers/MessageChains/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Couplers/MessageChains/Invoice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,23 +38,7 @@
       <recent name="Bloaters.DataClumps.Address" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InvoiceShould">
-    <configuration name="CustomerShould.customerAddressSummaryIncludesHouseStreetCityPostCodeAndCountry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CodeSmells" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Bloaters.DataClumps.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Bloaters.DataClumps" />
-      <option name="MAIN_CLASS_NAME" value="Bloaters.DataClumps.CustomerShould" />
-      <option name="METHOD_NAME" value="customerAddressSummaryIncludesHouseStreetCityPostCodeAndCountry" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.InsuranceQuotationShould">
     <configuration name="CustomerTestsShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodeSmells" />
       <extension name="coverage">
@@ -68,6 +49,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="Bloaters.LongParameterList" />
       <option name="MAIN_CLASS_NAME" value="Bloaters.LongParameterList.CustomerTestsShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InsuranceQuotationShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodeSmells" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Couplers.FeatureEnvy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Couplers.FeatureEnvy" />
+      <option name="MAIN_CLASS_NAME" value="Couplers.FeatureEnvy.InsuranceQuotationShould" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InsuranceQuotationShould" />
         <item itemvalue="JUnit.InvoiceShould" />
         <item itemvalue="JUnit.OnDemandAgentServiceShould" />
         <item itemvalue="JUnit.CustomerTestsShould" />
         <item itemvalue="JUnit.TechnicalDebtShould" />
-        <item itemvalue="JUnit.CustomerShould.customerAddressSummaryIncludesHouseStreetCityPostCodeAndCountry" />
       </list>
     </recent_temporary>
   </component>
@@ -154,10 +150,10 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="400" y="255" width="493" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.727@0.23.1280.727" timestamp="1580486621402" />
-    <state x="654" y="182" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1580718855441">
+    <state x="654" y="182" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1580719571800">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state x="654" y="182" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.23.1280.727@0.23.1280.727" timestamp="1580718855441" />
+    <state x="654" y="182" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.23.1280.727@0.23.1280.727" timestamp="1580719571800" />
     <state x="276" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580403037979">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
@@ -166,22 +162,22 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="378" y="141" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.727@0.23.1280.727" timestamp="1580481288820" />
-    <state width="1240" height="151" key="GridCell.Tab.0.bottom" timestamp="1580719029584">
+    <state width="1240" height="151" key="GridCell.Tab.0.bottom" timestamp="1580719605529">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="151" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1580719029584" />
-    <state width="1240" height="151" key="GridCell.Tab.0.center" timestamp="1580719029583">
+    <state width="1240" height="151" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1580719605529" />
+    <state width="1240" height="151" key="GridCell.Tab.0.center" timestamp="1580719605528">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="151" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1580719029583" />
-    <state width="1240" height="151" key="GridCell.Tab.0.left" timestamp="1580719029583">
+    <state width="1240" height="151" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1580719605528" />
+    <state width="1240" height="151" key="GridCell.Tab.0.left" timestamp="1580719605527">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="151" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1580719029583" />
-    <state width="1240" height="151" key="GridCell.Tab.0.right" timestamp="1580719029584">
+    <state width="1240" height="151" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1580719605527" />
+    <state width="1240" height="151" key="GridCell.Tab.0.right" timestamp="1580719605528">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1240" height="151" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1580719029584" />
+    <state width="1240" height="151" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1580719605528" />
     <state x="298" y="91" width="683" height="574" key="RefactorJ.ExtractClass" timestamp="1580486694333">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
