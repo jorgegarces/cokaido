@@ -38,9 +38,6 @@ public class Board {
         }
 
     }
-    public void AddTileAt(Tile tile) {
-        replaceTileAt(tile);
-    }
 
     public char winner() {
         for (int x = 0; x < 3; x++) {
