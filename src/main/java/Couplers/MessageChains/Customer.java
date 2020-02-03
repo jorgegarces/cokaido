@@ -8,7 +8,7 @@ public class Customer {
         this.address = address;
     }
 
-    public Address getAddress() {
-        return address;
+    boolean isInEurope() {
+        return address.isInEurope();
     }
 }
