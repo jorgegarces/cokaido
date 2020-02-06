@@ -20,13 +20,19 @@ public class MarsRover {
 
     public void navigate(String movement) {
         for (int i = 0; i < movement.length() ; i++) {
-            if(movement.charAt(i) == 'F'){
-                if (this.orientation == 'N') this.positionY += 1;
-                if (this.orientation == 'E') this.positionX += 1;
-                if (this.orientation == 'S') this.positionY -= 1;
-                if (this.orientation == 'W') this.positionX -= 1;
-            }
+            run(movement.charAt(i));
         }
+    }
+
+    private void run(char command) {
+        if(command == 'F') moveForward();
+    }
+
+    private void moveForward() {
+        if (this.orientation == 'N') this.positionY += 1;
+        if (this.orientation == 'E') this.positionX += 1;
+        if (this.orientation == 'S') this.positionY -= 1;
+        if (this.orientation == 'W') this.positionX -= 1;
     }
 
     @Override
