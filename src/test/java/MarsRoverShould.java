@@ -46,12 +46,22 @@ public class MarsRoverShould {
 
         assertEquals(expectedRover, rover);
     }
-    @Test
-    public void rotate_right_when_R_is_passed_as_command() {
-        MarsRover rover = new MarsRover();
-        MarsRover expectedRover = new MarsRover(0,0,'E');
 
+    private static Stream<Arguments> testCasesForRCommand() {
+        return Stream.of(
+                Arguments.of(new MarsRover(), new MarsRover(0, 0, 'E')),
+                Arguments.of(new MarsRover(0,0,'E'), new MarsRover(0, 0, 'S')),
+                Arguments.of(new MarsRover(0,0,'S'), new MarsRover(0, 0, 'W')),
+                Arguments.of(new MarsRover(0,0,'W'), new MarsRover(0, 0, 'N'))
+
+                );
+    }
+
+    @ParameterizedTest(name = "{index} => MarsRover={0}, MarsRover={1}")
+    @MethodSource("testCasesForRCommand")
+    public void rotate_right_when_R_is_passed_as_command(MarsRover rover, MarsRover expectedRover) {
         rover.navigate("R");
+
         assertEquals(expectedRover, rover);
     }
 }

@@ -30,7 +30,10 @@ public class MarsRover {
     }
 
     private void rotateRight() {
-        this.orientation = 'E';
+        if (this.orientation == 'N') this.orientation = 'E';
+        else if (this.orientation == 'E') this.orientation = 'S';
+        else if (this.orientation == 'S') this.orientation = 'W';
+        else if (this.orientation == 'W') this.orientation = 'N';
     }
 
     private void moveForward() {
