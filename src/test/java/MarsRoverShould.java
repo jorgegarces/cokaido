@@ -1,5 +1,13 @@
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.extension.ExtensionContext;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+
+import java.util.stream.Stream;
+
 
 public class MarsRoverShould {
     @Test
@@ -7,49 +15,25 @@ public class MarsRoverShould {
         MarsRover marsRover = new MarsRover();
         MarsRover expected = new MarsRover(0, 0, 'N');
 
-        Assert.assertEquals(expected, marsRover);
+        assertEquals(expected, marsRover);
     }
 
-    @Test
-    public void navigates_north_when_F_instruction_is_passed_from_starter_position() {
-        MarsRover marsRover = new MarsRover();
-        marsRover.navigate('F');
-        MarsRover expected = new MarsRover(0, 1, 'N');
-
-        Assert.assertEquals(expected, marsRover);
+    private static Stream<Arguments> testCasesForFCommand() {
+        return Stream.of(
+                Arguments.of(new MarsRover(), new MarsRover(0, 1, 'N')),
+                Arguments.of(new MarsRover(0, 1, 'N'), new MarsRover(0, 2, 'N')),
+                Arguments.of(new MarsRover(0, 1, 'E'), new MarsRover(1, 1, 'E')),
+                Arguments.of(new MarsRover(0, 0, 'S'), new MarsRover(0, -1, 'S')),
+                Arguments.of(new MarsRover(0, 0, 'W'), new MarsRover(-1, 0, 'W'))
+        );
     }
 
-    @Test
-    public void navigates_north_when_F_instruction_if_orientation_is_north() {
-        MarsRover marsRover = new MarsRover(0, 1, 'N');
-        marsRover.navigate('F');
-        MarsRover expected = new MarsRover(0, 2, 'N');
+    @ParameterizedTest(name = "{index} => MarsRover={0}, MarsRover={1}")
+    @MethodSource("testCasesForFCommand")
+    public void move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover rover, MarsRover expectedRover) {
+        rover.navigate('F');
 
-        Assert.assertEquals(expected, marsRover);
+        assertEquals(expectedRover, rover);
     }
 
-    @Test
-    public void navigates_east_when_F_instruction_if_orientation_is_east(){
-        MarsRover marsRover = new MarsRover(0,0,'E');
-        marsRover.navigate('F');
-        MarsRover expected = new MarsRover(1,0,'E');
-
-        Assert.assertEquals(expected, marsRover);
-    }
-
-    @Test
-    public void navigates_south_when_F_instruction_if_orientation_is_south(){
-        MarsRover marsRover = new MarsRover(0,0,'S');
-        marsRover.navigate('F');
-        MarsRover expected = new MarsRover(0,-1,'S');
-        Assert.assertEquals(expected, marsRover);
-    }
-    
-    @Test
-    public void navigates_west_when_F_instruction_if_orientation_is_west(){
-        MarsRover marsRover = new MarsRover(0,0,'W');
-        marsRover.navigate('F');
-        MarsRover expected = new MarsRover(-1, 0, 'W');
-        Assert.assertEquals(expected, marsRover);
-    }
 }
