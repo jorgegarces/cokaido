@@ -30,22 +30,11 @@ public class MarsRover {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         MarsRover marsRover = (MarsRover) o;
-        return position.positionX == marsRover.position.positionX &&
-                position.positionY == marsRover.position.positionY &&
-                position.orientation == marsRover.position.orientation;
+        return Objects.equals(position, marsRover.position);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(position.positionX, position.positionY, position.orientation);
-    }
-
-    @Override
-    public String toString() {
-        return "MarsRover{" +
-                "positionX=" + position.positionX +
-                ", positionY=" + position.positionY +
-                ", orientation=" + position.orientation +
-                '}';
+        return Objects.hash(position);
     }
 }

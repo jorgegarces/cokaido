@@ -1,41 +1,52 @@
+import java.util.Objects;
+
 public class Position {
 
-    int positionX;
-    int positionY;
-    char orientation;
+    private Orientation orientation;
+    private int positionX;
+    private int positionY;
 
     public Position(int positionX, int positionY, char orientation) {
 
         this.positionX = positionX;
         this.positionY = positionY;
-        this.orientation = orientation;
+        this.orientation = Orientation.create(orientation);
     }
 
     void rotateLeft() {
-        if (orientation == 'N') orientation = 'W';
-        else if (orientation == 'E') orientation = 'N';
-        else if (orientation == 'S') orientation = 'E';
-        else if (orientation == 'W') orientation = 'S';
+        this.orientation = orientation.rotateLeft();
     }
 
     void rotateRight() {
-        if (orientation == 'N') orientation = 'E';
-        else if (orientation == 'E') orientation = 'S';
-        else if (orientation == 'S') orientation = 'W';
-        else if (orientation == 'W') orientation = 'N';
+        this.orientation = orientation.rotateRight();
     }
 
     void moveForward() {
-        if (orientation == 'N') positionY = positionY + 1;
-        if (orientation == 'E') positionX = positionX + 1;
-        if (orientation == 'S') positionY = positionY - 1;
-        if (orientation == 'W') positionX = positionX - 1;
+        if (orientation instanceof North) positionY = positionY + 1;
+        if (orientation instanceof East) positionX = positionX + 1;
+        if (orientation instanceof South) positionY = positionY - 1;
+        if (orientation instanceof West) positionX = positionX - 1;
     }
 
     void moveBackwards() {
-        if (orientation == 'N') positionY = positionY - 1;
-        if (orientation == 'E') positionX = positionX - 1;
-        if (orientation == 'S') positionY = positionY + 1;
-        if (orientation == 'W') positionX = positionX + 1;
+        if (orientation instanceof North) positionY = positionY - 1;
+        if (orientation instanceof East) positionX = positionX - 1;
+        if (orientation instanceof South) positionY = positionY + 1;
+        if (orientation instanceof West) positionX = positionX + 1;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Position position = (Position) o;
+        return positionX == position.positionX &&
+                positionY == position.positionY &&
+                position.orientation.getClass() == this.orientation.getClass();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(orientation, positionX, positionY);
     }
 }
