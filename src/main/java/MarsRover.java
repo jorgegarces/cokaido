@@ -22,6 +22,7 @@ public class MarsRover {
         if (this.orientation == 'N') this.positionY += 1;
         if (this.orientation == 'E') this.positionX += 1;
         if (this.orientation == 'S') this.positionY -= 1;
+        if (this.orientation == 'W') this.positionX -= 1;
     }
 
     @Override

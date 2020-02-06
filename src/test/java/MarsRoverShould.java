@@ -44,4 +44,12 @@ public class MarsRoverShould {
         MarsRover expected = new MarsRover(0,-1,'S');
         Assert.assertEquals(expected, marsRover);
     }
+    
+    @Test
+    public void navigates_west_when_F_instruction_if_orientation_is_west(){
+        MarsRover marsRover = new MarsRover(0,0,'W');
+        marsRover.navigate('F');
+        MarsRover expected = new MarsRover(-1, 0, 'W');
+        Assert.assertEquals(expected, marsRover);
+    }
 }
