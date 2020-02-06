@@ -92,4 +92,23 @@ public class MarsRoverShould {
 
         assertEquals(expectedRover, rover);
     }
+
+    private static Stream<Arguments> testCasesForBCommand() {
+        return Stream.of(
+                Arguments.of(new MarsRover(), new MarsRover(0, -1, 'N')),
+                Arguments.of(new MarsRover(0, 1, 'N'), new MarsRover(0, 0, 'N')),
+                Arguments.of(new MarsRover(0, 1, 'E'), new MarsRover(-1, 1, 'E')),
+                Arguments.of(new MarsRover(0, 0, 'S'), new MarsRover(0, 1, 'S')),
+                Arguments.of(new MarsRover(0, 0, 'W'), new MarsRover(1, 0, 'W'))
+        );
+    }
+
+    @ParameterizedTest(name = "{index} => MarsRover={0}, MarsRover={1}")
+    @MethodSource("testCasesForBCommand")
+    public void move_backwards_in_the_direction_is_facing_if_B_is_passed_as_a_navigation_command(MarsRover rover, MarsRover expectedRover) {
+        rover.navigate("B");
+
+        assertEquals(expectedRover, rover);
+    }
+
 }

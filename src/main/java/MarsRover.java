@@ -2,20 +2,14 @@ import java.util.Objects;
 
 public class MarsRover {
 
-    private int positionX;
-    private int positionY;
-    private char orientation;
+    private final Position position;
 
     public MarsRover() {
-        this.positionX = 0;
-        this.positionY = 0;
-        this.orientation = 'N';
+        position = new Position(0,0,'N');
     }
 
     public MarsRover(int positionX, int positionY, char orientation) {
-        this.positionX = positionX;
-        this.positionY = positionY;
-        this.orientation = orientation;
+        position = new Position(positionX, positionY, orientation);
     }
 
     public void navigate(String movement) {
@@ -28,41 +22,57 @@ public class MarsRover {
         if (command == 'F') moveForward();
         if (command == 'R') rotateRight();
         if (command == 'L') rotateLeft();
+        if (command == 'B') moveBackwards();
     }
 
     private void rotateLeft() {
-        if (this.orientation == 'N') this.orientation = 'W';
-        else if (this.orientation == 'E') this.orientation = 'N';
-        else if (this.orientation == 'S') this.orientation = 'E';
-        else if (this.orientation == 'W') this.orientation = 'S';
+        if (this.position.orientation == 'N') this.position.orientation = 'W';
+        else if (this.position.orientation == 'E') this.position.orientation = 'N';
+        else if (this.position.orientation == 'S') this.position.orientation = 'E';
+        else if (this.position.orientation == 'W') this.position.orientation = 'S';
     }
 
     private void rotateRight() {
-        if (this.orientation == 'N') this.orientation = 'E';
-        else if (this.orientation == 'E') this.orientation = 'S';
-        else if (this.orientation == 'S') this.orientation = 'W';
-        else if (this.orientation == 'W') this.orientation = 'N';
+        if (this.position.orientation == 'N') this.position.orientation = 'E';
+        else if (this.position.orientation == 'E') this.position.orientation = 'S';
+        else if (this.position.orientation == 'S') this.position.orientation = 'W';
+        else if (this.position.orientation == 'W') this.position.orientation = 'N';
     }
 
     private void moveForward() {
-        if (this.orientation == 'N') this.positionY += 1;
-        if (this.orientation == 'E') this.positionX += 1;
-        if (this.orientation == 'S') this.positionY -= 1;
-        if (this.orientation == 'W') this.positionX -= 1;
+        if (this.position.orientation == 'N') this.position.positionY = this.position.positionY + 1;
+        if (this.position.orientation == 'E') this.position.positionX = this.position.positionX + 1;
+        if (this.position.orientation == 'S') this.position.positionY = this.position.positionY - 1;
+        if (this.position.orientation == 'W') this.position.positionX = this.position.positionX - 1;
     }
 
+    private void moveBackwards() {
+        if (this.position.orientation == 'N') this.position.positionY = this.position.positionY - 1;
+        if (this.position.orientation == 'E') this.position.positionX = this.position.positionX - 1;
+        if (this.position.orientation == 'S') this.position.positionY = this.position.positionY + 1;
+        if (this.position.orientation == 'W') this.position.positionX = this.position.positionX + 1;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         MarsRover marsRover = (MarsRover) o;
-        return positionX == marsRover.positionX &&
-                positionY == marsRover.positionY &&
-                orientation == marsRover.orientation;
+        return position.positionX == marsRover.position.positionX &&
+                position.positionY == marsRover.position.positionY &&
+                position.orientation == marsRover.position.orientation;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(positionX, positionY, orientation);
+        return Objects.hash(position.positionX, position.positionY, position.orientation);
+    }
+
+    @Override
+    public String toString() {
+        return "MarsRover{" +
+                "positionX=" + position.positionX +
+                ", positionY=" + position.positionY +
+                ", orientation=" + position.orientation +
+                '}';
     }
 }
