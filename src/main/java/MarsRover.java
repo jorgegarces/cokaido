@@ -18,11 +18,15 @@ public class MarsRover {
         this.orientation = orientation;
     }
 
-    public void navigate(char movement) {
-        if (this.orientation == 'N') this.positionY += 1;
-        if (this.orientation == 'E') this.positionX += 1;
-        if (this.orientation == 'S') this.positionY -= 1;
-        if (this.orientation == 'W') this.positionX -= 1;
+    public void navigate(String movement) {
+        for (int i = 0; i < movement.length() ; i++) {
+            if(movement.charAt(i) == 'F'){
+                if (this.orientation == 'N') this.positionY += 1;
+                if (this.orientation == 'E') this.positionX += 1;
+                if (this.orientation == 'S') this.positionY -= 1;
+                if (this.orientation == 'W') this.positionX -= 1;
+            }
+        }
     }
 
     @Override

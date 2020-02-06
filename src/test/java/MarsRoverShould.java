@@ -1,4 +1,6 @@
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -31,7 +33,16 @@ public class MarsRoverShould {
     @ParameterizedTest(name = "{index} => MarsRover={0}, MarsRover={1}")
     @MethodSource("testCasesForFCommand")
     public void move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover rover, MarsRover expectedRover) {
-        rover.navigate('F');
+        rover.navigate("F");
+
+        assertEquals(expectedRover, rover);
+    }
+    @Test
+    public void move_twice_forward_when_FF_is_passed_as_navigation_command() {
+        MarsRover rover = new MarsRover();
+        MarsRover expectedRover = new MarsRover(0,2,'N');
+
+        rover.navigate("FF");
 
         assertEquals(expectedRover, rover);
     }
