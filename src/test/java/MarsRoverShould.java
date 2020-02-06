@@ -1,3 +1,4 @@
+import com.sun.tools.javac.util.Assert;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -61,6 +62,16 @@ public class MarsRoverShould {
     @MethodSource("testCasesForRCommand")
     public void rotate_right_when_R_is_passed_as_command(MarsRover rover, MarsRover expectedRover) {
         rover.navigate("R");
+
+        assertEquals(expectedRover, rover);
+    }
+
+    @Test
+    public void accept_various_F_and_R_commands_combined(){
+        MarsRover rover = new MarsRover();
+        MarsRover expectedRover = new MarsRover(1,2,'S');
+
+        rover.navigate("FFRFR");
 
         assertEquals(expectedRover, rover);
     }
