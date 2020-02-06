@@ -19,13 +19,18 @@ public class MarsRover {
     }
 
     public void navigate(String movement) {
-        for (int i = 0; i < movement.length() ; i++) {
+        for (int i = 0; i < movement.length(); i++) {
             run(movement.charAt(i));
         }
     }
 
     private void run(char command) {
-        if(command == 'F') moveForward();
+        if (command == 'F') moveForward();
+        if (command == 'R') rotateRight();
+    }
+
+    private void rotateRight() {
+        this.orientation = 'E';
     }
 
     private void moveForward() {

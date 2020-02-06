@@ -46,5 +46,12 @@ public class MarsRoverShould {
 
         assertEquals(expectedRover, rover);
     }
+    @Test
+    public void rotate_right_when_R_is_passed_as_command() {
+        MarsRover rover = new MarsRover();
+        MarsRover expectedRover = new MarsRover(0,0,'E');
 
+        rover.navigate("R");
+        assertEquals(expectedRover, rover);
+    }
 }

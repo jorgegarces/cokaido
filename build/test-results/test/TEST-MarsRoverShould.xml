@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MarsRoverShould" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-02-06T14:13:27" hostname="admins-MBP.office" time="0.193">
+<testsuite name="MarsRoverShould" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-02-06T14:24:24" hostname="admins-MBP.office" time="0.118">
   <properties/>
-  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[1]" classname="MarsRoverShould" time="0.099"/>
-  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[2]" classname="MarsRoverShould" time="0.002"/>
+  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[1]" classname="MarsRoverShould" time="0.056"/>
+  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[2]" classname="MarsRoverShould" time="0.004"/>
   <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[3]" classname="MarsRoverShould" time="0.002"/>
-  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[4]" classname="MarsRoverShould" time="0.011"/>
-  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[5]" classname="MarsRoverShould" time="0.006"/>
-  <testcase name="move_twice_forward_when_FF_is_passed_as_navigation_command()" classname="MarsRoverShould" time="0.004"/>
+  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[4]" classname="MarsRoverShould" time="0.002"/>
+  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[5]" classname="MarsRoverShould" time="0.005"/>
+  <testcase name="move_twice_forward_when_FF_is_passed_as_navigation_command()" classname="MarsRoverShould" time="0.012"/>
   <testcase name="default_to_00N_as_initial_position()" classname="MarsRoverShould" time="0.001"/>
+  <testcase name="rotate_right_when_R_is_passed_as_command()" classname="MarsRoverShould" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
