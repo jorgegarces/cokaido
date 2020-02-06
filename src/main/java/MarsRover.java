@@ -27,6 +27,14 @@ public class MarsRover {
     private void run(char command) {
         if (command == 'F') moveForward();
         if (command == 'R') rotateRight();
+        if (command == 'L') rotateLeft();
+    }
+
+    private void rotateLeft() {
+        if (this.orientation == 'N') this.orientation = 'W';
+        else if (this.orientation == 'E') this.orientation = 'N';
+        else if (this.orientation == 'S') this.orientation = 'E';
+        else if (this.orientation == 'W') this.orientation = 'S';
     }
 
     private void rotateRight() {

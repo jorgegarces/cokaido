@@ -75,4 +75,21 @@ public class MarsRoverShould {
 
         assertEquals(expectedRover, rover);
     }
+
+    private static Stream<Arguments> testCasesForLCommand() {
+        return Stream.of(
+                Arguments.of(new MarsRover(), new MarsRover(0, 0, 'W')),
+                Arguments.of(new MarsRover(0,0,'E'), new MarsRover(0, 0, 'N')),
+                Arguments.of(new MarsRover(0,0,'S'), new MarsRover(0, 0, 'E')),
+                Arguments.of(new MarsRover(0,0,'W'), new MarsRover(0, 0, 'S'))
+        );
+    }
+
+    @ParameterizedTest(name = "{index} => MarsRover={0}, MarsRover={1}")
+    @MethodSource("testCasesForLCommand")
+    public void rotate_left_when_L_is_passed_as_command(MarsRover rover, MarsRover expectedRover) {
+        rover.navigate("L");
+
+        assertEquals(expectedRover, rover);
+    }
 }

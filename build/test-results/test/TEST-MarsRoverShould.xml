@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MarsRoverShould" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-02-06T14:45:47" hostname="admins-MBP.office" time="0.276">
+<testsuite name="MarsRoverShould" tests="16" skipped="0" failures="0" errors="0" timestamp="2020-02-06T15:20:26" hostname="admins-MBP.office" time="0.289">
   <properties/>
-  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[1]" classname="MarsRoverShould" time="0.144"/>
-  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[2]" classname="MarsRoverShould" time="0.004"/>
-  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[3]" classname="MarsRoverShould" time="0.004"/>
-  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[4]" classname="MarsRoverShould" time="0.002"/>
+  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[1]" classname="MarsRoverShould" time="0.171"/>
+  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[2]" classname="MarsRoverShould" time="0.002"/>
+  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[3]" classname="MarsRoverShould" time="0.003"/>
+  <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[4]" classname="MarsRoverShould" time="0.003"/>
   <testcase name="move_forward_in_the_direction_is_facing_if_F_is_passed_as_a_navigation_command(MarsRover, MarsRover)[5]" classname="MarsRoverShould" time="0.002"/>
-  <testcase name="accept_various_F_and_R_commands_combined()" classname="MarsRoverShould" time="0.005"/>
-  <testcase name="move_twice_forward_when_FF_is_passed_as_navigation_command()" classname="MarsRoverShould" time="0.002"/>
-  <testcase name="default_to_00N_as_initial_position()" classname="MarsRoverShould" time="0.009"/>
-  <testcase name="rotate_right_when_R_is_passed_as_command(MarsRover, MarsRover)[1]" classname="MarsRoverShould" time="0.01"/>
-  <testcase name="rotate_right_when_R_is_passed_as_command(MarsRover, MarsRover)[2]" classname="MarsRoverShould" time="0.003"/>
-  <testcase name="rotate_right_when_R_is_passed_as_command(MarsRover, MarsRover)[3]" classname="MarsRoverShould" time="0.002"/>
+  <testcase name="accept_various_F_and_R_commands_combined()" classname="MarsRoverShould" time="0.003"/>
+  <testcase name="move_twice_forward_when_FF_is_passed_as_navigation_command()" classname="MarsRoverShould" time="0.003"/>
+  <testcase name="default_to_00N_as_initial_position()" classname="MarsRoverShould" time="0.001"/>
+  <testcase name="rotate_left_when_L_is_passed_as_command(MarsRover, MarsRover)[1]" classname="MarsRoverShould" time="0.009"/>
+  <testcase name="rotate_left_when_L_is_passed_as_command(MarsRover, MarsRover)[2]" classname="MarsRoverShould" time="0.006"/>
+  <testcase name="rotate_left_when_L_is_passed_as_command(MarsRover, MarsRover)[3]" classname="MarsRoverShould" time="0.002"/>
+  <testcase name="rotate_left_when_L_is_passed_as_command(MarsRover, MarsRover)[4]" classname="MarsRoverShould" time="0.003"/>
+  <testcase name="rotate_right_when_R_is_passed_as_command(MarsRover, MarsRover)[1]" classname="MarsRoverShould" time="0.002"/>
+  <testcase name="rotate_right_when_R_is_passed_as_command(MarsRover, MarsRover)[2]" classname="MarsRoverShould" time="0.008"/>
+  <testcase name="rotate_right_when_R_is_passed_as_command(MarsRover, MarsRover)[3]" classname="MarsRoverShould" time="0.003"/>
   <testcase name="rotate_right_when_R_is_passed_as_command(MarsRover, MarsRover)[4]" classname="MarsRoverShould" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
