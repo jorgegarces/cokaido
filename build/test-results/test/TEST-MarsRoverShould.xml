@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MarsRoverShould" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-02-06T11:16:13" hostname="admins-MBP.office" time="0.005">
+<testsuite name="MarsRoverShould" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-02-06T11:29:52" hostname="admins-MBP.office" time="0.004">
   <properties/>
-  <testcase name="navigates_north_when_F_instruction_is_passed_from_starter_position" classname="MarsRoverShould" time="0.002"/>
+  <testcase name="navigates_east_when_F_instruction_if_orientation_is_east" classname="MarsRoverShould" time="0.002"/>
+  <testcase name="navigates_north_when_F_instruction_is_passed_from_starter_position" classname="MarsRoverShould" time="0.0"/>
   <testcase name="navigates_north_when_F_instruction_if_orientation_is_north" classname="MarsRoverShould" time="0.0"/>
-  <testcase name="default_to_00N_as_initial_position" classname="MarsRoverShould" time="0.001"/>
+  <testcase name="default_to_00N_as_initial_position" classname="MarsRoverShould" time="0.0"/>
+  <testcase name="navigates_south_when_F_instruction_if_orientation_is_south" classname="MarsRoverShould" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

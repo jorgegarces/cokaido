@@ -19,7 +19,9 @@ public class MarsRover {
     }
 
     public void navigate(char movement) {
-        this.positionY += 1;
+        if (this.orientation == 'N') this.positionY += 1;
+        if (this.orientation == 'E') this.positionX += 1;
+        if (this.orientation == 'S') this.positionY -= 1;
     }
 
     @Override
