@@ -2,9 +2,9 @@ import java.util.Objects;
 
 public class MarsRover {
 
-    private final int positionX;
-    private final int positionY;
-    private final char orientation;
+    private int positionX;
+    private int positionY;
+    private char orientation;
 
     public MarsRover() {
         this.positionX = 0;
@@ -16,6 +16,11 @@ public class MarsRover {
         this.positionX = positionX;
         this.positionY = positionY;
         this.orientation = orientation;
+    }
+
+    public void navigate(char movement) {
+        this.positionY = 1;
+
     }
 
     @Override
