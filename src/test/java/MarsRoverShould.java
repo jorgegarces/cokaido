@@ -15,6 +15,14 @@ public class MarsRoverShould {
         marsRover.navigate('F');
         MarsRover expected = new MarsRover(0, 1,'N');
 
-        Assert.assertEquals(expected, marsRover );
+        Assert.assertEquals(expected, marsRover);
+    }
+    @Test
+    public void navigates_north_when_F_instruction_if_orientation_is_north(){
+        MarsRover marsRover = new MarsRover(0,1,'N');
+        marsRover.navigate('F');
+        MarsRover expected = new MarsRover(0,2,'N');
+
+        Assert.assertEquals(expected, marsRover);
     }
 }

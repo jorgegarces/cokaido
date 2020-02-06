@@ -19,8 +19,7 @@ public class MarsRover {
     }
 
     public void navigate(char movement) {
-        this.positionY = 1;
-
+        this.positionY += 1;
     }
 
     @Override
