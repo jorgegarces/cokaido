@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BinaryShould" tests="17" skipped="0" failures="0" errors="0" timestamp="2020-01-07T09:15:18" hostname="admins-MacBook-Pro.local" time="0.078">
+  <properties/>
+  <testcase name="[0] 2, 10 (correctly_convert_a_natural_number_to_binary)" classname="BinaryShould" time="0.003"/>
+  <testcase name="[1] 15, 1111 (correctly_convert_a_natural_number_to_binary)" classname="BinaryShould" time="0.0"/>
+  <testcase name="[2] 0, 0 (correctly_convert_a_natural_number_to_binary)" classname="BinaryShould" time="0.001"/>
+  <testcase name="[3] 1, 1 (correctly_convert_a_natural_number_to_binary)" classname="BinaryShould" time="0.001"/>
+  <testcase name="[0] 8,15, 11010101 (merge_two_binaries_alternating_their_elements)" classname="BinaryShould" time="0.0"/>
+  <testcase name="[1] 2,3, 1101 (merge_two_binaries_alternating_their_elements)" classname="BinaryShould" time="0.0"/>
+  <testcase name="[2] 1000,600, 11101011100111000000 (merge_two_binaries_alternating_their_elements)" classname="BinaryShould" time="0.0"/>
+  <testcase name="[3] 900000,1000000, 1111011110011010100011101001100000000000 (merge_two_binaries_alternating_their_elements)" classname="BinaryShould" time="0.0"/>
+  <testcase name="[4] 0,0, 00 (merge_two_binaries_alternating_their_elements)" classname="BinaryShould" time="0.0"/>
+  <testcase name="[5] 0,1, 01 (merge_two_binaries_alternating_their_elements)" classname="BinaryShould" time="0.0"/>
+  <testcase name="[0] 1,1, 11 (work_with_a_long_ass_named_method)" classname="BinaryShould" time="0.001"/>
+  <testcase name="[1] 8,15, 11010101 (work_with_a_long_ass_named_method)" classname="BinaryShould" time="0.0"/>
+  <testcase name="[2] 2,3, 1101 (work_with_a_long_ass_named_method)" classname="BinaryShould" time="0.0"/>
+  <testcase name="[3] 1000,600, 11101011100111000000 (work_with_a_long_ass_named_method)" classname="BinaryShould" time="0.009"/>
+  <testcase name="[4] 900000,1000000, 1111011110011010100011101001100000000000 (work_with_a_long_ass_named_method)" classname="BinaryShould" time="0.0"/>
+  <testcase name="[5] 0,0, 00 (work_with_a_long_ass_named_method)" classname="BinaryShould" time="0.001"/>
+  <testcase name="[6] 0,1, 01 (work_with_a_long_ass_named_method)" classname="BinaryShould" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
