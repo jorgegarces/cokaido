@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d066d18-04a3-42a5-98d4-9c96c3417736" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1X7aqMHYYexCv7dKG9dWhhddPQF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="IntroduceParameterObject.EXISTING_KEY">
+      <recent name="Bloaters.LongParameterList.Address" />
+      <recent name="Bloaters.DataClumps.Address" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MotoristShould">
+    <configuration name="InsuranceQuotationShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodeSmells" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Couplers.FeatureEnvy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Couplers.FeatureEnvy" />
+      <option name="MAIN_CLASS_NAME" value="Couplers.FeatureEnvy.InsuranceQuotationShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InvoiceShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodeSmells" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Couplers.MessageChains.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Couplers.MessageChains" />
+      <option name="MAIN_CLASS_NAME" value="Couplers.MessageChains.InvoiceShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LicenseShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodeSmells" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Couplers.InappropriateIntimacy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Couplers.InappropriateIntimacy" />
+      <option name="MAIN_CLASS_NAME" value="Couplers.InappropriateIntimacy.LicenseShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MotoristShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodeSmells" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Couplers.InappropriateIntimacy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Couplers.InappropriateIntimacy" />
+      <option name="MAIN_CLASS_NAME" value="Couplers.InappropriateIntimacy.MotoristShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OnDemandAgentServiceShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodeSmells" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ChangePreventers.DivergentChange.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ChangePreventers.DivergentChange" />
+      <option name="MAIN_CLASS_NAME" value="ChangePreventers.DivergentChange.OnDemandAgentServiceShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MotoristShould" />
+        <item itemvalue="JUnit.LicenseShould" />
+        <item itemvalue="JUnit.InsuranceQuotationShould" />
+        <item itemvalue="JUnit.InvoiceShould" />
+        <item itemvalue="JUnit.OnDemandAgentServiceShould" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d066d18-04a3-42a5-98d4-9c96c3417736" name="Default Changelist" comment="" />
+      <created>1580399776405</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580399776405</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="453" y="109" key="#com.intellij.ide.util.MemberChooser" timestamp="1580480937141">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="453" y="109" key="#com.intellij.ide.util.MemberChooser/0.23.1280.727@0.23.1280.727" timestamp="1580480937141" />
+    <state x="380" y="177" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580480782360">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="380" y="177" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1280.727@0.23.1280.727" timestamp="1580480782360" />
+    <state x="400" y="255" width="493" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580486621402">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="400" y="255" width="493" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.727@0.23.1280.727" timestamp="1580486621402" />
+    <state x="654" y="182" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1580720160140">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="654" y="182" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.23.1280.727@0.23.1280.727" timestamp="1580720160140" />
+    <state x="276" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580403037979">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="276" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.727@0.23.1280.727" timestamp="1580403037979" />
+    <state x="378" y="141" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580481288820">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="378" y="141" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.727@0.23.1280.727" timestamp="1580481288820" />
+    <state width="1240" height="150" key="GridCell.Tab.0.bottom" timestamp="1580720828671">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state width="1240" height="150" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1580720828671" />
+    <state width="1240" height="150" key="GridCell.Tab.0.center" timestamp="1580720828670">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state width="1240" height="150" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1580720828670" />
+    <state width="1240" height="150" key="GridCell.Tab.0.left" timestamp="1580720828660">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state width="1240" height="150" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1580720828660" />
+    <state width="1240" height="150" key="GridCell.Tab.0.right" timestamp="1580720828671">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state width="1240" height="150" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1580720828671" />
+    <state x="298" y="91" width="683" height="574" key="RefactorJ.ExtractClass" timestamp="1580486694333">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="298" y="91" width="683" height="574" key="RefactorJ.ExtractClass/0.23.1280.727@0.23.1280.727" timestamp="1580486694333" />
+    <state x="622" y="23" width="518" height="698" key="RefactorJ.IntroduceParameterObject" timestamp="1580480792553">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="622" y="23" width="518" height="698" key="RefactorJ.IntroduceParameterObject/0.23.1280.727@0.23.1280.727" timestamp="1580480792553" />
+    <state x="47" y="141" key="caller.chooser.dialog" timestamp="1580481296802">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="47" y="141" key="caller.chooser.dialog/0.23.1280.727@0.23.1280.727" timestamp="1580481296802" />
+    <state x="100" y="123" width="1080" height="527" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1580402434835">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="100" y="123" width="1080" height="527" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1280.727@0.23.1280.727" timestamp="1580402434835" />
+    <state x="283" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580402120122">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="283" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.727@0.23.1280.727" timestamp="1580402120122" />
+    <state x="416" y="310" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580478002307">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="416" y="310" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.727@0.23.1280.727" timestamp="1580478002307" />
+    <state x="702" y="137" key="extract.method.dialog" timestamp="1580720151376">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="702" y="137" key="extract.method.dialog/0.23.1280.727@0.23.1280.727" timestamp="1580720151376" />
+    <state x="664" y="23" key="refactoring.ChangeSignatureDialog" timestamp="1580481035546">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="664" y="23" key="refactoring.ChangeSignatureDialog/0.23.1280.727@0.23.1280.727" timestamp="1580481035546" />
+    <state x="303" y="71" width="672" height="678" key="search.everywhere.popup" timestamp="1580480426459">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="303" y="71" width="672" height="678" key="search.everywhere.popup/0.23.1280.727@0.23.1280.727" timestamp="1580480426459" />
+  </component>
+</project>
