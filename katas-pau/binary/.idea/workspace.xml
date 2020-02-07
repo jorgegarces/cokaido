@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="24d16994-78d8-4d69-a008-f6c1c14760cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/BinaryNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NaturalNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TwoDecimalsToTwoBinariesConverterAndAlternateMerger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RomanConverter" beforeDir="false" afterPath="$PROJECT_DIR$/../../RomanConverter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../curray" beforeDir="false" afterPath="$PROJECT_DIR$/../../curray" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fibonacci" beforeDir="false" afterPath="$PROJECT_DIR$/../../fibonacci" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Converter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/BinaryShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/BinaryShould.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/BinaryShould.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/BinaryShould.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-BinaryShould.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-BinaryShould.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Converter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BinaryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BinaryShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../leaps" beforeDir="false" afterPath="$PROJECT_DIR$/../../leaps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stringcalc" beforeDir="false" afterPath="$PROJECT_DIR$/../../stringcalc" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VqQ936aO7OLFPkRjMGikt32DR4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.BinaryShould">
+    <configuration name="BinaryShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;BinaryShould&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BinaryShould.ensure_it_correctly_converts_natural_to_binary" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;BinaryShould.ensure_it_correctly_converts_natural_to_binary&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BinaryShould.ensure_it_merges_two_binaries" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;BinaryShould.ensure_it_merges_two_binaries&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BinaryShould.work_with_a_zero_and_a_one" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;BinaryShould.work_with_a_zero_and_a_one&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BinaryShould.work_with_two_zeroes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;BinaryShould.work_with_two_zeroes&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.BinaryShould" />
+        <item itemvalue="Gradle.BinaryShould.ensure_it_merges_two_binaries" />
+        <item itemvalue="Gradle.BinaryShould.ensure_it_correctly_converts_natural_to_binary" />
+        <item itemvalue="Gradle.BinaryShould.work_with_a_zero_and_a_one" />
+        <item itemvalue="Gradle.BinaryShould.work_with_two_zeroes" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24d16994-78d8-4d69-a008-f6c1c14760cc" name="Default Changelist" comment="" />
+      <created>1577977990148</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577977990148</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="240" y="65" key="#Notifications" timestamp="1578386239170">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="65" key="#Notifications/0.0.1280.800@0.0.1280.800" timestamp="1578386239170" />
+    <state x="240" y="77" key="#Project_Structure" timestamp="1578051913825">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="240" y="77" key="#Project_Structure/0.23.1280.777@0.23.1280.777" timestamp="1578051913825" />
+    <state x="100" y="100" width="1080" height="600" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1578250335307">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="100" y="100" width="1080" height="600" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.800@0.0.1280.800" timestamp="1578250335307" />
+    <state x="364" y="108" key="#com.intellij.ide.util.MemberChooser" timestamp="1578247584122">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="364" y="108" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1578247584122" />
+    <state x="328" y="136" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578386224354">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="328" y="136" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.800@0.0.1280.800" timestamp="1578386224354" />
+    <state width="1238" height="225" key="GridCell.Tab.0.bottom" timestamp="1578388516964">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="225" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1578388516964" />
+    <state width="1238" height="194" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1578059041889" />
+    <state width="1238" height="225" key="GridCell.Tab.0.center" timestamp="1578388516963">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="225" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1578388516963" />
+    <state width="1238" height="194" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1578059041888" />
+    <state width="1238" height="225" key="GridCell.Tab.0.left" timestamp="1578388516962">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="225" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1578388516962" />
+    <state width="1238" height="194" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1578059041887" />
+    <state width="1238" height="225" key="GridCell.Tab.0.right" timestamp="1578388516964">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="225" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1578388516964" />
+    <state width="1238" height="194" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1578059041888" />
+    <state width="1238" height="245" key="GridCell.Tab.1.bottom" timestamp="1578050750549">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="245" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1578050750549" />
+    <state width="1238" height="245" key="GridCell.Tab.1.center" timestamp="1578050750549">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="245" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1578050750549" />
+    <state width="1238" height="245" key="GridCell.Tab.1.left" timestamp="1578050750548">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="245" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1578050750548" />
+    <state width="1238" height="245" key="GridCell.Tab.1.right" timestamp="1578050750549">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="245" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1578050750549" />
+    <state x="434" y="336" key="ReplaceDuplicatesPrompt" timestamp="1578042755390">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="434" y="336" key="ReplaceDuplicatesPrompt/0.23.1280.777@0.23.1280.777" timestamp="1578042755390" />
+    <state x="384" y="140" key="RollbackChangesDialog" timestamp="1578051216497">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="384" y="140" key="RollbackChangesDialog/0.23.1280.777@0.23.1280.777" timestamp="1578051216497" />
+    <state x="179" y="39" key="SettingsEditor" timestamp="1578386361594">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="179" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1578386361594" />
+    <state x="26" y="78" width="1212" height="577" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1578052338579">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="26" y="78" width="1212" height="577" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1280.777@0.23.1280.777" timestamp="1578052338579" />
+    <state x="484" y="291" width="569" height="481" key="extract.method.dialog" timestamp="1578050403759">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="484" y="291" width="569" height="481" key="extract.method.dialog/0.23.1280.777@0.23.1280.777" timestamp="1578050403759" />
+    <state x="402" y="24" key="refactoring.ChangeSignatureDialog" timestamp="1578245883097">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="402" y="24" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1578245883097" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1577980529283">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1577980529283" />
+  </component>
+</project>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c4303855-3c1c-45d1-850b-ab5bce809765" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../RomanConverter" beforeDir="false" afterPath="$PROJECT_DIR$/../../RomanConverter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../curray" beforeDir="false" afterPath="$PROJECT_DIR$/../../curray" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fibonacci" beforeDir="false" afterPath="$PROJECT_DIR$/../../fibonacci" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../leaps" beforeDir="false" afterPath="$PROJECT_DIR$/../../leaps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stringcalc" beforeDir="false" afterPath="$PROJECT_DIR$/../../stringcalc" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VkCXFVwCyitjcOIkfH9KE0DyAV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+  </component>
+  <component name="RunManager" selected="Gradle.TableShould">
+    <configuration name="TableShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;TableShould&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TableShould.meh_work_when_vectors_contain_zeros_as_starting_elements" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;TableShould.meh_work_when_vectors_contain_zeros_as_starting_elements&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TableShould.work_when_vector_size_differs_and_one_element_is_repeated" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;TableShould.work_when_vector_size_differs_and_one_element_is_repeated&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TableShould.work_when_vectors_contain_zeros_as_starting_elements" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;TableShould.work_when_vectors_contain_zeros_as_starting_elements&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TableShould.work_when_vectors_share_size_and_multiple_element_values_are_repeated" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;TableShould.work_when_vectors_share_size_and_multiple_element_values_are_repeated&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.TableShould" />
+        <item itemvalue="Gradle.TableShould.work_when_vector_size_differs_and_one_element_is_repeated" />
+        <item itemvalue="Gradle.TableShould.meh_work_when_vectors_contain_zeros_as_starting_elements" />
+        <item itemvalue="Gradle.TableShould.work_when_vectors_contain_zeros_as_starting_elements" />
+        <item itemvalue="Gradle.TableShould.work_when_vectors_share_size_and_multiple_element_values_are_repeated" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4303855-3c1c-45d1-850b-ab5bce809765" name="Default Changelist" comment="" />
+      <created>1577787743643</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577787743643</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="100" width="1080" height="600" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1577811626463">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="100" y="100" width="1080" height="600" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.800@0.0.1280.800" timestamp="1577811626463" />
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1577807703397">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1577807703397" />
+    <state x="560" y="160" width="403" height="480" key="#xdebugger.XInspectDialog" timestamp="1577952946317">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="560" y="160" width="403" height="480" key="#xdebugger.XInspectDialog/0.0.1280.800@0.0.1280.800" timestamp="1577952946317" />
+    <state width="482" height="438" key="DebuggerActiveHint" timestamp="1577789164110">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="482" height="438" key="DebuggerActiveHint/0.0.1280.800@0.0.1280.800" timestamp="1577789164110" />
+    <state width="1238" height="376" key="GridCell.Tab.0.bottom" timestamp="1577977970717">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="376" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1577977970717" />
+    <state width="1238" height="376" key="GridCell.Tab.0.center" timestamp="1577977970716">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="376" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1577977970716" />
+    <state width="1238" height="376" key="GridCell.Tab.0.left" timestamp="1577977970715">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="376" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1577977970715" />
+    <state width="1238" height="376" key="GridCell.Tab.0.right" timestamp="1577977970716">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="376" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1577977970716" />
+    <state width="1238" height="376" key="GridCell.Tab.1.bottom" timestamp="1577977970718">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="376" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1577977970718" />
+    <state width="1238" height="376" key="GridCell.Tab.1.center" timestamp="1577977970718">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="376" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1577977970718" />
+    <state width="1238" height="376" key="GridCell.Tab.1.left" timestamp="1577977970717">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="376" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1577977970717" />
+    <state width="1238" height="376" key="GridCell.Tab.1.right" timestamp="1577977970718">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="376" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1577977970718" />
+    <state x="428" y="186" width="424" height="467" key="RefactorJ.WrapReturnValue" timestamp="1577799748213">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="428" y="186" width="424" height="467" key="RefactorJ.WrapReturnValue/0.0.1280.800@0.0.1280.800" timestamp="1577799748213" />
+    <state x="449" y="164" key="extract.method.dialog" timestamp="1577800482296">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="449" y="164" key="extract.method.dialog/0.0.1280.800@0.0.1280.800" timestamp="1577800482296" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1577955849632">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1577955849632" />
+  </component>
+</project>
