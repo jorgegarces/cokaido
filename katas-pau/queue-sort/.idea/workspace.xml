@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="46b72421-45ea-42ce-9207-67a55e6f3a60" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
@@ -34,12 +35,37 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/QueueSortShould.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../leaps" beforeDir="false" afterPath="$PROJECT_DIR$/../../leaps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../stringcalc" beforeDir="false" afterPath="$PROJECT_DIR$/../../stringcalc" afterDir="false" />
+=======
+    <list default="true" id="45364b9b-265f-41f2-9cf4-5132ef609cd2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/QueueSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/QueueSortShould.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/TEST-QueueSortShould.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/QueueSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Seq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/QueueSortShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RomanConverter" beforeDir="false" afterPath="$PROJECT_DIR$/../../RomanConverter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../curray" beforeDir="false" afterPath="$PROJECT_DIR$/../../curray" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fibonacci" beforeDir="false" afterPath="$PROJECT_DIR$/../../fibonacci" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../leaps" beforeDir="false" afterPath="$PROJECT_DIR$/../../leaps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stringcalc" beforeDir="false" afterPath="$PROJECT_DIR$/../../stringcalc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../yatzy/src/main/java/RollStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../yatzy/src/main/java/RollStats.java" afterDir="false" />
+>>>>>>> pacman
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -56,6 +82,21 @@
         <entry key="$PROJECT_DIR$/../.." value="master" />
       </map>
     </option>
+=======
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+>>>>>>> pacman
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IgnoredFileRootStore">
@@ -65,8 +106,15 @@
       </set>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="1V3eoW2l3K4QLoUqcT0bYtBPoHj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+=======
+  <component name="ProjectId" id="1UpcOWFJoDAbdWHJfEm7SLSphYO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+>>>>>>> pacman
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -74,6 +122,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< HEAD
     <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RunManager" selected="Gradle.PersonSorterShould.ensure_it_sorts_more_than_two_people_by_age_and_name">
@@ -117,6 +166,16 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+=======
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+>>>>>>> pacman
     <configuration name="QueueSortShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -137,6 +196,7 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="QueueSortShould.ensure_it_adds_one_person_to_the_list" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -184,6 +244,11 @@
         <item itemvalue="Gradle.QueueSortShould.ensure_it_sorts_more_than_two_people_by_age" />
         <item itemvalue="Gradle.QueueSortShould" />
         <item itemvalue="Gradle.QueueSortShould.ensure_it_adds_one_person_to_the_list" />
+=======
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.QueueSortShould" />
+>>>>>>> pacman
       </list>
     </recent_temporary>
   </component>
@@ -204,15 +269,24 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="46b72421-45ea-42ce-9207-67a55e6f3a60" name="Default Changelist" comment="" />
       <created>1576486380578</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576486380578</updated>
+=======
+      <changelist id="45364b9b-265f-41f2-9cf4-5132ef609cd2" name="Default Changelist" comment="" />
+      <created>1576056945426</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576056945426</updated>
+>>>>>>> pacman
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="100" y="100" width="1080" height="600" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1577717215158">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -281,5 +355,35 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1576574535601" />
+=======
+    <state x="364" y="108" key="#com.intellij.ide.util.MemberChooser" timestamp="1576144668693">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="364" y="108" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1576144668693" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1576244710419">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1576244710419" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1576244710417">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1576244710417" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1576244710283">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1576244710283" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1576244710418">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1576244710418" />
+    <state x="113" y="43" key="SettingsEditor" timestamp="1576065459659">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="113" y="43" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1576065459659" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1576144773504">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1576144773504" />
+>>>>>>> pacman
   </component>
 </project>
