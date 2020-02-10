@@ -1,3 +1,7 @@
+package position;
+
+import orientation.*;
+
 import java.util.Objects;
 
 public class Position {
@@ -13,22 +17,22 @@ public class Position {
         this.orientation = Orientation.create(orientation);
     }
 
-    void rotateLeft() {
+    public void rotateLeft() {
         this.orientation = orientation.rotateLeft();
     }
 
-    void rotateRight() {
+    public void rotateRight() {
         this.orientation = orientation.rotateRight();
     }
 
-    void moveForward() {
+    public void moveForward() {
         if (orientation instanceof North) longitude++;
         if (orientation instanceof East) latitude++;
         if (orientation instanceof South) longitude--;
         if (orientation instanceof West) latitude--;
     }
 
-    void moveBackwards() {
+    public void moveBackwards() {
         if (orientation instanceof North) longitude--;
         if (orientation instanceof East) latitude--;
         if (orientation instanceof South) longitude++;

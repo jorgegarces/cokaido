@@ -1,3 +1,7 @@
+package navCommands;
+
+import position.Position;
+
 public abstract class Command {
     protected final Position position;
 
@@ -13,5 +17,5 @@ public abstract class Command {
         return null;
     }
 
-    abstract protected void execute();
+    public abstract void execute();
 }

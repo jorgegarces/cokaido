@@ -1,3 +1,7 @@
+package navCommands;
+
+import position.Position;
+
 public class RotateRightCommand extends Command {
 
     protected RotateRightCommand(Position position) {
@@ -5,7 +9,7 @@ public class RotateRightCommand extends Command {
     }
 
     @Override
-    protected void execute() {
+    public void execute() {
         position.rotateRight();
     }
 }

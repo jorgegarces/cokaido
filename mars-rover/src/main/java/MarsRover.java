@@ -1,3 +1,6 @@
+import navCommands.Command;
+import position.Position;
+
 import java.util.Objects;
 
 public class MarsRover {

@@ -1,10 +1,14 @@
+package navCommands;
+
+import position.Position;
+
 public class MoveBackwardCommand extends Command {
     protected MoveBackwardCommand(Position position) {
         super(position);
     }
 
     @Override
-    protected void execute() {
+    public void execute() {
         position.moveBackwards();
     }
 }

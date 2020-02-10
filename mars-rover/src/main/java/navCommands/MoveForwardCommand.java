@@ -1,3 +1,7 @@
+package navCommands;
+
+import position.Position;
+
 public class MoveForwardCommand extends Command {
 
 
@@ -6,7 +10,7 @@ public class MoveForwardCommand extends Command {
     }
 
     @Override
-    protected void execute() {
+    public void execute() {
         this.position.moveForward();
     }
 }
