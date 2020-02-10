@@ -5,21 +5,21 @@ public class MarsRover {
     private final Position position;
 
     public MarsRover() {
-        position = new Position(0,0,'N');
+        position = new Position(0, 0, 'N');
     }
 
-    public MarsRover(int positionX, int positionY, char orientation) {
-        position = new Position(positionX, positionY, orientation);
+    public MarsRover(int latitude, int longitude, char orientation) {
+        position = new Position(latitude, longitude, orientation);
     }
 
     public void navigate(String movement) {
         for (int i = 0; i < movement.length(); i++) {
-            run(new Command(movement.charAt(i)));
+            run(Command.create(movement.charAt(i), position));
         }
     }
 
     private void run(Command command) {
-        command.execute(position);
+        command.execute();
     }
 
     @Override

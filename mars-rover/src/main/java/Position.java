@@ -3,13 +3,13 @@ import java.util.Objects;
 public class Position {
 
     private Orientation orientation;
-    private int positionX;
-    private int positionY;
+    private int latitude;
+    private int longitude;
 
-    public Position(int positionX, int positionY, char orientation) {
+    public Position(int latitude, int longitude, char orientation) {
 
-        this.positionX = positionX;
-        this.positionY = positionY;
+        this.latitude = latitude;
+        this.longitude = longitude;
         this.orientation = Orientation.create(orientation);
     }
 
@@ -22,17 +22,17 @@ public class Position {
     }
 
     void moveForward() {
-        if (orientation instanceof North) positionY++;
-        if (orientation instanceof East) positionX++;
-        if (orientation instanceof South) positionY--;
-        if (orientation instanceof West) positionX--;
+        if (orientation instanceof North) longitude++;
+        if (orientation instanceof East) latitude++;
+        if (orientation instanceof South) longitude--;
+        if (orientation instanceof West) latitude--;
     }
 
     void moveBackwards() {
-        if (orientation instanceof North) positionY--;
-        if (orientation instanceof East) positionX--;
-        if (orientation instanceof South) positionY++;
-        if (orientation instanceof West) positionX++;
+        if (orientation instanceof North) longitude--;
+        if (orientation instanceof East) latitude--;
+        if (orientation instanceof South) longitude++;
+        if (orientation instanceof West) latitude++;
     }
 
     @Override
@@ -40,13 +40,13 @@ public class Position {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Position position = (Position) o;
-        return positionX == position.positionX &&
-                positionY == position.positionY &&
+        return latitude == position.latitude &&
+                longitude == position.longitude &&
                 position.orientation.getClass() == this.orientation.getClass();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(orientation, positionX, positionY);
+        return Objects.hash(orientation, latitude, longitude);
     }
 }

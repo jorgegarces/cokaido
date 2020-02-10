@@ -1,14 +1,17 @@
-public class Command {
-    private final char command;
+public abstract class Command {
+    protected final Position position;
 
-    public Command(char command) {
-        this.command = command;
+    public Command(Position position) {
+        this.position = position;
     }
 
-    public void execute(Position position) {
-        if (command == 'F') position.moveForward();
-        if (command == 'R') position.rotateRight();
-        if (command == 'L') position.rotateLeft();
-        if (command == 'B') position.moveBackwards();
+    public static Command create(char command, Position position) {
+        if (command == 'F') return new MoveForwardCommand(position);
+        if (command == 'B') return new MoveBackwardCommand(position);
+        if (command == 'L') return new RotateLeftCommand(position);
+        if (command == 'R') return new RotateRightCommand(position);
+        return null;
     }
+
+    abstract protected void execute();
 }
