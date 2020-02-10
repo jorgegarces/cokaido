@@ -1,14 +1,14 @@
 package navCommands;
 
-import position.Position;
+import rover.Rover;
 
 public class RotateLeftCommand extends Command {
-    protected RotateLeftCommand(Position position) {
-        super(position);
+    protected RotateLeftCommand(Rover rover) {
+        super(rover);
     }
 
     @Override
     public void execute() {
-        position.rotateLeft();
+        rover.rotateLeft();
     }
 }

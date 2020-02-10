@@ -1,16 +1,16 @@
 package navCommands;
 
-import position.Position;
+import rover.Rover;
 
 public class MoveForwardCommand extends Command {
 
 
-    protected MoveForwardCommand(Position position) {
-      super(position);
+    protected MoveForwardCommand(Rover rover) {
+      super(rover);
     }
 
     @Override
     public void execute() {
-        this.position.moveForward();
+        this.rover.moveForward();
     }
 }
