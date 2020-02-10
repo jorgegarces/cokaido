@@ -1,3 +1,6 @@
+import navCommands.Command;
+import position.Position;
+
 import java.util.Objects;
 
 public class MarsRover {
@@ -5,24 +8,21 @@ public class MarsRover {
     private final Position position;
 
     public MarsRover() {
-        position = new Position(0,0,'N');
+        position = new Position(0, 0, 'N');
     }
 
-    public MarsRover(int positionX, int positionY, char orientation) {
-        position = new Position(positionX, positionY, orientation);
+    public MarsRover(int latitude, int longitude, char orientation) {
+        position = new Position(latitude, longitude, orientation);
     }
 
     public void navigate(String movement) {
         for (int i = 0; i < movement.length(); i++) {
-            run(movement.charAt(i));
+            run(Command.create(movement.charAt(i), position));
         }
     }
 
-    private void run(char command) {
-        if (command == 'F') position.moveForward();
-        if (command == 'R') position.rotateRight();
-        if (command == 'L') position.rotateLeft();
-        if (command == 'B') position.moveBackwards();
+    private void run(Command command) {
+        command.execute();
     }
 
     @Override

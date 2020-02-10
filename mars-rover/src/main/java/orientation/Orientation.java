@@ -1,3 +1,5 @@
+package orientation;
+
 public abstract class Orientation {
 
     public static Orientation create(char cardinal) {
@@ -8,8 +10,8 @@ public abstract class Orientation {
         return null;
     }
 
-    abstract Orientation rotateLeft();
+    public abstract Orientation rotateLeft();
 
-    abstract Orientation rotateRight();
+    public abstract Orientation rotateRight();
 
 }

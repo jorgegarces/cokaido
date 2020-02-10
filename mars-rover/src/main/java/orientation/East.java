@@ -1,11 +1,15 @@
+package orientation;
+
+import orientation.Orientation;
+
 public class East extends Orientation {
     @Override
-    Orientation rotateLeft() {
+    public Orientation rotateLeft() {
        return new North();
     }
 
     @Override
-    Orientation rotateRight() {
+    public Orientation rotateRight() {
         return new South();
      }
 }
