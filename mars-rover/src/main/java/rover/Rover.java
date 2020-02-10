@@ -1,14 +1,14 @@
-package position;
+package rover;
 
 import orientation.*;
 
 import java.util.Objects;
 
-public class Rover {
+public abstract class Rover {
 
-    private Orientation orientation;
-    private int latitude;
-    private int longitude;
+    protected Orientation orientation;
+    protected int latitude;
+    protected int longitude;
 
     public Rover(int latitude, int longitude, char orientation) {
 
@@ -16,6 +16,13 @@ public class Rover {
         this.longitude = longitude;
         this.orientation = Orientation.create(orientation);
     }
+
+    public Rover() {
+        this.latitude = 0;
+        this.longitude = 0;
+        this.orientation = new North();
+    }
+
 
     public void rotateLeft() {
         this.orientation = orientation.rotateLeft();
@@ -47,6 +54,7 @@ public class Rover {
         return latitude == rover.latitude &&
                 longitude == rover.longitude &&
                 rover.orientation.getClass() == this.orientation.getClass();
+
     }
 
     @Override

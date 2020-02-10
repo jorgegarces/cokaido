@@ -1,6 +1,6 @@
 package navCommands;
 
-import position.Rover;
+import rover.Rover;
 
 public abstract class Command {
     protected final Rover rover;

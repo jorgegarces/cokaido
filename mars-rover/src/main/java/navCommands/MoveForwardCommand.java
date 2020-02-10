@@ -1,6 +1,6 @@
 package navCommands;
 
-import position.Rover;
+import rover.Rover;
 
 public class MoveForwardCommand extends Command {
 

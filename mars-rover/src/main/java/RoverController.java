@@ -1,5 +1,5 @@
 import navCommands.Command;
-import position.Rover;
+import rover.Rover;
 
 import java.util.Objects;
 
@@ -7,13 +7,10 @@ public class RoverController {
 
     private final Rover rover;
 
-    public RoverController() {
-        rover = new Rover(0, 0, 'N');
+    public RoverController(Rover rover) {
+        this.rover = rover;
     }
 
-    public RoverController(int latitude, int longitude, char orientation) {
-        rover = new Rover(latitude, longitude, orientation);
-    }
 
     public void navigate(String movement) {
         for (int i = 0; i < movement.length(); i++) {
@@ -29,12 +26,20 @@ public class RoverController {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        RoverController roverController = (RoverController) o;
-        return Objects.equals(rover, roverController.rover);
+        RoverController that = (RoverController) o;
+        return Objects.equals(rover, that.rover);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(rover);
     }
+
+    @Override
+    public String toString() {
+        return "RoverController{" +
+                "rover=" + rover +
+                '}';
+    }
 }
+

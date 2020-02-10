@@ -1,6 +1,6 @@
 package navCommands;
 
-import position.Rover;
+import rover.Rover;
 
 public class RotateLeftCommand extends Command {
     protected RotateLeftCommand(Rover rover) {
