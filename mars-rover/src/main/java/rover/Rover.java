@@ -11,7 +11,6 @@ public abstract class Rover {
     protected int longitude;
 
     public Rover(int latitude, int longitude, char orientation) {
-
         this.latitude = latitude;
         this.longitude = longitude;
         this.orientation = Orientation.create(orientation);
@@ -32,19 +31,9 @@ public abstract class Rover {
         this.orientation = orientation.rotateRight();
     }
 
-    public void moveForward() {
-        if (orientation instanceof North) longitude++;
-        if (orientation instanceof East) latitude++;
-        if (orientation instanceof South) longitude--;
-        if (orientation instanceof West) latitude--;
-    }
+    public abstract void moveForward();
 
-    public void moveBackwards() {
-        if (orientation instanceof North) longitude--;
-        if (orientation instanceof East) latitude--;
-        if (orientation instanceof South) longitude++;
-        if (orientation instanceof West) latitude++;
-    }
+    public abstract void moveBackwards();
 
     @Override
     public boolean equals(Object o) {
