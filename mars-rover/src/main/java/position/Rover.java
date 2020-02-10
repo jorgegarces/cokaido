@@ -4,13 +4,13 @@ import orientation.*;
 
 import java.util.Objects;
 
-public class Position {
+public class Rover {
 
     private Orientation orientation;
     private int latitude;
     private int longitude;
 
-    public Position(int latitude, int longitude, char orientation) {
+    public Rover(int latitude, int longitude, char orientation) {
 
         this.latitude = latitude;
         this.longitude = longitude;
@@ -43,10 +43,10 @@ public class Position {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Position position = (Position) o;
-        return latitude == position.latitude &&
-                longitude == position.longitude &&
-                position.orientation.getClass() == this.orientation.getClass();
+        Rover rover = (Rover) o;
+        return latitude == rover.latitude &&
+                longitude == rover.longitude &&
+                rover.orientation.getClass() == this.orientation.getClass();
     }
 
     @Override

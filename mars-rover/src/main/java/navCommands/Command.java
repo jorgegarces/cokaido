@@ -1,19 +1,19 @@
 package navCommands;
 
-import position.Position;
+import position.Rover;
 
 public abstract class Command {
-    protected final Position position;
+    protected final Rover rover;
 
-    public Command(Position position) {
-        this.position = position;
+    public Command(Rover rover) {
+        this.rover = rover;
     }
 
-    public static Command create(char command, Position position) {
-        if (command == 'F') return new MoveForwardCommand(position);
-        if (command == 'B') return new MoveBackwardCommand(position);
-        if (command == 'L') return new RotateLeftCommand(position);
-        if (command == 'R') return new RotateRightCommand(position);
+    public static Command create(char command, Rover rover) {
+        if (command == 'F') return new MoveForwardCommand(rover);
+        if (command == 'B') return new MoveBackwardCommand(rover);
+        if (command == 'L') return new RotateLeftCommand(rover);
+        if (command == 'R') return new RotateRightCommand(rover);
         return null;
     }
 
