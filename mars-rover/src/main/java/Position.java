@@ -22,17 +22,17 @@ public class Position {
     }
 
     void moveForward() {
-        if (orientation instanceof North) positionY = positionY + 1;
-        if (orientation instanceof East) positionX = positionX + 1;
-        if (orientation instanceof South) positionY = positionY - 1;
-        if (orientation instanceof West) positionX = positionX - 1;
+        if (orientation instanceof North) positionY++;
+        if (orientation instanceof East) positionX++;
+        if (orientation instanceof South) positionY--;
+        if (orientation instanceof West) positionX--;
     }
 
     void moveBackwards() {
-        if (orientation instanceof North) positionY = positionY - 1;
-        if (orientation instanceof East) positionX = positionX - 1;
-        if (orientation instanceof South) positionY = positionY + 1;
-        if (orientation instanceof West) positionX = positionX + 1;
+        if (orientation instanceof North) positionY--;
+        if (orientation instanceof East) positionX--;
+        if (orientation instanceof South) positionY++;
+        if (orientation instanceof West) positionX++;
     }
 
     @Override

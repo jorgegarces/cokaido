@@ -14,15 +14,12 @@ public class MarsRover {
 
     public void navigate(String movement) {
         for (int i = 0; i < movement.length(); i++) {
-            run(movement.charAt(i));
+            run(new Command(movement.charAt(i)));
         }
     }
 
-    private void run(char command) {
-        if (command == 'F') position.moveForward();
-        if (command == 'R') position.rotateRight();
-        if (command == 'L') position.rotateLeft();
-        if (command == 'B') position.moveBackwards();
+    private void run(Command command) {
+        command.execute(position);
     }
 
     @Override
