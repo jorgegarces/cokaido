@@ -11,6 +11,7 @@ public class BlackCoffeeShould {
         Assert.assertEquals("Coffee", blackCoffee.getDescription());
         Assert.assertEquals(1.00, blackCoffee.getCost(), 2);
     }
+
     @Test
     public void get_Milk_Coffee_ass_description_and_1euro_30cents_as_price(){
         Coffee milkCoffee = new Milk(new BlackCoffee());
@@ -18,6 +19,7 @@ public class BlackCoffeeShould {
         Assert.assertEquals("Milk Coffee", milkCoffee.getDescription());
         Assert.assertEquals(1.30, milkCoffee.getCost(), 2);
     }
+
     @Test
     public void get_Irish_as_description_and_2euros_as_price(){
         Coffee irishCoffee = new Whisky(new BlackCoffee());
@@ -25,6 +27,7 @@ public class BlackCoffeeShould {
         Assert.assertEquals("Irish Coffee", irishCoffee.getDescription());
         Assert.assertEquals(2.00, irishCoffee.getCost(),2);
     }
+
     @Test
     public void get_Irish_Milk_coffee_as_description_and_2euros_30cents_as_price(){
         Coffee irishMilkCoffee = new Whisky(new Milk(new BlackCoffee()));
