@@ -5,5 +5,4 @@ public abstract class Extra implements Coffee{
     public Extra(Coffee coffee) {
         this.inProgressCoffee = coffee;
     }
-
 }
