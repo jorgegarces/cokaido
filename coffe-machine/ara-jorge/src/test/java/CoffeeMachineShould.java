@@ -37,4 +37,14 @@ public class CoffeeMachineShould {
 
         Assert.assertEquals(expected, milkCoffee.getName());
     }
+
+    @Test
+    public void iris_coffee_name_is_irish_milk_coffee() {
+
+        Coffee irishMilkCoffee = new Whisky(new Milk(new BlackCoffee()));
+
+        String expected = "Irish Milk Coffee";
+
+        Assert.assertEquals(expected, irishMilkCoffee.getName());
+    }
 }
