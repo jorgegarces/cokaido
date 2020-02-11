@@ -5,13 +5,5 @@ public abstract class CoffeeExtrasDecorator implements Coffee {
     public CoffeeExtrasDecorator(Coffee newCoffee) {
         this.currentCoffee = newCoffee;
     }
-
-    public String getDescription() {
-        return this.currentCoffee.getDescription();
-    }
-
-    public double getCost() {
-        return this.currentCoffee.getCost();
-    }
 }
 
