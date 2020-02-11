@@ -1,8 +1,10 @@
-public class BlackCoffee extends Coffe {
+public class BlackCoffee implements Coffee {
+    String name;
+    Price price;
 
     public BlackCoffee(){
         name = "Coffee";
-        price = new Price(1);
+        price = new Price(1.0);
     }
 
     @Override

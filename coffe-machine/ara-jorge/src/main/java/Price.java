@@ -1,9 +1,9 @@
 import java.util.Objects;
 
 public class Price {
-    private Integer price;
+    private Double price;
 
-    public Price(int price) {
+    public Price(Double price) {
         this.price = price;
     }
 
