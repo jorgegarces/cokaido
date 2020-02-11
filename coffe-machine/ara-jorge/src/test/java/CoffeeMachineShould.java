@@ -20,16 +20,21 @@ public class CoffeeMachineShould {
         Assert.assertEquals(expected, coffee.getName());
     }
 
-    /*@Test
+    @Test
     public void charge_13_for_a_milk_coffee(){
 
-        Coffee coffee = new BlackCoffee();
+        Coffee milkCoffee = new Milk(new BlackCoffee());
         Price expected = new Price(1.3);
-        Extra milk = new Milk();
 
-        coffee.addExtra(milk);
+        Assert.assertEquals(expected, milkCoffee.getPrice());
+    }
 
+    @Test
+    public void milk_coffee_name_is_milk_coffee() {
 
-        Assert.assertEquals(expected, coffee.getPrice());
-    }*/
+        Coffee milkCoffee = new Milk(new BlackCoffee());
+        String expected = "Milk Coffee";
+
+        Assert.assertEquals(expected, milkCoffee.getName());
+    }
 }

@@ -7,6 +7,10 @@ public class Price {
         this.price = price;
     }
 
+    public void add(double addValue) {
+        price = price + addValue;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -19,4 +23,5 @@ public class Price {
     public int hashCode() {
         return Objects.hash(price);
     }
+
 }

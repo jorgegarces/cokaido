@@ -1,12 +1,9 @@
-public class Extra implements Coffee{
+public abstract class Extra implements Coffee{
 
-    @Override
-    public Price getPrice() {
-        return null;
+    protected Coffee inProgressCoffee;
+
+    public Extra(Coffee coffee) {
+        this.inProgressCoffee = coffee;
     }
 
-    @Override
-    public String getName() {
-        return null;
-    }
 }
