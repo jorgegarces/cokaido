@@ -1,5 +1,5 @@
 public class Milk extends IngredientsDecorator {
-    Coffee coffee;
+    private Coffee coffee;
 
     public Milk(Coffee coffee) {
         this.coffee = coffee;
@@ -13,6 +13,3 @@ public class Milk extends IngredientsDecorator {
         return "Milk " + coffee.name();
     }
 }
-
-// Coffee blackCoffee = new BlackCoffee();
-//Coffee milkCoffee = new Milk(blackCoffee);
