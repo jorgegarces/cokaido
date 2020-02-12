@@ -61,4 +61,14 @@ public class RoverShould {
         Assertions.assertTrue(rover.checkState(new Ground()));
     }
 
+    @Test
+    public void spend_two_energy_when_flying_forward() {
+        Rover rover = new RoverNormal();
+
+        rover.fly();
+        rover.moveForward();
+
+        Assertions.assertTrue(rover.checkBattery(98));
+    }
+
 }

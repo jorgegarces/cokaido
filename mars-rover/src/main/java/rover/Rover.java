@@ -6,38 +6,33 @@ import java.util.Objects;
 
 public abstract class Rover {
 
-    protected final Battery battery;
     protected Orientation orientation;
     protected int latitude;
     protected int longitude;
-    private Context context;
+    protected EngineManager engineManager;
 
     public Rover(int latitude, int longitude, char orientation) {
         this.latitude = latitude;
         this.longitude = longitude;
         this.orientation = Orientation.create(orientation);
-        this.battery = new Battery();
-        this.context = new Context();
+        this.engineManager = new EngineManager(new Battery());
     }
 
     public Rover() {
         this.latitude = 0;
         this.longitude = 0;
         this.orientation = new North();
-        this.battery = new Battery();
-        this.context = new Context();
+        this.engineManager = new EngineManager(new Battery());
     }
-
 
     public void rotateLeft() {
+        this.engineManager.supplyEnergy();
         this.orientation = orientation.rotateLeft();
-        this.battery.decreaseBatteryLevel();
     }
 
-
     public void rotateRight() {
+        this.engineManager.supplyEnergy();
         this.orientation = orientation.rotateRight();
-        this.battery.decreaseBatteryLevel();
     }
 
     public abstract void moveForward();
@@ -45,25 +40,24 @@ public abstract class Rover {
     public abstract void moveBackwards();
 
     public void fly(){
-        this.context.setState(new Air());
+        this.engineManager.useEngine(new Air());
     }
 
     public void dig() {
-        this.context.setState(new Underground());
+        this.engineManager.useEngine(new Underground());
     }
 
     public void land(){
-        this.context.setState(new Ground());
+        this.engineManager.useEngine(new Ground());
     }
 
     public boolean checkBattery(int chargeLevel) {
-        return this.battery.checkLevel(chargeLevel);
+        return this.engineManager.checkLevel(chargeLevel);
     }
 
-    public boolean checkState(RoverState state) {
-        return this.context.getState().getClass() == state.getClass();
+    public boolean checkState(RoverEngine state) {
+        return this.engineManager.getState().getClass() == state.getClass();
     }
-
 
     @Override
     public boolean equals(Object o) {
@@ -79,6 +73,5 @@ public abstract class Rover {
     public int hashCode() {
         return Objects.hash(orientation, latitude, longitude);
     }
-
 }
 

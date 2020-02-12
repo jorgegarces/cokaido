@@ -1,6 +1,8 @@
 package rover;
 
-import rover.RoverState;
-
-public class Underground implements RoverState {
+public class Underground implements RoverEngine {
+    @Override
+    public void loadEnergy(Battery battery) {
+        battery.extractEnergy(3);
+    }
 }

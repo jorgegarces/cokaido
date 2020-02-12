@@ -7,8 +7,8 @@ public class Battery {
         this.chargeLevel = 100;
     }
 
-    void decreaseBatteryLevel() {
-        chargeLevel--;
+    void extractEnergy(int energy) {
+        chargeLevel-= energy;
     }
 
     boolean checkLevel(int chargeLevel) {

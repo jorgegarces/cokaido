@@ -17,20 +17,19 @@ public class RoverNormal extends Rover {
 
     @Override
     public void moveForward() {
+        engineManager.supplyEnergy();
         if (orientation instanceof North) longitude++;
         if (orientation instanceof East) latitude++;
         if (orientation instanceof South) longitude--;
         if (orientation instanceof West) latitude--;
-        battery.decreaseBatteryLevel();
     }
 
     @Override
     public void moveBackwards() {
+        engineManager.supplyEnergy();
         if (orientation instanceof North) longitude--;
         if (orientation instanceof East) latitude--;
         if (orientation instanceof South) longitude++;
         if (orientation instanceof West) latitude++;
-        battery.decreaseBatteryLevel();
     }
-
 }

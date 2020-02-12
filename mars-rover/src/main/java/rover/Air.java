@@ -1,8 +1,8 @@
 package rover;
 
-public class Air implements  RoverState {
-
-    public void changeState() {
-
+public class Air implements RoverEngine {
+    @Override
+    public void loadEnergy(Battery battery) {
+        battery.extractEnergy(2);
     }
 }
