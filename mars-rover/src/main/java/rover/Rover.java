@@ -28,10 +28,12 @@ public abstract class Rover {
 
     public void rotateLeft() {
         this.orientation = orientation.rotateLeft();
+        this.fuel--;
     }
 
     public void rotateRight() {
         this.orientation = orientation.rotateRight();
+        this.fuel--;
     }
 
     public abstract void moveForward();
