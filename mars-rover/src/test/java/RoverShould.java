@@ -1,7 +1,9 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import rover.Land;
 import rover.Rover;
 import rover.RoverNormal;
+import rover.RoverState;
 
 public class RoverShould {
     @Test
@@ -29,6 +31,12 @@ public class RoverShould {
         Rover rover = new RoverNormal();
         rover.rotateRight();
         Assertions.assertTrue(rover.checkBattery(99));
+    }
+    @Test
+    public void rover_normal_default_state_is_Land() {
+        Rover rover = new RoverNormal();
+        RoverState land = new Land();
+        Assertions.assertTrue(rover.checkState(land));
     }
 
 }

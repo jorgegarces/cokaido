@@ -1,7 +1,7 @@
 package rover;
 
 public class Battery {
-    public int chargeLevel;
+    private int chargeLevel;
 
     public Battery() {
         this.chargeLevel = 100;
