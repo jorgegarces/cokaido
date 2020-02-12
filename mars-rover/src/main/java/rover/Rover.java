@@ -10,14 +10,14 @@ public abstract class Rover {
     protected Orientation orientation;
     protected int latitude;
     protected int longitude;
-    private RoverState state;
+    private Context context;
 
     public Rover(int latitude, int longitude, char orientation) {
         this.latitude = latitude;
         this.longitude = longitude;
         this.orientation = Orientation.create(orientation);
         this.battery = new Battery();
-        this.state = new Land();
+        this.context = new Context();
     }
 
     public Rover() {
@@ -25,7 +25,7 @@ public abstract class Rover {
         this.longitude = 0;
         this.orientation = new North();
         this.battery = new Battery();
-        this.state = new Land();
+        this.context = new Context();
     }
 
 
@@ -44,9 +44,18 @@ public abstract class Rover {
 
     public abstract void moveBackwards();
 
+    public void fly(){
+        this.context.setState(new Air());
+    }
+
     public boolean checkBattery(int chargeLevel) {
         return this.battery.checkLevel(chargeLevel);
     }
+
+    public boolean checkState(RoverState state) {
+        return this.context.getState().getClass() == state.getClass();
+    }
+
 
     @Override
     public boolean equals(Object o) {
@@ -62,8 +71,5 @@ public abstract class Rover {
     public int hashCode() {
         return Objects.hash(orientation, latitude, longitude);
     }
-
-    public boolean checkState(RoverState state) {
-        return this.state.getClass() == state.getClass();
-    }
 }
+
