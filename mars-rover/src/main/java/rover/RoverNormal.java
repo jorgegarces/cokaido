@@ -21,6 +21,7 @@ public class RoverNormal extends Rover {
         if (orientation instanceof East) latitude++;
         if (orientation instanceof South) longitude--;
         if (orientation instanceof West) latitude--;
+        fuel--;
     }
 
     @Override
@@ -29,5 +30,7 @@ public class RoverNormal extends Rover {
         if (orientation instanceof East) latitude--;
         if (orientation instanceof South) longitude++;
         if (orientation instanceof West) latitude++;
+        fuel--;
     }
+
 }

@@ -28,4 +28,5 @@ public class RoverTurbo extends Rover {
         if (orientation instanceof South) longitude+=2;
         if (orientation instanceof West) latitude+=2;
     }
+
 }

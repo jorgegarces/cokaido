@@ -9,17 +9,20 @@ public abstract class Rover {
     protected Orientation orientation;
     protected int latitude;
     protected int longitude;
+    protected int fuel;
 
     public Rover(int latitude, int longitude, char orientation) {
         this.latitude = latitude;
         this.longitude = longitude;
         this.orientation = Orientation.create(orientation);
+        this.fuel = 100;
     }
 
     public Rover() {
         this.latitude = 0;
         this.longitude = 0;
         this.orientation = new North();
+        this.fuel = 100;
     }
 
 
@@ -49,5 +52,9 @@ public abstract class Rover {
     @Override
     public int hashCode() {
         return Objects.hash(orientation, latitude, longitude);
+    }
+
+    public boolean checkFuel(int fuelLevel) {
+        return this.fuel == fuelLevel;
     }
 }
