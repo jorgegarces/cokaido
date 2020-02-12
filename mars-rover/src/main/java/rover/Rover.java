@@ -47,9 +47,13 @@ public abstract class Rover {
     public void fly(){
         this.context.setState(new Air());
     }
+
     public void dig() {
         this.context.setState(new Underground());
+    }
 
+    public void land(){
+        this.context.setState(new Ground());
     }
 
     public boolean checkBattery(int chargeLevel) {

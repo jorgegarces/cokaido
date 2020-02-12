@@ -30,7 +30,7 @@ public class RoverShould {
         Assertions.assertTrue(rover.checkBattery(99));
     }
     @Test
-    public void default_state_is_Ground() {
+    public void default_state_is_ground() {
         Rover rover = new RoverNormal();
         Assertions.assertTrue(rover.checkState(new Ground()));
     }
@@ -50,6 +50,15 @@ public class RoverShould {
         rover.dig();
 
         Assertions.assertTrue(rover.checkState(new Underground()));
+    }
+    @Test
+    public void take_off_and_land() {
+        Rover rover = new RoverNormal();
+
+        rover.fly();
+        rover.land();
+
+        Assertions.assertTrue(rover.checkState(new Ground()));
     }
 
 }
