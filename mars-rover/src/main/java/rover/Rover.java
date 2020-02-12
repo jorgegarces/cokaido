@@ -6,39 +6,44 @@ import java.util.Objects;
 
 public abstract class Rover {
 
+    protected final Battery battery;
     protected Orientation orientation;
     protected int latitude;
     protected int longitude;
-    protected int fuel;
 
     public Rover(int latitude, int longitude, char orientation) {
         this.latitude = latitude;
         this.longitude = longitude;
         this.orientation = Orientation.create(orientation);
-        this.fuel = 100;
+        this.battery = new Battery();
     }
 
     public Rover() {
         this.latitude = 0;
         this.longitude = 0;
         this.orientation = new North();
-        this.fuel = 100;
+        this.battery = new Battery();
     }
 
 
     public void rotateLeft() {
         this.orientation = orientation.rotateLeft();
-        this.fuel--;
+        this.battery.decreaseBatteryLevel();
     }
+
 
     public void rotateRight() {
         this.orientation = orientation.rotateRight();
-        this.fuel--;
+        this.battery.decreaseBatteryLevel();
     }
 
     public abstract void moveForward();
 
     public abstract void moveBackwards();
+
+    public boolean checkBattery(int chargeLevel) {
+        return this.battery.checkLevel(chargeLevel);
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -48,7 +53,6 @@ public abstract class Rover {
         return latitude == rover.latitude &&
                 longitude == rover.longitude &&
                 rover.orientation.getClass() == this.orientation.getClass();
-
     }
 
     @Override
@@ -56,7 +60,4 @@ public abstract class Rover {
         return Objects.hash(orientation, latitude, longitude);
     }
 
-    public boolean checkFuel(int fuelLevel) {
-        return this.fuel == fuelLevel;
-    }
 }

@@ -1,0 +1,17 @@
+package rover;
+
+public class Battery {
+    public int chargeLevel;
+
+    public Battery() {
+        this.chargeLevel = 100;
+    }
+
+    void decreaseBatteryLevel() {
+        chargeLevel--;
+    }
+
+    boolean checkLevel(int chargeLevel) {
+        return this.chargeLevel == chargeLevel;
+    }
+}
