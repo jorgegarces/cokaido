@@ -32,7 +32,7 @@ public class RoverShould {
     @Test
     public void default_state_is_ground() {
         Rover rover = new RoverNormal();
-        Assertions.assertTrue(rover.checkState(new Ground()));
+        Assertions.assertTrue(rover.engineInUse(new Ground()));
     }
 
     @Test
@@ -41,7 +41,7 @@ public class RoverShould {
 
         rover.fly();
 
-        Assertions.assertTrue(rover.checkState(new Air()));
+        Assertions.assertTrue(rover.engineInUse(new Air()));
     }
     @Test
     public void burrow_from_the_surface() {
@@ -49,7 +49,7 @@ public class RoverShould {
 
         rover.dig();
 
-        Assertions.assertTrue(rover.checkState(new Underground()));
+        Assertions.assertTrue(rover.engineInUse(new Underground()));
     }
     @Test
     public void take_off_and_land() {
@@ -58,7 +58,7 @@ public class RoverShould {
         rover.fly();
         rover.land();
 
-        Assertions.assertTrue(rover.checkState(new Ground()));
+        Assertions.assertTrue(rover.engineInUse(new Ground()));
     }
 
     @Test

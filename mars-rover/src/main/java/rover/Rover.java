@@ -55,8 +55,8 @@ public abstract class Rover {
         return this.engineManager.checkLevel(chargeLevel);
     }
 
-    public boolean checkState(RoverEngine state) {
-        return this.engineManager.getState().getClass() == state.getClass();
+    public boolean engineInUse(RoverEngine engine) {
+        return this.engineManager.engineInUse(engine);
     }
 
     @Override
