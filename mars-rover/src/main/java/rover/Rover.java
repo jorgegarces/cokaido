@@ -47,6 +47,10 @@ public abstract class Rover {
     public void fly(){
         this.context.setState(new Air());
     }
+    public void dig() {
+        this.context.setState(new Underground());
+
+    }
 
     public boolean checkBattery(int chargeLevel) {
         return this.battery.checkLevel(chargeLevel);
@@ -71,5 +75,6 @@ public abstract class Rover {
     public int hashCode() {
         return Objects.hash(orientation, latitude, longitude);
     }
+
 }
 

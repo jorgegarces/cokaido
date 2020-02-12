@@ -43,5 +43,13 @@ public class RoverShould {
 
         Assertions.assertTrue(rover.checkState(new Air()));
     }
+    @Test
+    public void burrow_from_the_surface() {
+        Rover rover = new RoverNormal();
+
+        rover.dig();
+
+        Assertions.assertTrue(rover.checkState(new Underground()));
+    }
 
 }
