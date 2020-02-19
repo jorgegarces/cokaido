@@ -1,13 +1,16 @@
 public class CharacterSource implements ISource {
 
-    private final char value;
+    private final String value;
+    private int counter = 0;
 
-    public CharacterSource(char source) {
+    public CharacterSource(String source) {
         this.value = source;
     }
 
     @Override
     public char getChar() {
-        return value;
+        char character = value.charAt(counter);
+        counter++;
+        return character;
     }
 }
