@@ -9,8 +9,6 @@ public class CharacterSource implements ISource {
 
     @Override
     public char getChar() {
-        char character = value.charAt(counter);
-        counter++;
-        return character;
+        return value.charAt(counter++);
     }
 }
