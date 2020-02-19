@@ -1,6 +1,6 @@
 public class CharacterDestination implements IDestination {
 
-    public char charCopy;
+    public char charCopy = 0;
 
     public char getCharCopy() {
         return charCopy;

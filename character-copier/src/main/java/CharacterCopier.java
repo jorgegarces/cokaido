@@ -9,6 +9,6 @@ public class CharacterCopier {
     }
 
     public void copy() {
-        destination.setChar(source.getChar());
+        if(source.getChar() != '\n') destination.setChar(source.getChar());
     }
 }
