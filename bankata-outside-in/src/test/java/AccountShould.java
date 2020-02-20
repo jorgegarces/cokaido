@@ -3,9 +3,7 @@ import app.printable.Printable;
 import app.repositories.Deposit;
 import app.repositories.TransactionRepository;
 import app.repositories.Withdrawal;
-import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
@@ -14,6 +12,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import static org.mockito.Mockito.*; /* Powered by Anna */
 
 @ExtendWith(MockitoExtension.class)
+
 public class AccountShould {
     private Account account;
     @Mock

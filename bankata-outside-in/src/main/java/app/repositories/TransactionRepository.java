@@ -6,7 +6,7 @@ public class TransactionRepository {
    }
 
    public String getStatement() {
-      return "";
+      return "date       || credit   || debit    || balance\n";
    }
 
 }
