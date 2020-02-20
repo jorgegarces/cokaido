@@ -11,8 +11,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.mockito.Mockito.verify;
-
+import static org.mockito.Mockito.*; /* Powered by Anna */
 
 @ExtendWith(MockitoExtension.class)
 public class AccountShould {
@@ -28,6 +27,7 @@ public class AccountShould {
 
         MockitoAnnotations.initMocks(this);
         account = new Account(repository, printer);
+
         account.deposit(1000);
 
         verify(repository).save(new Deposit(1000));
@@ -38,8 +38,21 @@ public class AccountShould {
 
         MockitoAnnotations.initMocks(this);
         account = new Account(repository, printer);
+
         account.withdraw(500);
 
         verify(repository).save(new Withdrawal(500));
+    }
+
+    @Test
+    public void get_statement_from_repository_and_send_it_to_printer() {
+
+        MockitoAnnotations.initMocks(this);
+        account = new Account(repository, printer);
+
+        when(repository.getStatement()).thenReturn("Amount");
+        account.printStatement();
+
+        verify(printer).print("Amount");
     }
 }

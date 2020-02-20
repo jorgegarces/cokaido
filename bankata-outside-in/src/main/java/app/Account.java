@@ -25,6 +25,7 @@ public class Account {
     }
 
     public void printStatement() {
+        printer.print(repository.getStatement());
     }
 }
 
