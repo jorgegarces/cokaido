@@ -4,6 +4,7 @@ import app.printable.Printable;
 import app.repositories.Deposit;
 import app.repositories.Transaction;
 import app.repositories.TransactionRepository;
+import app.repositories.Withdrawal;
 
 public class Account {
 
@@ -20,6 +21,7 @@ public class Account {
     }
 
     public void withdraw(int amount) {
+        repository.save(new Withdrawal(amount));
     }
 
     public void printStatement() {
