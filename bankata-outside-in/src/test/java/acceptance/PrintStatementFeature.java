@@ -25,7 +25,7 @@ date       || credit   || debit    || balance
 */
 
 @ExtendWith(MockitoExtension.class)
-public class BankKataShould {
+public class PrintStatementFeature {
 
     @Mock
     private Printable printer;
