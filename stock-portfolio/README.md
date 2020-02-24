@@ -1,1 +1,1 @@
-Stock Portfolio Kata
+Stock app.Portfolio Kata
