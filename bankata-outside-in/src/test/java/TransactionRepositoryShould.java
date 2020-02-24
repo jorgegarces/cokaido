@@ -46,8 +46,8 @@ public class TransactionRepositoryShould {
         when(transaction.toString()).thenReturn("10/01/2012 || 1000.00  ||          || ");
         when(newTransaction.toString()).thenReturn("13/01/2012 || 2000.00  ||          || ");
 
-        when(transaction.calculateBalance(anyInt())).thenReturn(1000);
-        when(newTransaction.calculateBalance(anyInt())).thenReturn(3000);
+        when(transaction.calculateBalance(0)).thenReturn(1000);
+        when(newTransaction.calculateBalance(1000)).thenReturn(3000);
 
         transactionRepository.save(transaction);
         transactionRepository.save(newTransaction);
