@@ -1,6 +1,7 @@
 package acceptance;
 
 import app.Account;
+import app.timeserver.TimeServer;
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
@@ -30,11 +31,14 @@ public class PrintStatementFeature {
     @Mock
     private Printable printer;
 
+    @Mock
+    private TimeServer timeServer;
+
     @Test
     public void print_the_bank_Statement_correctly() {
         MockitoAnnotations.initMocks(this);
         TransactionRepository repository = new TransactionRepository();
-        Account account = new Account(repository, printer);
+        Account account = new Account(repository, printer, timeServer);
         account.deposit(1000);
         account.deposit(2000);
         account.withdraw(500);

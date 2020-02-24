@@ -3,6 +3,7 @@ import app.printable.Printable;
 import app.repositories.Deposit;
 import app.repositories.TransactionRepository;
 import app.repositories.Withdrawal;
+import app.timeserver.TimeServer;
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
@@ -21,33 +22,36 @@ public class AccountShould {
     @Mock
     private TransactionRepository repository;
 
+    @Mock
+    private TimeServer timeServer;
+
     @Test
     public void send_deposit_to_repository() {
 
         MockitoAnnotations.initMocks(this);
-        account = new Account(repository, printer);
+        account = new Account(repository, printer, timeServer);
 
         account.deposit(1000);
 
-        verify(repository).save(new Deposit(1000));
+        verify(repository).save(new Deposit(1000, timeServer.getDate()));
     }
 
     @Test
     public void send_withdrawal_to_repository() {
 
         MockitoAnnotations.initMocks(this);
-        account = new Account(repository, printer);
+        account = new Account(repository, printer, timeServer);
 
         account.withdraw(500);
 
-        verify(repository).save(new Withdrawal(500));
+        verify(repository).save(new Withdrawal(500, timeServer.getDate()));
     }
 
     @Test
     public void get_statement_from_repository_and_send_it_to_printer() {
 
         MockitoAnnotations.initMocks(this);
-        account = new Account(repository, printer);
+        account = new Account(repository, printer, timeServer);
 
         when(repository.getStatement()).thenReturn("Amount");
         account.printStatement();

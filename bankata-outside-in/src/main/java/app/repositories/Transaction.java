@@ -1,12 +1,16 @@
 package app.repositories;
 
+import app.timeserver.TimeServer;
+
 import java.util.Objects;
 
 public abstract class Transaction {
     private int amount;
+    private String date;
 
-    public Transaction(int amount) {
+    public Transaction(int amount, String date) {
         this.amount = amount;
+        this.date = date;
     }
 
     @Override
@@ -14,7 +18,8 @@ public abstract class Transaction {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Transaction that = (Transaction) o;
-        return amount == that.amount;
+        return amount == that.amount &&
+                Objects.equals(date, that.date);
     }
 
 }
