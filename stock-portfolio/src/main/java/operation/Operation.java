@@ -1,0 +1,25 @@
+package operation;
+
+import java.util.Objects;
+
+public abstract class Operation {
+    final int shareAmount;
+    final String companyName;
+    final double price;
+
+    protected Operation(int shareAmount, String companyName, double price) {
+        this.shareAmount = shareAmount;
+        this.companyName = companyName;
+        this.price = price;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Operation operation = (Operation) o;
+        return shareAmount == operation.shareAmount &&
+                Double.compare(operation.price, price) == 0 &&
+                Objects.equals(companyName, operation.companyName);
+    }
+}
