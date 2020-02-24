@@ -5,8 +5,8 @@ import app.timeserver.TimeServer;
 import java.util.Objects;
 
 public abstract class Transaction {
-    private int amount;
-    private String date;
+    protected int amount;
+    protected String date;
 
     public Transaction(int amount, String date) {
         this.amount = amount;

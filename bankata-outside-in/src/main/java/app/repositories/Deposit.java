@@ -6,4 +6,8 @@ public class Deposit extends Transaction {
         super(amount, date);
     }
 
+    @Override
+    public String toString() {
+        return this.date + " || " + this.amount + ".00  ||          || ";
+    }
 }
