@@ -7,6 +7,11 @@ public class Deposit extends Transaction {
     }
 
     @Override
+    public int calculateBalance(int currentBalance) {
+        return currentBalance + this.amount;
+    }
+
+    @Override
     public String toString() {
         return this.date + " || " + this.amount + ".00  ||          || ";
     }

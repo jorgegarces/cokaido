@@ -1,7 +1,5 @@
 package app.repositories;
 
-import app.timeserver.TimeServer;
-
 import java.util.Objects;
 
 public abstract class Transaction {
@@ -12,6 +10,8 @@ public abstract class Transaction {
         this.amount = amount;
         this.date = date;
     }
+
+    public abstract int calculateBalance(int currentBalance);
 
     @Override
     public boolean equals(Object o) {

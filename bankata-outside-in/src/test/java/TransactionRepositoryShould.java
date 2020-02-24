@@ -28,7 +28,7 @@ public class TransactionRepositoryShould {
         MockitoAnnotations.initMocks(this);
         TransactionRepository transactionRepository = new TransactionRepository();
 
-        when(transaction.toString()).thenReturn("10/01/2012 || 1000.00  ||          || 1000.00");
+        when(transaction.toString()).thenReturn("10/01/2012 || 1000.00  ||          || ");
         transactionRepository.save(transaction);
 
         Assert.assertEquals("date       || credit   || debit    || balance\n10/01/2012 || 1000.00  ||          || 1000.00", transactionRepository.getStatement());
