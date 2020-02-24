@@ -16,4 +16,5 @@ public class DepositShould {
 
         Assert.assertEquals(1000, deposit.calculateBalance(0));
     }
+
 }

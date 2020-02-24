@@ -8,7 +8,7 @@ public class Withdrawal extends Transaction {
 
     @Override
     public int calculateBalance(int currentBalance) {
-        return 0;
+        return currentBalance - this.amount;
     }
 
 
