@@ -1,6 +1,7 @@
 package app;
 import operation.Buy;
 import operation.Operation;
+import operation.Sell;
 import printable.Printable;
 import timeserver.*;
 
@@ -21,8 +22,8 @@ public class Portfolio {
         this.repository.save(new Buy(shareAmount, companyName, price, timeServer.getDate() ));
     }
 
-    public void sell(int shareAmount, String company, double sharePrice) {
-
+    public void sell(int shareAmount, String companyName, double price) {
+        this.repository.save(new Sell(shareAmount, companyName, price, timeServer.getDate() ));
     }
 
     public void print() {
