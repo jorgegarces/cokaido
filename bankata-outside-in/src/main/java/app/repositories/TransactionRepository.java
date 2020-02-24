@@ -12,7 +12,7 @@ public class TransactionRepository {
 
     public void save(Transaction transaction) {
 
-        this.transactions.add(transaction);
+        this.transactions.add(0,transaction);
     }
 
     public String getStatement() {
@@ -20,7 +20,7 @@ public class TransactionRepository {
         int currentBalance = 0;
         for (Transaction transaction : transactions) {
             currentBalance = transaction.calculateBalance(currentBalance);
-            statement.append(transaction).append(currentBalance + ".00");
+            statement.append(transaction).append(currentBalance + ".00\n" );
         }
 
         return statement.toString();

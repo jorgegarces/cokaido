@@ -39,6 +39,7 @@ public class PrintStatementFeature {
         MockitoAnnotations.initMocks(this);
         TransactionRepository repository = new TransactionRepository();
         Account account = new Account(repository, printer, timeServer);
+        when(timeServer.getDate()).thenReturn("10/01/2012","13/01/2012","14/01/2012");
         account.deposit(1000);
         account.deposit(2000);
         account.withdraw(500);
@@ -47,6 +48,6 @@ public class PrintStatementFeature {
         verify(printer).print("date       || credit   || debit    || balance\n" +
                 "14/01/2012 ||          || 500.00   || 2500.00\n" +
                 "13/01/2012 || 2000.00  ||          || 3000.00\n" +
-                "10/01/2012 || 1000.00  ||          || 1000.00");
+                "10/01/2012 || 1000.00  ||          || 1000.00\n");
     }
 }
