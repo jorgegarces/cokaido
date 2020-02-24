@@ -17,8 +17,11 @@ public class TransactionRepository {
 
     public String getStatement() {
         StringBuilder statement = new StringBuilder("date       || credit   || debit    || balance\n");
-
-        for (Transaction transaction : transactions) statement.append(transaction);
+        int currentBalance = 0;
+        for (Transaction transaction : transactions) {
+            currentBalance = transaction.calculateBalance(currentBalance);
+            statement.append(transaction).append(currentBalance + ".00");
+        }
 
         return statement.toString();
     }
