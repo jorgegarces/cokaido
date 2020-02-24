@@ -1,11 +1,12 @@
 import app.repositories.Deposit;
+import app.repositories.Withdrawal;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class WithdrawalShould {
     @Test
-    public void create_a_valid_deposit_transaction() {
-        Deposit deposit = new Deposit(1000, "10/01/2012");
-        Assert.assertEquals("10/01/2012 || 1000.00  ||          || ", deposit.toString());
+    public void create_a_valid_withdrawal_transaction() {
+        Withdrawal withdrawal = new Withdrawal(500, "14/01/2012");
+        Assert.assertEquals("14/01/2012 ||          || 500.00   || ", withdrawal.toString());
     }
 }
