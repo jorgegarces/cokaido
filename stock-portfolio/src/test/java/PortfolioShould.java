@@ -1,7 +1,8 @@
+import app.AssetReport;
 import app.Portfolio;
-import formatter.PortfolioFormatter;
+import app.PortfolioReport;
+import formatter.Formatter;
 import operation.Buy;
-import operation.Operation;
 import operation.Sell;
 import org.junit.Test;
 import org.mockito.Mock;
@@ -9,9 +10,6 @@ import org.mockito.MockitoAnnotations;
 import printable.Printable;
 import repository.OperationRepository;
 import timeserver.TimeServer;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -28,7 +26,7 @@ public class PortfolioShould {
     private TimeServer timeServer;
 
     @Mock
-    private PortfolioFormatter formatter;
+    private Formatter formatter;
 
     @Test
     public void send_buy_operation_to_repository() {
@@ -54,13 +52,15 @@ public class PortfolioShould {
 
     @Test
     public void print_operations() {
+
         MockitoAnnotations.initMocks(this);
         Portfolio portfolio = new Portfolio(printer, repository, timeServer, formatter);
-        List<Operation> operationsList = new ArrayList<>();
-        operationsList.add(new Buy(1000, "Old School Waterfall Software LTD", 5.75, timeServer.getDate()));
-        when(repository.getOperations()).thenReturn(operationsList);
-        when(formatter.create(operationsList)).thenReturn(" foo ");
+        //company | shares | current price | current value | last operation\
+        PortfolioReport portfolioReport = new PortfolioReport();
+        portfolioReport.addAsset(new AssetReport("Old School Waterfall Software LTD", "1000", "5,75", "2,875.00","sold 500 on 11/12/2018"));
 
+        when(repository.getOperations()).thenReturn(portfolioReport);
+        when(formatter.create(portfolioReport)).thenReturn(" foo ");
         portfolio.print();
 
         verify(printer).print(" foo ");

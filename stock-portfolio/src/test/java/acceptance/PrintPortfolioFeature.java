@@ -1,7 +1,7 @@
 package acceptance;
 
 import app.Portfolio;
-import formatter.PortfolioFormatter;
+import formatter.Formatter;
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
@@ -41,7 +41,7 @@ public class PrintPortfolioFeature {
     private TimeServer timeServer;
 
     @Mock
-    private PortfolioFormatter formatter;
+    private Formatter formatter;
 
     @Test
     public void print_the_portfolio_in_the_correct_format(){

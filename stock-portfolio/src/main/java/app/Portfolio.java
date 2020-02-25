@@ -1,5 +1,5 @@
 package app;
-import formatter.PortfolioFormatter;
+import formatter.Formatter;
 import operation.Buy;
 import operation.Sell;
 import printable.Printable;
@@ -11,9 +11,9 @@ public class Portfolio {
     private final Printable printer;
     private final OperationRepository repository;
     private final TimeServer timeServer;
-    private PortfolioFormatter formatter;
+    private Formatter formatter;
 
-    public Portfolio(Printable printer, OperationRepository repository, TimeServer timeServer, PortfolioFormatter formatter) {
+    public Portfolio(Printable printer, OperationRepository repository, TimeServer timeServer, Formatter formatter) {
         this.printer = printer;
         this.repository = repository;
         this.timeServer = timeServer;
