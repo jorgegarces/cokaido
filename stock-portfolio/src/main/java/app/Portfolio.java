@@ -1,6 +1,6 @@
 package app;
+import formatter.PortfolioFormatter;
 import operation.Buy;
-import operation.Operation;
 import operation.Sell;
 import printable.Printable;
 import timeserver.*;
@@ -11,11 +11,13 @@ public class Portfolio {
     private final Printable printer;
     private final OperationRepository repository;
     private final TimeServer timeServer;
+    private PortfolioFormatter formatter;
 
-    public Portfolio(Printable printer, OperationRepository repository, TimeServer timeServer) {
+    public Portfolio(Printable printer, OperationRepository repository, TimeServer timeServer, PortfolioFormatter formatter) {
         this.printer = printer;
         this.repository = repository;
         this.timeServer = timeServer;
+        this.formatter = formatter;
     }
 
     public void buy(int shareAmount, String companyName, double price) {
@@ -27,7 +29,7 @@ public class Portfolio {
     }
 
     public void print() {
-
+        this.printer.print(this.formatter.create(this.repository.getOperations()));
     }
 
 }

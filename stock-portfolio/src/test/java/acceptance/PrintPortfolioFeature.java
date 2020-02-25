@@ -1,6 +1,7 @@
 package acceptance;
 
 import app.Portfolio;
+import formatter.PortfolioFormatter;
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
@@ -39,11 +40,14 @@ public class PrintPortfolioFeature {
     @Mock
     private TimeServer timeServer;
 
+    @Mock
+    private PortfolioFormatter formatter;
+
     @Test
     public void print_the_portfolio_in_the_correct_format(){
         MockitoAnnotations.initMocks(this);
         OperationRepository repository = new OperationRepository();
-        Portfolio portfolio = new Portfolio(printer, repository, timeServer);
+        Portfolio portfolio = new Portfolio(printer, repository, timeServer, formatter);
 
         when(timeServer.getDate()).thenReturn("14/02/1990","11/12/2018", "09/06/2016", "10/12/2018");
 
