@@ -55,11 +55,9 @@ public class PortfolioShould {
 
         MockitoAnnotations.initMocks(this);
         Portfolio portfolio = new Portfolio(printer, repository, timeServer, formatter);
-        //company | shares | current price | current value | last operation\
         PortfolioReport portfolioReport = new PortfolioReport();
-        portfolioReport.addAsset(new AssetReport("Old School Waterfall Software LTD", "1000", "5,75", "2,875.00","sold 500 on 11/12/2018"));
 
-        when(repository.getOperations()).thenReturn(portfolioReport);
+        when(repository.getPortfolioReport()).thenReturn(portfolioReport);
         when(formatter.create(portfolioReport)).thenReturn(" foo ");
         portfolio.print();
 

@@ -57,6 +57,7 @@ public class PrintPortfolioFeature {
         portfolio.sell(500, "Old School Waterfall Software LTD", 5.75);
         portfolio.print();
 
+
         verify(printer).print("company | shares | current price | current value | last operation\n" +
                 "Old School Waterfall Software LTD | 500 | $5.75 | $2,875.00 | sold 500 on 11/12/2018\n" +
                 "Crafter Masters Limited | 400 | $17.25 | $6,900.00 | bought 400 on 09/06/2016\n" +

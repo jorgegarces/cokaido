@@ -29,7 +29,7 @@ public class Portfolio {
     }
 
     public void print() {
-        this.printer.print(this.formatter.create(this.repository.getOperations()));
+        this.printer.print(this.formatter.create(this.repository.getPortfolioReport()));
     }
 
 }
