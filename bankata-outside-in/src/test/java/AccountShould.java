@@ -6,6 +6,7 @@ import app.repositories.Withdrawal;
 import app.timeserver.TimeServer;
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -13,9 +14,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import static org.mockito.Mockito.*; /* Powered by Anna */
 
 @ExtendWith(MockitoExtension.class)
-
 public class AccountShould {
-    private Account account;
     @Mock
     private Printable printer;
 
@@ -25,11 +24,12 @@ public class AccountShould {
     @Mock
     private TimeServer timeServer;
 
+    @InjectMocks
+    private Account account;
+
     @Test
     public void send_deposit_to_repository() {
-
         MockitoAnnotations.initMocks(this);
-        account = new Account(repository, printer, timeServer);
 
         account.deposit(1000);
 
@@ -40,7 +40,6 @@ public class AccountShould {
     public void send_withdrawal_to_repository() {
 
         MockitoAnnotations.initMocks(this);
-        account = new Account(repository, printer, timeServer);
 
         account.withdraw(500);
 

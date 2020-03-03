@@ -54,6 +54,4 @@ public class TransactionRepositoryShould {
 
         Assert.assertEquals("date       || credit   || debit    || balance\n13/01/2012 || 2000.00  ||          || 3000.00\n10/01/2012 || 1000.00  ||          || 1000.00\n", transactionRepository.getStatement());
     }
-
-
 }
