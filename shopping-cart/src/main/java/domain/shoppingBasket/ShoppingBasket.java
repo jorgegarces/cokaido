@@ -1,6 +1,7 @@
 package domain.shoppingBasket;
 
 import domain.exceptions.NegativeQuantityException;
+import domain.exceptions.ProductDoesNotExistException;
 import domain.lineItem.LineItem;
 import domain.lineItem.LineItemList;
 import domain.user.UserId;
@@ -20,7 +21,8 @@ public class ShoppingBasket {
 
     }
 
-    public void add(Product product, int quantity) throws NegativeQuantityException {
+    public void add(Product product, int quantity) throws NegativeQuantityException, ProductDoesNotExistException {
+        if(product == null) throw new ProductDoesNotExistException();
         if(quantity < 0) throw new NegativeQuantityException();
         this.lineItemList.add(product, quantity);
     }

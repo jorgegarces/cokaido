@@ -1,6 +1,7 @@
 package domain.shoppingBasket;
 
 import domain.exceptions.NegativeQuantityException;
+import domain.exceptions.ProductDoesNotExistException;
 import domain.product.ProductId;
 import domain.user.UserId;
 import org.junit.Assert;
@@ -62,5 +63,11 @@ class ShoppingBasketShould {
         shoppingBasket.remove(product, 1);
 
         Assert.assertEquals(expectedShoppingBasket, shoppingBasket);
+    }
+    @Test
+    public void not_allow_to_add_a_non_existent_product(){
+        ShoppingBasket shoppingBasket = new ShoppingBasket(new UserId(1), "04/03/2020");
+
+        Assertions.assertThrows(ProductDoesNotExistException.class, ()-> shoppingBasket.add(null,1));
     }
 }

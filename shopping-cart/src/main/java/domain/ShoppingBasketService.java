@@ -23,11 +23,11 @@ public class ShoppingBasketService {
 
     public void addItem(UserId userId, ProductId productId, int quantity) {
 
+
         ShoppingBasket shoppingBasket = basketRepository.get(userId);
         if (shoppingBasket == null) shoppingBasket = new ShoppingBasket(userId, timeServer.getDate());
-
         Product product = productRepository.get(productId);
-        if(product == null) throw new ProductDoesNotExistException();
+
         shoppingBasket.add(product, quantity);
 
         basketRepository.save(shoppingBasket);

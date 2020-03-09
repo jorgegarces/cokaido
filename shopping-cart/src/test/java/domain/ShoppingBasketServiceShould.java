@@ -1,15 +1,12 @@
 package domain;
 
 import domain.basket.IBasketRepository;
-import domain.exceptions.ProductDoesNotExistException;
 import domain.product.IProductRepository;
 import domain.product.ProductId;
 import domain.shoppingBasket.ShoppingBasket;
 import domain.timeserver.ITimeServer;
 import domain.user.UserId;
-import org.junit.Assert;
 import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import domain.product.Product;
@@ -39,16 +36,5 @@ public class ShoppingBasketServiceShould {
 
         verify(basketRepository).save(shoppingBasket);
     }
-    @Test
-    public void not_allow_to_add_a_non_existent_product(){
 
-        MockitoAnnotations.initMocks(this);
-        UserId userId = new UserId(1);
-        ProductId productId = new ProductId(10002);
-        ShoppingBasketService shoppingBasketService = new ShoppingBasketService(productRepository, basketRepository, timeServer);
-        when(productRepository.get(productId)).thenReturn(null);
-
-
-        Assertions.assertThrows(ProductDoesNotExistException.class, ()-> shoppingBasketService.addItem(userId, productId,2));
-    }
 }
