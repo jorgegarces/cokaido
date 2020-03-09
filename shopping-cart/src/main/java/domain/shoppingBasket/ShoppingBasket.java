@@ -1,7 +1,9 @@
 package domain.shoppingBasket;
 
-import domain.product.ProductId;
+import domain.lineItem.LineItem;
+import domain.lineItem.LineItemList;
 import domain.user.UserId;
+import domain.product.Product;
 
 import java.util.Objects;
 
@@ -9,13 +11,16 @@ public class ShoppingBasket {
 
     private final UserId userId;
     private final String date;
+    private LineItemList lineItemList = new LineItemList();
 
     public ShoppingBasket(UserId userId, String date) {
         this.userId = userId;
         this.date = date;
+
     }
 
-    public void add(ProductId productId, int quantity) {
+    public void add(Product product, int quantity) {
+        this.lineItemList.add(product, quantity);
     }
 
     @Override
@@ -24,11 +29,21 @@ public class ShoppingBasket {
         if (o == null || getClass() != o.getClass()) return false;
         ShoppingBasket that = (ShoppingBasket) o;
         return Objects.equals(userId, that.userId) &&
-                Objects.equals(date, that.date);
+                Objects.equals(date, that.date) &&
+                Objects.equals(lineItemList, that.lineItemList);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(userId, date);
+        return Objects.hash(userId, date, lineItemList);
+    }
+
+    @Override
+    public String toString() {
+        return "ShoppingBasket{" +
+                "userId=" + userId +
+                ", date='" + date + '\'' +
+                ", lineItemList=" + lineItemList +
+                '}';
     }
 }
