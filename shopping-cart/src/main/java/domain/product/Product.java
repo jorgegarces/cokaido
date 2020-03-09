@@ -1,5 +1,8 @@
 package domain.product;
 
+import domain.memento.LineItemMemento;
+import domain.memento.ProductMemento;
+
 import java.util.Objects;
 
 public class Product {
@@ -27,5 +30,17 @@ public class Product {
     @Override
     public int hashCode() {
         return Objects.hash(productId, name, price);
+    }
+
+    public ProductMemento createMemento() {
+        ProductMemento productMemento = new ProductMemento();
+        productMemento.name = this.name;
+        productMemento.price = this.price;
+
+        return productMemento;
+    }
+
+    public double calculateTotal(int quantity) {
+        return quantity * this.price;
     }
 }

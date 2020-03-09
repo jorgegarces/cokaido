@@ -1,5 +1,6 @@
 package domain.lineItem;
 
+import domain.memento.LineItemMemento;
 import domain.product.Product;
 
 import java.util.Objects;
@@ -23,6 +24,18 @@ public class LineItem {
 
     public void decreaseQuantity(int quantity) {
         this.quantity -= quantity;
+    }
+
+    public LineItemMemento createMemento() {
+        LineItemMemento lineItemMemento = new LineItemMemento();
+        lineItemMemento.quantity = this.quantity;
+        lineItemMemento.productMemento = product.createMemento();
+        lineItemMemento.total = calculateTotal();
+        return lineItemMemento;
+    }
+
+    public double calculateTotal() {
+        return product.calculateTotal(this.quantity);
     }
 
     @Override

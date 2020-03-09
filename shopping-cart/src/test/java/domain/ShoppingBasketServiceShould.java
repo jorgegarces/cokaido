@@ -36,5 +36,4 @@ public class ShoppingBasketServiceShould {
 
         verify(basketRepository).save(shoppingBasket);
     }
-
 }

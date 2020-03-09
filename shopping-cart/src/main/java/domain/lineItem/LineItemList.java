@@ -1,12 +1,12 @@
 package domain.lineItem;
 
+import domain.memento.LineItemListMemento;
 import domain.product.Product;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class LineItemList {
-
     private final ArrayList<LineItem> itemList;
 
     public LineItemList() {
@@ -27,6 +27,23 @@ public class LineItemList {
         if (lineItem == null) return;
         lineItem.decreaseQuantity(quantity);
         if (lineItem.isQuantityZero()) itemList.remove(lineItem);
+    }
+
+    public LineItemListMemento createMemento() {
+        LineItemListMemento lineItemListMemento = new LineItemListMemento();
+        for (LineItem lineItem : itemList) {
+            lineItemListMemento.items.add(lineItem.createMemento());
+        }
+        lineItemListMemento.total = calculateTotal();
+        return lineItemListMemento;
+    }
+
+    private double calculateTotal() {
+        double total = 0;
+        for (LineItem lineItem : itemList) {
+            total += lineItem.calculateTotal();
+        }
+        return total;
     }
 
     private LineItem productExists(Product product) {
@@ -56,4 +73,5 @@ public class LineItemList {
                 "itemList=" + itemList +
                 '}';
     }
+
 }

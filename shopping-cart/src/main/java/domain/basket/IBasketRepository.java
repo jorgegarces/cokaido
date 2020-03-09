@@ -12,3 +12,4 @@ public interface IBasketRepository {
 
     ShoppingBasketMemento memento(UserId userId);
 }
+

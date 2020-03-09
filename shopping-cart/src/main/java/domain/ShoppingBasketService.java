@@ -1,7 +1,6 @@
 package domain;
 
 import domain.basket.IBasketRepository;
-import domain.exceptions.ProductDoesNotExistException;
 import domain.memento.ShoppingBasketMemento;
 import domain.product.IProductRepository;
 import domain.product.ProductId;
@@ -22,14 +21,11 @@ public class ShoppingBasketService {
     }
 
     public void addItem(UserId userId, ProductId productId, int quantity) {
-
-
         ShoppingBasket shoppingBasket = basketRepository.get(userId);
         if (shoppingBasket == null) shoppingBasket = new ShoppingBasket(userId, timeServer.getDate());
+
         Product product = productRepository.get(productId);
-
         shoppingBasket.add(product, quantity);
-
         basketRepository.save(shoppingBasket);
     }
 

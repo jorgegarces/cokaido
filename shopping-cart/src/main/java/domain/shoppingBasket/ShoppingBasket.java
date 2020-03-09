@@ -2,8 +2,8 @@ package domain.shoppingBasket;
 
 import domain.exceptions.NegativeQuantityException;
 import domain.exceptions.ProductDoesNotExistException;
-import domain.lineItem.LineItem;
 import domain.lineItem.LineItemList;
+import domain.memento.ShoppingBasketMemento;
 import domain.user.UserId;
 import domain.product.Product;
 
@@ -29,6 +29,14 @@ public class ShoppingBasket {
 
     public void remove(Product product, int quantity) {
         this.lineItemList.remove(product, quantity);
+    }
+
+    public ShoppingBasketMemento createMemento() {
+        ShoppingBasketMemento shoppingBasketMemento = new ShoppingBasketMemento();
+        shoppingBasketMemento.date = this.date;
+        shoppingBasketMemento.lineItemList = lineItemList.createMemento();
+
+        return shoppingBasketMemento;
     }
 
     @Override

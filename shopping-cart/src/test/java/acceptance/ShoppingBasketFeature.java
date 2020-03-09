@@ -34,8 +34,8 @@ public class ShoppingBasketFeature {
         ShoppingBasketMemento basket = shoppingBasketService.basketFor(new UserId(1));
 
         Assert.assertEquals("Creation date : 01/03/2020\n" +
-                "2x The Hobbit 2x 5.00 = €10 .00\n" +
-                "5 x Breaking Bad 5 x 7.00 = €35 .00\n" +
-                "Total: €45 .00 ", basket);
+                "2x The Hobbit 2x 5.00 = €10.00\n" +
+                "5x Breaking Bad 5x 7.00 = €35.00\n" +
+                "Total: €45.00 ", basket);
     }
 }
