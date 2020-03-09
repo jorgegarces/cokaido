@@ -15,10 +15,18 @@ public class LineItemList {
 
     public void add(Product product, int quantity) {
         LineItem lineItem = productExists(product);
+        if (lineItem != null) {
+            lineItem.increaseQuantity(quantity);
+            return;
+        }
+        itemList.add(new LineItem(product, quantity));
+    }
 
-        if (lineItem != null) lineItem.doUpdateQuantity(quantity);
-
-        else itemList.add(new LineItem(product, quantity));
+    public void remove(Product product, int quantity) {
+        LineItem lineItem = productExists(product);
+        if (lineItem == null) return;
+        lineItem.decreaseQuantity(quantity);
+        if (lineItem.isQuantityZero()) itemList.remove(lineItem);
     }
 
     private LineItem productExists(Product product) {
@@ -27,6 +35,7 @@ public class LineItemList {
         }
         return null;
     }
+
 
     @Override
     public boolean equals(Object o) {
@@ -39,5 +48,12 @@ public class LineItemList {
     @Override
     public int hashCode() {
         return Objects.hash(itemList);
+    }
+
+    @Override
+    public String toString() {
+        return "LineItemList{" +
+                "itemList=" + itemList +
+                '}';
     }
 }

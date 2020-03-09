@@ -1,6 +1,8 @@
 package domain;
 
 import domain.basket.IBasketRepository;
+import domain.exceptions.ProductDoesNotExistException;
+import domain.memento.ShoppingBasketMemento;
 import domain.product.IProductRepository;
 import domain.product.ProductId;
 import domain.shoppingBasket.ShoppingBasket;
@@ -25,12 +27,23 @@ public class ShoppingBasketService {
         if (shoppingBasket == null) shoppingBasket = new ShoppingBasket(userId, timeServer.getDate());
 
         Product product = productRepository.get(productId);
+        if(product == null) throw new ProductDoesNotExistException();
         shoppingBasket.add(product, quantity);
 
         basketRepository.save(shoppingBasket);
     }
 
-    public ShoppingBasket basketFor(UserId userId) {
-        return null;
+    public ShoppingBasketMemento basketFor(UserId userId) {
+
+        return basketRepository.memento(userId);
+    }
+
+    @Override
+    public String toString() {
+        return "ShoppingBasketService{" +
+                "productRepository=" + productRepository +
+                ", basketRepository=" + basketRepository +
+                ", timeServer=" + timeServer +
+                '}';
     }
 }

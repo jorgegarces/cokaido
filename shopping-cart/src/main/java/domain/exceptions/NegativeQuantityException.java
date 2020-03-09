@@ -1,8 +1,6 @@
 package domain.exceptions;
 
 
-public class NegativeQuantityException extends NullPointerException {
-
-
+public class NegativeQuantityException extends RuntimeException {
 }
 

@@ -13,6 +13,18 @@ public class LineItem {
         this.quantity = quantity;
     }
 
+    public void increaseQuantity(int quantity) {
+        this.quantity += quantity;
+    }
+
+    public boolean checkProduct(Product product) {
+        return this.product.equals(product);
+    }
+
+    public void decreaseQuantity(int quantity) {
+        this.quantity -= quantity;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -27,11 +39,16 @@ public class LineItem {
         return Objects.hash(product, quantity);
     }
 
-    public void doUpdateQuantity(int quantity) {
-        this.quantity += quantity;
+
+    public boolean isQuantityZero() {
+        return this.quantity <= 0;
     }
 
-    public boolean checkProduct(Product product) {
-        return this.product.equals(product);
+    @Override
+    public String toString() {
+        return "LineItem{" +
+                "product=" + product +
+                ", quantity=" + quantity +
+                '}';
     }
 }

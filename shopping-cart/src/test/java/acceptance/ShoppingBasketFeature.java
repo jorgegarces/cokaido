@@ -2,6 +2,7 @@ package acceptance;
 
 import domain.basket.IBasketRepository;
 import domain.ShoppingBasketService;
+import domain.memento.ShoppingBasketMemento;
 import domain.shoppingBasket.ShoppingBasket;
 import org.junit.Assert;
 import org.junit.Test;
@@ -30,11 +31,11 @@ public class ShoppingBasketFeature {
         shoppingBasketService.addItem(new UserId(1), new ProductId(10002), 2);
         shoppingBasketService.addItem(new UserId(1), new ProductId(20110), 5);
 
-        ShoppingBasket basket = shoppingBasketService.basketFor(new UserId(1));
+        ShoppingBasketMemento basket = shoppingBasketService.basketFor(new UserId(1));
 
         Assert.assertEquals("Creation date : 01/03/2020\n" +
                 "2x The Hobbit 2x 5.00 = €10 .00\n" +
                 "5 x Breaking Bad 5 x 7.00 = €35 .00\n" +
-                "Total: €45 .00 ", basket.toString());
+                "Total: €45 .00 ", basket);
     }
 }

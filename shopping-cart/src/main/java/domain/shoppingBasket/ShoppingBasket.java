@@ -25,6 +25,10 @@ public class ShoppingBasket {
         this.lineItemList.add(product, quantity);
     }
 
+    public void remove(Product product, int quantity) {
+        this.lineItemList.remove(product, quantity);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -48,4 +52,6 @@ public class ShoppingBasket {
                 ", lineItemList=" + lineItemList +
                 '}';
     }
+
+
 }

@@ -33,4 +33,34 @@ class ShoppingBasketShould {
 
         Assertions.assertThrows(NegativeQuantityException.class, ()-> shoppingBasket.add(product, -1));
     }
+
+    @Test
+    public void remove_product_from_shoppingBasket() {
+
+        ProductId productId = new ProductId(10002);
+        Product product = new Product(productId, "The Hobbit",5.00);
+        ShoppingBasket shoppingBasket = new ShoppingBasket(new UserId(1), "04/03/2020");
+        ShoppingBasket expectedShoppingBasket = new ShoppingBasket(new UserId(1),"04/03/2020");
+        shoppingBasket.add(product, 1);
+        shoppingBasket.add(product, 1);
+        expectedShoppingBasket.add(product, 1);
+
+        shoppingBasket.remove(product, 1);
+
+        Assert.assertEquals(expectedShoppingBasket, shoppingBasket);
+    }
+
+    @Test
+    public void remove_product_from_shopping_basket_if_quantity_is_zero(){
+
+        ProductId productId = new ProductId(10002);
+        Product product = new Product(productId, "The Hobbit",5.00);
+        ShoppingBasket shoppingBasket = new ShoppingBasket(new UserId(1), "04/03/2020");
+        ShoppingBasket expectedShoppingBasket = new ShoppingBasket(new UserId(1),"04/03/2020");
+        shoppingBasket.add(product, 1);
+
+        shoppingBasket.remove(product, 1);
+
+        Assert.assertEquals(expectedShoppingBasket, shoppingBasket);
+    }
 }
