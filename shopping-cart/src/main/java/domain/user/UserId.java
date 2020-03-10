@@ -1,5 +1,7 @@
 package domain.user;
 
+import domain.memento.UserIdMemento;
+
 import java.util.Objects;
 
 public class UserId {
@@ -7,6 +9,12 @@ public class UserId {
 
     public UserId(int userId) {
         this.userId = userId;
+    }
+
+    public UserIdMemento createMemento() {
+        UserIdMemento userIdMemento = new UserIdMemento();
+        userIdMemento.id = this.userId;
+        return userIdMemento;
     }
 
     @Override

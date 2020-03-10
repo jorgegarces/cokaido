@@ -1,4 +1,4 @@
-package domain.basket;
+package infrastructure;
 
 import domain.memento.ShoppingBasketMemento;
 import domain.shoppingBasket.ShoppingBasket;

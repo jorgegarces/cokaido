@@ -2,10 +2,7 @@ package domain.shoppingBasket;
 
 import domain.exceptions.NegativeQuantityException;
 import domain.exceptions.ProductDoesNotExistException;
-import domain.memento.LineItemListMemento;
-import domain.memento.LineItemMemento;
-import domain.memento.ProductMemento;
-import domain.memento.ShoppingBasketMemento;
+import domain.memento.*;
 import domain.product.ProductId;
 import domain.user.UserId;
 import org.junit.Assert;
@@ -93,6 +90,9 @@ class ShoppingBasketShould {
         expectedMemento.lineItemList = new LineItemListMemento();
         expectedMemento.lineItemList.items.add(lineItemMemento);
         expectedMemento.lineItemList.total = 10.00;
+        UserIdMemento userIdMemento = new UserIdMemento();
+        userIdMemento.id = 1;
+        expectedMemento.userId = userIdMemento;
 
         ShoppingBasketMemento memento = shoppingBasket.createMemento();
 

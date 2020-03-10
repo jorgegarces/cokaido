@@ -35,6 +35,7 @@ public class ShoppingBasket {
         ShoppingBasketMemento shoppingBasketMemento = new ShoppingBasketMemento();
         shoppingBasketMemento.date = this.date;
         shoppingBasketMemento.lineItemList = lineItemList.createMemento();
+        shoppingBasketMemento.userId = userId.createMemento();
 
         return shoppingBasketMemento;
     }

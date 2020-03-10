@@ -1,5 +1,7 @@
 package domain.memento;
 
+import domain.user.UserId;
+
 import java.util.Objects;
 
 
@@ -7,6 +9,7 @@ public class ShoppingBasketMemento {
 
     public String date;
     public LineItemListMemento lineItemList;
+    public UserIdMemento userId;
 
     @Override
     public boolean equals(Object o) {
@@ -14,12 +17,13 @@ public class ShoppingBasketMemento {
         if (o == null || getClass() != o.getClass()) return false;
         ShoppingBasketMemento that = (ShoppingBasketMemento) o;
         return Objects.equals(date, that.date) &&
-                Objects.equals(lineItemList, that.lineItemList);
+                Objects.equals(lineItemList, that.lineItemList) &&
+                Objects.equals(userId, that.userId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(date, lineItemList);
+        return Objects.hash(date, lineItemList, userId);
     }
 
     @Override

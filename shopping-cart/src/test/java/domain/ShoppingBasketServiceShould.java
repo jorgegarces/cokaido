@@ -1,7 +1,7 @@
 package domain;
 
-import domain.basket.IBasketRepository;
-import domain.product.IProductRepository;
+import infrastructure.IBasketRepository;
+import infrastructure.IProductRepository;
 import domain.product.ProductId;
 import domain.shoppingBasket.ShoppingBasket;
 import domain.timeserver.ITimeServer;
@@ -29,7 +29,7 @@ public class ShoppingBasketServiceShould {
         when(timeServer.getDate()).thenReturn("10/02/1990");
         ShoppingBasket shoppingBasket = new ShoppingBasket(userId, timeServer.getDate());
         when(basketRepository.get(userId)).thenReturn(null);
-        when(productRepository.get(productId)).thenReturn(product);
+        when(productRepository.get(productId)).thenReturn(java.util.Optional.of(product));
         shoppingBasket.add(product,2);
 
         shoppingBasketService.addItem(userId, productId, 2);

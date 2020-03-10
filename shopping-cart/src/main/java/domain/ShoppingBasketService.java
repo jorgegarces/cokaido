@@ -1,8 +1,8 @@
 package domain;
 
-import domain.basket.IBasketRepository;
+import infrastructure.IBasketRepository;
 import domain.memento.ShoppingBasketMemento;
-import domain.product.IProductRepository;
+import infrastructure.IProductRepository;
 import domain.product.ProductId;
 import domain.shoppingBasket.ShoppingBasket;
 import domain.user.UserId;
@@ -24,7 +24,7 @@ public class ShoppingBasketService {
         ShoppingBasket shoppingBasket = basketRepository.get(userId);
         if (shoppingBasket == null) shoppingBasket = new ShoppingBasket(userId, timeServer.getDate());
 
-        Product product = productRepository.get(productId);
+        Product product = productRepository.get(productId).orElse(null);
         shoppingBasket.add(product, quantity);
         basketRepository.save(shoppingBasket);
     }
