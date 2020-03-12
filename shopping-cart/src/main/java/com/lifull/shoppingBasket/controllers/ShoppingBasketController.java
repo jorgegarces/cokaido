@@ -1,7 +1,10 @@
 package com.lifull.shoppingBasket.controllers;
 
 import com.lifull.shoppingBasket.domain.ShoppingBasketService;
+import com.lifull.shoppingBasket.domain.exceptions.NegativeQuantityException;
 import com.lifull.shoppingBasket.domain.exceptions.ProductDoesNotExistException;
+import com.lifull.shoppingBasket.domain.exceptions.ShoppingBasketException;
+import com.lifull.shoppingBasket.domain.memento.ShoppingBasketMemento;
 import com.lifull.shoppingBasket.domain.product.ProductId;
 import com.lifull.shoppingBasket.services.ITimeServer;
 import com.lifull.shoppingBasket.domain.user.UserId;
@@ -23,18 +26,14 @@ public class ShoppingBasketController {
     @Autowired
     ITimeServer timeServer;
 
-    /*@GetMapping("/shoppingBaskets/{id}")
-    public ShoppingBasketMemento shoppingBasketByUserId(@PathVariable int id) {
-        return basketRepository.findById(id);
+    @GetMapping("/shoppingBaskets")
+    public ResponseEntity<ShoppingBasketMemento> shoppingBasketByUserId(@RequestParam int userId) {
+        ShoppingBasketService shoppingBasketService = new ShoppingBasketService(inMemoryProductRepository, inMemoryBasketRepository, timeServer);
+        return new ResponseEntity<>(shoppingBasketService.basketFor(new UserId(userId)),HttpStatus.OK);
     }
 
-    @GetMapping("/shoppingBaskets")
-    public List<ShoppingBasketMemento> allShoppingBaskets() {
-        return basketRepository.findAll();
-    }*/
-
     @PostMapping(value = "/shoppingBaskets", consumes = "application/json", produces = "application/json")
-    public ResponseEntity addItem(@RequestBody AddItemUseCase addItemUseCase) {
+    public ResponseEntity<Object> addItem(@RequestBody AddItemUseCase addItemUseCase) {
         ShoppingBasketService shoppingBasketService = new ShoppingBasketService(inMemoryProductRepository, inMemoryBasketRepository, timeServer);
         try {
             shoppingBasketService.addItem(
@@ -42,9 +41,9 @@ public class ShoppingBasketController {
                     new ProductId(addItemUseCase.productId),
                     addItemUseCase.quantity);
             return new ResponseEntity<>("Product added correctly", HttpStatus.CREATED);
-        } catch(ProductDoesNotExistException e) {
-            ResponseEntity errorResponse = new ResponseEntity(e.message, HttpStatus.BAD_REQUEST);
-            return errorResponse;
+        } catch (ShoppingBasketException exception) {
+            return new ResponseEntity<>(exception.getMessage(), HttpStatus.BAD_REQUEST);
         }
     }
+
 }
