@@ -35,15 +35,14 @@ public class ShoppingBasketController {
     @PostMapping(value = "/shoppingBaskets", consumes = "application/json", produces = "application/json")
     public ResponseEntity addItem(@RequestBody AddItemUseCase addItemUseCase) {
         ShoppingBasketService shoppingBasketService = new ShoppingBasketService(inMemoryProductRepository, inMemoryBasketRepository, timeServer);
-        try{
+        try {
             shoppingBasketService.addItem(
                     new UserId(addItemUseCase.userId),
                     new ProductId(addItemUseCase.productId),
                     addItemUseCase.quantity);
-        }catch(Error e){
-
-            return new ResponseEntity(HttpStatus.NOT_ACCEPTABLE);
+            return new ResponseEntity<>("Product added correctly", HttpStatus.CREATED);
+        } catch(ProductDoesNotExistException e) {
+            return null;
         }
-        return null;
     }
 }
