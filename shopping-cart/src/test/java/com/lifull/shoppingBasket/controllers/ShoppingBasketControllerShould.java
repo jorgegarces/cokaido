@@ -36,19 +36,25 @@ public class ShoppingBasketControllerShould {
 
         Assert.assertEquals(message, "Product added correctly");
     }
+
+    @Test
+    public void throw_an_error_if_product_id_does_not_exist() throws Exception {
+        AddItemUseCase addItemUseCase = new AddItemUseCase();
+        addItemUseCase.productId = 20002;
+        addItemUseCase.userId = 1;
+        addItemUseCase.quantity = 1;
+        String jsonRequest = new ObjectMapper().writeValueAsString(addItemUseCase);
+        MvcResult result = this.mockMvc.perform(post("/shoppingBaskets").contentType(MediaType.APPLICATION_JSON)
+                .content(jsonRequest)).andDo(print()).andExpect(status().isBadRequest())
+                .andReturn();
+
+        String message = result.getResponse().getContentAsString();
+
+        Assert.assertEquals(message, "product does not exist");
+    }
 }
 
-/*package controllers;
-import static org.junit.Assert.assertNotNull;
-import com.lifull.shoppingBasket.RestServiceApplication;
-import com.lifull.shoppingBasket.controllers.AddItemUseCase;
-import com.lifull.shoppingBasket.controllers.ShoppingBasketController;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.ResponseEntity;
-import org.springframework.test.web.servlet.MockMvc;
+/*
 @SpringBootTest(classes = RestServiceApplication.class)
 @AutoConfigureMockMvc
 public class ShoppingBasketControllerShould {

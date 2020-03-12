@@ -7,6 +7,7 @@ import com.lifull.shoppingBasket.services.ITimeServer;
 import com.lifull.shoppingBasket.domain.user.UserId;
 import com.lifull.shoppingBasket.infrastructure.IBasketRepository;
 import com.lifull.shoppingBasket.infrastructure.IProductRepository;
+import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -42,7 +43,8 @@ public class ShoppingBasketController {
                     addItemUseCase.quantity);
             return new ResponseEntity<>("Product added correctly", HttpStatus.CREATED);
         } catch(ProductDoesNotExistException e) {
-            return null;
+            ResponseEntity errorResponse = new ResponseEntity(e.message, HttpStatus.BAD_REQUEST);
+            return errorResponse;
         }
     }
 }
