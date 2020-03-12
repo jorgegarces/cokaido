@@ -4,7 +4,7 @@ import infrastructure.IBasketRepository;
 import infrastructure.IProductRepository;
 import domain.product.ProductId;
 import domain.shoppingBasket.ShoppingBasket;
-import domain.timeserver.ITimeServer;
+import services.ITimeServer;
 import domain.user.UserId;
 import org.junit.Test;
 import org.mockito.Mock;

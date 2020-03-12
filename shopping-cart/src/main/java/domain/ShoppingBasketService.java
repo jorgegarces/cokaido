@@ -6,7 +6,7 @@ import infrastructure.IProductRepository;
 import domain.product.ProductId;
 import domain.shoppingBasket.ShoppingBasket;
 import domain.user.UserId;
-import domain.timeserver.ITimeServer;
+import services.ITimeServer;
 import domain.product.Product;
 
 public class ShoppingBasketService {

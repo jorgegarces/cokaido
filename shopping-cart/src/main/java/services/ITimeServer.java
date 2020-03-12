@@ -1,4 +1,4 @@
-package domain.timeserver;
+package services;
 
 public interface ITimeServer {
     String getDate();
