@@ -128,20 +128,3 @@ public class ShoppingBasketControllerShould {
     }
 }
 
-/*
-@SpringBootTest(classes = RestServiceApplication.class)
-@AutoConfigureMockMvc
-public class ShoppingBasketControllerShould {
-    @Autowired
-    private ShoppingBasketController shoppingBasketController;
-    @Test
-    public void shouldReturnDefaultMessage() throws Exception {
-        AddItemUseCase item = new AddItemUseCase();
-        item.productId = 20001;
-        item.userId = 1;
-        item.quantity = 2;
-        ResponseEntity response = shoppingBasketController.addItem(item);
-        assertNotNull(response);
-        System.out.println(response);
-    }
-}*/

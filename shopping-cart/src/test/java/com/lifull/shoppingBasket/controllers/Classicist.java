@@ -19,6 +19,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+import java.util.Optional;
+
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -42,5 +44,38 @@ public class Classicist {
 
         Assert.assertNotNull(basket);
         Assert.assertEquals(HttpStatus.OK,basket.getStatusCode());
+    }
+
+    @Test
+    public void create_basket() {
+
+        MockitoAnnotations.initMocks(this);
+        when(productRepository.get(new ProductId(20))).thenReturn(java.util.Optional.of(new Product(new ProductId(20), "name", 1.00)));
+        AddItemUseCase addItemUseCase = new AddItemUseCase();
+        addItemUseCase.userId = 1;
+        addItemUseCase.productId = 20;
+        addItemUseCase.quantity = 1;
+
+        ResponseEntity<Object> responseExpected = controller.addItem(addItemUseCase);
+
+        Assert.assertEquals(HttpStatus.CREATED, responseExpected.getStatusCode());
+        Assert.assertEquals("Product added correctly", responseExpected.getBody());
+    }
+
+    @Test
+    public void throw_an_error_if_product_id_does_not_exist() {
+
+        MockitoAnnotations.initMocks(this);
+        when(productRepository.get(new ProductId(2))).thenReturn(Optional.empty());
+
+        ResponseEntity<Object> responseExpected = controller.addItem(new AddItemUseCase());
+
+        Assert.assertEquals(HttpStatus.BAD_REQUEST, responseExpected.getStatusCode());
+        Assert.assertEquals("product does not exist", responseExpected.getBody());
+    }
+
+    @Test
+    public void test() {
+
     }
 }
