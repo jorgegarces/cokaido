@@ -1,17 +1,17 @@
 package acceptance;
 
-import infrastructure.IBasketRepository;
-import domain.ShoppingBasketService;
-import domain.memento.ShoppingBasketMemento;
-import infrastructure.InMemoryBasketRepository;
-import infrastructure.InMemoryProductRepository;
+import com.lifull.shoppingBasket.infrastructure.IBasketRepository;
+import com.lifull.shoppingBasket.domain.ShoppingBasketService;
+import com.lifull.shoppingBasket.domain.memento.ShoppingBasketMemento;
+import com.lifull.shoppingBasket.infrastructure.InMemoryBasketRepository;
+import com.lifull.shoppingBasket.infrastructure.InMemoryProductRepository;
 import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import domain.product.ProductId;
-import services.ITimeServer;
-import domain.user.UserId;
+import com.lifull.shoppingBasket.domain.product.ProductId;
+import com.lifull.shoppingBasket.services.ITimeServer;
+import com.lifull.shoppingBasket.domain.user.UserId;
 
 import static org.mockito.Mockito.when;
 
