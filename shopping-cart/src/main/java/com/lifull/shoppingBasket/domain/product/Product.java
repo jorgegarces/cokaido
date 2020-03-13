@@ -10,7 +10,6 @@ public class Product {
     private final double price;
 
     public Product(ProductId productId, String name, double price) {
-
         this.productId = productId;
         this.name = name;
         this.price = price;

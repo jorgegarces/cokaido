@@ -1,8 +1,9 @@
-package com.lifull.shoppingBasket.infrastructure;
+package com.lifull.shoppingBasket.infrastructure.inMemory;
 
 import com.lifull.shoppingBasket.domain.memento.ShoppingBasketMemento;
 import com.lifull.shoppingBasket.domain.shoppingBasket.ShoppingBasket;
 import com.lifull.shoppingBasket.domain.user.UserId;
+import com.lifull.shoppingBasket.infrastructure.IBasketRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;

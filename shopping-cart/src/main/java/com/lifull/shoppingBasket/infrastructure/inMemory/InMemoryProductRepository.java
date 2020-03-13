@@ -1,7 +1,8 @@
-package com.lifull.shoppingBasket.infrastructure;
+package com.lifull.shoppingBasket.infrastructure.inMemory;
 
 import com.lifull.shoppingBasket.domain.product.Product;
 import com.lifull.shoppingBasket.domain.product.ProductId;
+import com.lifull.shoppingBasket.infrastructure.IProductRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
@@ -29,4 +30,7 @@ public class InMemoryProductRepository implements IProductRepository {
         if(productList.containsKey(productId)) return Optional.ofNullable(productList.get(productId));
         return Optional.empty();
     }
+
 }
+
+

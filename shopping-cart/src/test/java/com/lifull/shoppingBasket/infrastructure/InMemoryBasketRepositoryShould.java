@@ -2,6 +2,7 @@ package com.lifull.shoppingBasket.infrastructure;
 
 import com.lifull.shoppingBasket.domain.shoppingBasket.ShoppingBasket;
 import com.lifull.shoppingBasket.domain.user.UserId;
+import com.lifull.shoppingBasket.infrastructure.inMemory.InMemoryBasketRepository;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 

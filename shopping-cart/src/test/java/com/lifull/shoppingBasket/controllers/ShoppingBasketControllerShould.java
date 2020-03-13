@@ -4,8 +4,8 @@ import com.lifull.shoppingBasket.domain.memento.ShoppingBasketMemento;
 import com.lifull.shoppingBasket.domain.product.Product;
 import com.lifull.shoppingBasket.domain.product.ProductId;
 import com.lifull.shoppingBasket.domain.user.UserId;
-import com.lifull.shoppingBasket.infrastructure.InMemoryBasketRepository;
-import com.lifull.shoppingBasket.infrastructure.InMemoryProductRepository;
+import com.lifull.shoppingBasket.infrastructure.inMemory.InMemoryBasketRepository;
+import com.lifull.shoppingBasket.infrastructure.inMemory.InMemoryProductRepository;
 import com.lifull.shoppingBasket.services.ITimeServer;
 import org.junit.Assert;
 import org.junit.Test;
@@ -14,6 +14,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -27,13 +28,12 @@ public class ShoppingBasketControllerShould {
     InMemoryBasketRepository basketRepository;
     @Mock
     InMemoryProductRepository productRepository;
-    @Mock
-    ITimeServer timeServer;
     @InjectMocks
     private ShoppingBasketController controller;
 
     @Test
     public void retrieve_basket_from_userId() {
+
         MockitoAnnotations.initMocks(this);
         when(basketRepository.memento(new UserId(1))).thenReturn(new ShoppingBasketMemento());
 
@@ -53,10 +53,10 @@ public class ShoppingBasketControllerShould {
         addItemUseCase.productId = 20;
         addItemUseCase.quantity = 1;
 
-        ResponseEntity<Object> responseExpected = controller.addItem(addItemUseCase);
+        ResponseEntity<Object> response = controller.addItem(addItemUseCase);
 
-        Assert.assertEquals(HttpStatus.CREATED, responseExpected.getStatusCode());
-        Assert.assertEquals("Product added correctly", responseExpected.getBody());
+        Assert.assertEquals(HttpStatus.CREATED, response.getStatusCode());
+        Assert.assertEquals("Product added correctly", response.getBody());
     }
 
     @Test
@@ -77,6 +77,7 @@ public class ShoppingBasketControllerShould {
         MockitoAnnotations.initMocks(this);
         when(productRepository.get(new ProductId(20))).thenReturn(java.util.Optional.of(new Product(new ProductId(20), "name", 1.00)));
         AddItemUseCase addItemUseCase = new AddItemUseCase();
+        addItemUseCase.userId = 1;
         addItemUseCase.productId = 20;
         addItemUseCase.quantity = -1;
 

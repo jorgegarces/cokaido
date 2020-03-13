@@ -8,12 +8,10 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lifull.shoppingBasket.domain.ShoppingBasketService;
 import com.lifull.shoppingBasket.domain.memento.*;
-import com.lifull.shoppingBasket.domain.product.Product;
 import com.lifull.shoppingBasket.domain.product.ProductId;
-import com.lifull.shoppingBasket.domain.shoppingBasket.ShoppingBasket;
 import com.lifull.shoppingBasket.domain.user.UserId;
-import com.lifull.shoppingBasket.infrastructure.InMemoryBasketRepository;
-import com.lifull.shoppingBasket.infrastructure.InMemoryProductRepository;
+import com.lifull.shoppingBasket.infrastructure.inMemory.InMemoryBasketRepository;
+import com.lifull.shoppingBasket.infrastructure.inMemory.InMemoryProductRepository;
 import com.lifull.shoppingBasket.services.ITimeServer;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
@@ -50,7 +48,7 @@ public class ShoppingBasketControllerEndToEndShould {
     public void add_new_item_to_basket_when_all_parameters_are_correct() throws Exception {
         AddItemUseCase addItemUseCase = new AddItemUseCase();
         addItemUseCase.productId = 20001;
-        addItemUseCase.userId = 1;
+        addItemUseCase.userId = 2;
         addItemUseCase.quantity = 1;
         String jsonRequest = new ObjectMapper().writeValueAsString(addItemUseCase);
         MvcResult result = this.mockMvc.perform(post("/shoppingBaskets").contentType(MediaType.APPLICATION_JSON)
