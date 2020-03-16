@@ -34,7 +34,7 @@ public class Product {
         ProductMemento productMemento = new ProductMemento();
         productMemento.name = this.name;
         productMemento.price = this.price;
-
+        productMemento.id = this.productId.getProductId();
         return productMemento;
     }
 

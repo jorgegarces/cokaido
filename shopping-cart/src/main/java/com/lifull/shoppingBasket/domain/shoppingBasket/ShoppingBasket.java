@@ -8,6 +8,7 @@ import com.lifull.shoppingBasket.domain.user.UserId;
 import com.lifull.shoppingBasket.domain.product.Product;
 
 import java.util.Objects;
+import java.util.UUID;
 
 public class ShoppingBasket {
 
