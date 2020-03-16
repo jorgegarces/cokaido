@@ -1,4 +1,4 @@
-import org.junit.Assert;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -23,6 +23,8 @@ class CharacterCopierMockShould {
 
     @Test
     void copy_one_character_from_source_to_destination() {
+        //copier = new CharacterCopier(source, destination); // se pone en el init para estar diponible para todos los test
+
         //Arrange
         when(source.getChar()).thenReturn('a', 'b','\n');
         //Act
