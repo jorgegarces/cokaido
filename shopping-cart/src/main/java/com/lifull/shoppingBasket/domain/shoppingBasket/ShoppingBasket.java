@@ -3,7 +3,10 @@ package com.lifull.shoppingBasket.domain.shoppingBasket;
 import com.lifull.shoppingBasket.domain.exceptions.NegativeQuantityException;
 import com.lifull.shoppingBasket.domain.exceptions.ProductDoesNotExistException;
 import com.lifull.shoppingBasket.domain.lineItem.LineItemList;
+import com.lifull.shoppingBasket.domain.memento.LineItemMemento;
+import com.lifull.shoppingBasket.domain.memento.ProductMemento;
 import com.lifull.shoppingBasket.domain.memento.ShoppingBasketMemento;
+import com.lifull.shoppingBasket.domain.product.ProductId;
 import com.lifull.shoppingBasket.domain.user.UserId;
 import com.lifull.shoppingBasket.domain.product.Product;
 
@@ -22,6 +25,7 @@ public class ShoppingBasket {
 
     }
 
+
     public void add(Product product, int quantity) throws NegativeQuantityException, ProductDoesNotExistException {
         if(product == null) throw new ProductDoesNotExistException();
         if(quantity < 0) throw new NegativeQuantityException();
@@ -39,6 +43,15 @@ public class ShoppingBasket {
         shoppingBasketMemento.userId = userId.createMemento();
 
         return shoppingBasketMemento;
+    }
+
+    public static ShoppingBasket createFromMemento(ShoppingBasketMemento shoppingBasketMemento) {
+        ShoppingBasket shoppingBasket = new ShoppingBasket(new UserId(shoppingBasketMemento.userId.id), shoppingBasketMemento.date);
+        for (LineItemMemento lineItemMemento : shoppingBasketMemento.lineItemList.items) {
+            ProductId productId = new ProductId(lineItemMemento.productMemento.id);
+            Product product = new Product(productId, lineItemMemento.productMemento.name, lineItemMemento.productMemento.price);
+            shoppingBasket.add(product, lineItemMemento.quantity);
+        } return shoppingBasket;
     }
 
     @Override
