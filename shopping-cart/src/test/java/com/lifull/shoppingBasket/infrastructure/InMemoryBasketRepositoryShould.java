@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 class InMemoryBasketRepositoryShould {
     @Test
-    public void save_and_retrieve_a_shoping_basket_correctly(){
+    public void save_and_retrieve_a_shopping_basket_correctly(){
 
         ShoppingBasket shoppingBasket = new ShoppingBasket(new UserId(1), "04/03/2020");
         InMemoryBasketRepository inMemoryBasketRepository = new InMemoryBasketRepository();
