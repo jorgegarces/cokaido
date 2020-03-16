@@ -42,8 +42,6 @@ public class ShoppingBasketControllerEndToEndShould {
     @Autowired
     private ITimeServer timeServer;
 
-
-
     @Test
     public void add_new_item_to_basket_when_all_parameters_are_correct() throws Exception {
         AddItemUseCase addItemUseCase = new AddItemUseCase();

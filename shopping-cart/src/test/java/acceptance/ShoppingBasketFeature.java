@@ -5,6 +5,7 @@ import com.lifull.shoppingBasket.domain.ShoppingBasketService;
 import com.lifull.shoppingBasket.domain.memento.ShoppingBasketMemento;
 import com.lifull.shoppingBasket.infrastructure.inMemory.InMemoryBasketRepository;
 import com.lifull.shoppingBasket.infrastructure.inMemory.InMemoryProductRepository;
+import com.lifull.shoppingBasket.infrastructure.sql.SQLProductRepository;
 import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mock;
@@ -18,6 +19,7 @@ import static org.mockito.Mockito.when;
 public class ShoppingBasketFeature {
 
     private InMemoryProductRepository inMemoryProductRepository = new InMemoryProductRepository();
+    //private SQLProductRepository inMemoryProductRepository = new SQLProductRepository();
     private IBasketRepository inMemoryBasketRepository = new InMemoryBasketRepository();
 
     @Mock

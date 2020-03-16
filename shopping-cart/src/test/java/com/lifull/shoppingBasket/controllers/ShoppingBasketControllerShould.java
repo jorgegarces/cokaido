@@ -6,6 +6,7 @@ import com.lifull.shoppingBasket.domain.product.ProductId;
 import com.lifull.shoppingBasket.domain.user.UserId;
 import com.lifull.shoppingBasket.infrastructure.inMemory.InMemoryBasketRepository;
 import com.lifull.shoppingBasket.infrastructure.inMemory.InMemoryProductRepository;
+import com.lifull.shoppingBasket.infrastructure.sql.SQLProductRepository;
 import com.lifull.shoppingBasket.services.ITimeServer;
 import org.junit.Assert;
 import org.junit.Test;
@@ -27,7 +28,9 @@ public class ShoppingBasketControllerShould {
     @Mock
     InMemoryBasketRepository basketRepository;
     @Mock
-    InMemoryProductRepository productRepository;
+    SQLProductRepository productRepository;
+    @Mock
+    ITimeServer timeServer;
     @InjectMocks
     private ShoppingBasketController controller;
 
