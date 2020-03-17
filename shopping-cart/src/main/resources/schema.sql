@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS line_items (
     );
 
 CREATE TABLE IF NOT EXISTS products (
-    id INT NOT NULL,
+    id INT NOT NULL UNIQUE,
     name VARCHAR(250) NOT NULL,
     price DECIMAL NOT NULL
     );

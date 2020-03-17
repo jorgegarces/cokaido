@@ -4,12 +4,14 @@ import com.lifull.shoppingBasket.domain.product.Product;
 import com.lifull.shoppingBasket.domain.product.ProductId;
 import com.lifull.shoppingBasket.infrastructure.IProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
 @Component
+@Primary
 public class SQLProductRepository implements IProductRepository {
     @Autowired
     JdbcTemplate jdbcTemplate;

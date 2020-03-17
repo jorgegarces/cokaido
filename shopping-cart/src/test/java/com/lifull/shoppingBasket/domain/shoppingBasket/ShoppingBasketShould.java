@@ -83,6 +83,7 @@ class ShoppingBasketShould {
         ProductMemento productMemento = new ProductMemento();
         productMemento.name = "The Hobbit";
         productMemento.price = 5.00;
+        productMemento.id = 10002;
         LineItemMemento lineItemMemento = new LineItemMemento();
         lineItemMemento.productMemento = productMemento;
         lineItemMemento.quantity = 2;
@@ -96,7 +97,7 @@ class ShoppingBasketShould {
 
         ShoppingBasketMemento memento = shoppingBasket.createMemento();
 
-        Assert.assertEquals(expectedMemento.toString(), memento.toString());
+        Assert.assertEquals(expectedMemento, memento);
     }
 
     @Test
