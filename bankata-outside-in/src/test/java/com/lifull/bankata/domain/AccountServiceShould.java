@@ -1,9 +1,10 @@
-import app.Account;
-import app.printable.Printable;
-import app.repositories.Deposit;
-import app.repositories.TransactionRepository;
-import app.repositories.Withdrawal;
-import app.timeserver.TimeServer;
+package com.lifull.bankata.domain;
+
+import com.lifull.bankata.domain.transaction.deposit.Deposit;
+import com.lifull.bankata.domain.transaction.withdrawal.Withdrawal;
+import com.lifull.bankata.infrastructure.TransactionRepository;
+import com.lifull.bankata.services.TimeServer;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -11,12 +12,11 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.mockito.Mockito.*; /* Powered by Anna */
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-public class AccountShould {
-    @Mock
-    private Printable printer;
+public class AccountServiceShould {
 
     @Mock
     private TransactionRepository repository;
@@ -25,13 +25,13 @@ public class AccountShould {
     private TimeServer timeServer;
 
     @InjectMocks
-    private Account account;
+    private AccountService accountService;
 
     @Test
     public void send_deposit_to_repository() {
         MockitoAnnotations.initMocks(this);
 
-        account.deposit(1000);
+        accountService.deposit(1000);
 
         verify(repository).save(new Deposit(1000, timeServer.getDate()));
     }
@@ -41,20 +41,19 @@ public class AccountShould {
 
         MockitoAnnotations.initMocks(this);
 
-        account.withdraw(500);
+        accountService.withdraw(500);
 
         verify(repository).save(new Withdrawal(500, timeServer.getDate()));
     }
 
     @Test
-    public void get_statement_from_repository_and_send_it_to_printer() {
+    public void get_statement_from_repository() {
 
         MockitoAnnotations.initMocks(this);
-        account = new Account(repository, printer, timeServer);
+        accountService = new AccountService(repository, timeServer);
 
         when(repository.getStatement()).thenReturn("Amount");
-        account.printStatement();
 
-        verify(printer).print("Amount");
+        Assert.assertEquals("Amount", accountService.printStatement());
     }
 }

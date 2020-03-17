@@ -5,7 +5,6 @@ import com.lifull.shoppingBasket.domain.product.Product;
 import com.lifull.shoppingBasket.domain.product.ProductId;
 import com.lifull.shoppingBasket.domain.user.UserId;
 import com.lifull.shoppingBasket.infrastructure.inMemory.InMemoryBasketRepository;
-import com.lifull.shoppingBasket.infrastructure.inMemory.InMemoryProductRepository;
 import com.lifull.shoppingBasket.infrastructure.sql.SQLProductRepository;
 import com.lifull.shoppingBasket.services.ITimeServer;
 import org.junit.Assert;
@@ -15,7 +14,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 

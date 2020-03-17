@@ -1,4 +1,6 @@
-package app.repositories;
+package com.lifull.bankata.domain.transaction.deposit;
+
+import com.lifull.bankata.domain.transaction.Transaction;
 
 public class Deposit extends Transaction {
 

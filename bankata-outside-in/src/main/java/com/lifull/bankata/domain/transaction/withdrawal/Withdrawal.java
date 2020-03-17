@@ -1,4 +1,6 @@
-package app.repositories;
+package com.lifull.bankata.domain.transaction.withdrawal;
+
+import com.lifull.bankata.domain.transaction.Transaction;
 
 public class Withdrawal extends Transaction {
 

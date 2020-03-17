@@ -1,4 +1,4 @@
-package app.repositories;
+package com.lifull.bankata.domain.transaction;
 
 import java.util.Objects;
 
