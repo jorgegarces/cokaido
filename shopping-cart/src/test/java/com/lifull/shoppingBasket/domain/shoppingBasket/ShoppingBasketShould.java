@@ -96,7 +96,7 @@ class ShoppingBasketShould {
 
         ShoppingBasketMemento memento = shoppingBasket.createMemento();
 
-        Assert.assertEquals(expectedMemento, memento);
+        Assert.assertEquals(expectedMemento.toString(), memento.toString());
     }
 
     @Test

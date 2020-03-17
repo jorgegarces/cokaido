@@ -120,7 +120,7 @@ public class ShoppingBasketControllerEndToEndShould {
         ShoppingBasketMemento memento = objectMapper.readValue(contentAsString, ShoppingBasketMemento.class);
 
 
-        Assert.assertEquals(expectedMemento, memento);
+        Assert.assertEquals(expectedMemento.toString(), memento.toString());
     }
 }
 

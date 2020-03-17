@@ -13,10 +13,10 @@ public class ShoppingBasketMemento {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ShoppingBasketMemento that = (ShoppingBasketMemento) o;
-        return Objects.equals(date, that.date) &&
-                Objects.equals(lineItemList, that.lineItemList) &&
-                Objects.equals(userId, that.userId);
+        ShoppingBasketMemento memento = (ShoppingBasketMemento) o;
+        return Objects.equals(date, memento.date) &&
+                Objects.equals(lineItemList, memento.lineItemList) &&
+                Objects.equals(userId, memento.userId);
     }
 
     @Override
@@ -27,7 +27,7 @@ public class ShoppingBasketMemento {
     @Override
     public String toString() {
         StringBuilder basketSummary = new StringBuilder();
-        basketSummary.append("Creation date : " + this.date + "\n");
+        basketSummary.append("Creation date : ").append(this.date).append("\n");
 
         for (LineItemMemento lineItem : lineItemList.items) {
 
