@@ -5,11 +5,11 @@ import com.lifull.shoppingBasket.domain.product.ProductId;
 import com.lifull.shoppingBasket.infrastructure.sql.SQLProductRepository;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.annotation.DirtiesContext;
+import org.springframework.test.context.TestPropertySource;
 
 import java.util.Optional;
 
