@@ -29,4 +29,9 @@ public class SQLBasketRepositoryShould {
         Assert.assertEquals(shoppingBasket, basketRepository.get(new UserId(1)));
     }
 
+    @Test
+    public void return_nothing_when_there_is_no_basket_for_the_given_user() {
+        Assert.assertEquals(null, basketRepository.get(new UserId(1)));
+    }
+
 }
